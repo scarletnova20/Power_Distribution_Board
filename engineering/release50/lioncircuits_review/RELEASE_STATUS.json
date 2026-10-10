@@ -1,0 +1,13 @@
+{
+  "board_sha256": "c9c3f9b4b2eaea11e62d7a06adaa5d6bd7cebcf41989441f326c62a01ae33d8d",
+  "fabricator": "LionCircuits",
+  "fabrication_files_generated": true,
+  "independent_export_checks_pass": true,
+  "electrical_connectivity_pass": true,
+  "lioncircuits_published_rules_pass": false,
+  "vendor_custom_process_accepted": false,
+  "exact_assembly_BOM_released": false,
+  "fabrication_ready": false,
+  "qualified_50A_rating": false,
+  "next_required_input": "LionCircuits custom process acceptance or accepted rule deck/stackup for redesign; see prepared supplier request"
+}

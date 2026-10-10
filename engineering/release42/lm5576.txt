@@ -1,0 +1,2629 @@
+
+PAGE 1
+LM5576 75V, 3A, Step-Down Switching Regulator
+1 Features
+•
+Ultra-wide input voltage range from 6V to 75V
+•
+Integrated 75V, 170mΩ N-channel MOSFET
+•
+Adjustable output voltage as low as 1.225V
+•
+1.5% feedback reference accuracy
+•
+Operating frequency adjustable between 50kHz 
+and 500kHz with single resistor
+•
+Controller or peripheral frequency synchronization
+•
+Adjustable soft start
+•
+Emulated current mode control architecture
+•
+Wide bandwidth error amplifier
+•
+Built-in protection
+•
+HTSSOP-20EP (exposed pad)
+•
+Create a custom design using the LM5576 with the 
+WEBENCH® Power Designer
+2 Applications
+•
+Industrial
+3 Description
+The LM5576 is an easy-to-use, buck regulator, which 
+allows design engineers to design and optimize 
+a robust power supply using a minimum set of 
+components. Operating with an input voltage range 
+of 6V to 75V, the LM5576 delivers 3A of continuous 
+output current with an integrated 170mΩ N-Channel 
+MOSFET. The regulator uses an emulated current 
+mode architecture which provides inherent line 
+regulation, tight load transient response, and ease-of-
+loop compensation without the usual limitation of low-
+duty cycles associated with current mode regulators. 
+The operating frequency is adjustable from 50kHz to 
+500kHz to allow optimization of size and efficiency. 
+To reduce EMI, a frequency synchronization pin 
+allows multiple ICs from the LM(2)557x family to 
+self-synchronize or to synchronize to an external 
+clock. The LM5576 makes sure of robustness with 
+cycle-by-cycle current limit, short-circuit protection, 
+thermal shutdown, and remote shutdown. The device 
+is available in a power-enhanced, 20-pin HTSSOP 
+package that features an exposed die attach pad for 
+thermal dissipation. The LM5576 is supported by the 
+full suite of WEBENCH circuit design and selection 
+simulation services online design tools.
+Package Information
+PART NUMBER
+PACKAGE(1)
+PACKAGE SIZE(2)
+LM5576
+PWP (HTSSOP, 20)
+6.5mm × 4.4mm
+(1)
+For more information, see Section 10.
+(2)
+The package size (length × width) is a nominal value and 
+includes pins, where applicable.
+BST
+SW
+COMP
+FB
+SS
+RAMP
+RT
+VCC
+VIN
+OUT
+IS
+GND
+LM5576
+VIN
+VOUT
+SYNC
+SD
+Simplified Application Schematic
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+PAGE 2
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Pin Configuration and Functions...................................3
+5 Specifications.................................................................. 5
+5.1 Absolute Maximum Ratings........................................ 5
+5.2 ESD Ratings............................................................... 5
+5.3 Recommended Operating Conditions.........................5
+5.4 Thermal Information....................................................5
+5.5 Electrical Characteristics.............................................6
+5.6 Typical Characteristics................................................8
+6 Detailed Description......................................................10
+6.1 Overview...................................................................10
+6.2 Functional Block Diagram.........................................10
+6.3 Feature Description...................................................10
+6.4 Device Functional Modes..........................................11
+7 Application and Implementation..................................17
+7.1 Application Information............................................. 17
+7.2 Typical Application.................................................... 18
+7.3 Power Supply Recommendations.............................26
+7.4 Layout....................................................................... 26
+8 Device and Documentation Support............................29
+8.1 Device Support......................................................... 29
+8.2 Receiving Notification of Documentation Updates....29
+8.3 Support Resources................................................... 29
+8.4 Trademarks...............................................................29
+8.5 Electrostatic Discharge Caution................................29
+8.6 Glossary....................................................................29
+9 Revision History............................................................ 30
+10 Mechanical, Packaging, and Orderable 
+Information.................................................................... 30
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+2
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 3
+4 Pin Configuration and Functions
+1
+VCC
+20
+ BST
+2
+SD
+19
+ PRE
+3
+VIN 
+18
+ SW
+4
+VIN 
+17
+ SW
+5
+SYNC
+16
+ IS
+6
+COMP
+15
+ IS
+7
+FB
+14
+ PGND
+8
+RT
+13
+ PGND
+9
+RAMP
+12
+ OUT
+10
+AGND
+11
+ SS
+Not to scale
+EP
+Figure 4-1. PWP Package 20-Pin HTSSOP (Top View)
+Table 4-1. Pin Functions
+PIN
+TYPE(1)
+DESCRIPTION
+APPLICATION INFORMATION
+NO.
+NAME
+1
+VCC
+O
+Output of the bias regulator
+VCC monitors VIN up to 9 V. Beyond 9 V, VCC 
+is regulated to 7 V. A 0.1-µF to 1-µF ceramic 
+decoupling capacitor is required. An external voltage 
+(7.5 V – 14 V) can be applied to this pin to reduce 
+internal power dissipation.
+2
+SD
+I
+Shutdown or UVLO input
+If the SD pin voltage is lass than 0.7 V, the regulator 
+is in a low power state. If the SD pin voltage is 
+between 0.7 V and 1.225 V, the regulator is in 
+standby mode. If the SD pin voltage is above 1.225 
+V, the regulator is operational. An external voltage 
+divider can be used to set a line undervoltage 
+shutdown threshold. If the SD pin is left open circuit, 
+a 5-µA pullup current source configures the regulator 
+fully operational.
+3, 4
+VIN
+I
+Input supply voltage
+Nominal operating range: 6 V to 75 V
+5
+SYNC
+I
+Oscillator synchronization input or output
+The internal oscillator can be synchronized to an 
+external clock with an external pulldown device. 
+Multiple LM5576 devices can be synchronized 
+together by connection of the SYNC pins.
+6
+COMP
+O
+Output of the internal error amplifier
+The loop compensation network must be connected 
+between this pin and the FB pin.
+7
+FB
+I
+Feedback signal from the regulated output
+This pin is connected to the inverting input of the 
+internal error amplifier. The regulation threshold is 
+1.225 V.
+8
+RT
+I
+Internal oscillator frequency set input
+The internal oscillator is set with a single resistor, 
+connected between this pin and the AGND pin.
+9
+RAMP
+O
+Ramp control signal
+An external capacitor connected between this pin 
+and the AGND pin sets the ramp slope used for 
+current mode control. Recommended capacitor range 
+50 pF to 2000 pF.
+10
+AGND
+GROUND
+Analog ground
+Internal reference for the regulator control functions
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+3
+Product Folder Links: LM5576
+
+
+PAGE 4
+Table 4-1. Pin Functions (continued)
+PIN
+TYPE(1)
+DESCRIPTION
+APPLICATION INFORMATION
+NO.
+NAME
+11
+SS
+O
+Soft-start
+An external capacitor and an internal 10-µA current 
+source set the time constant for the rise of the 
+error amp reference. The SS pin is held low during 
+standby, VCC UVLO and thermal shutdown.
+12
+OUT
+O
+Output voltage connection
+Connect directly to the regulated output voltage.
+13, 14
+PGND
+GROUND
+Power ground
+Low-side reference for the PRE switch and the IS 
+sense resistor.
+15, 16
+IS
+I
+Current sense
+Current measurement connection for the re-
+circulating diode. An internal sense resistor and a 
+sample and hold circuit sense the diode current 
+near the conclusion of the off-time. This current 
+measurement provides the DC level of the emulated 
+current ramp.
+17, 18
+SW
+O
+Switching node
+The source terminal of the internal buck switch. The 
+SW pin must be connected to the external Schottky 
+diode and to the buck inductor.
+19
+PRE
+I
+Pre-charge assist for the bootstrap capacitor
+This open-drain output can be connected to SW pin 
+to aid charging the bootstrap capacitor during very 
+light load conditions or in applications where the 
+output can be pre-charged before the LM5576 is 
+enabled. An internal pre-charge MOSFET is turned 
+on for 265 ns each cycle just prior to the on-time 
+interval of the buck switch.
+20
+BST
+I
+Boost input for bootstrap capacitor
+An external capacitor is required between the BST 
+and the SW pins. A 0.022-µF ceramic capacitor is 
+recommended. The capacitor is charged from VCC 
+through an internal diode during the off-time of the 
+buck switch.
+NA
+EP
+GROUND
+Exposed Pad
+Exposed metal pad on the underside of the device. TI 
+recommends to connect this pad to the PWB ground 
+plane to help in heat dissipation.
+(1)
+I = input, O = output
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+4
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 5
+5 Specifications
+5.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted)(1) (2)
+MIN
+MAX
+UNIT
+VIN to GND
+76
+V
+BST to GND
+90
+V
+PRE to GND
+76
+V
+SW to GND (Steady State)
+–1.5
+V
+BST to VCC
+76
+V
+SD, VCC to GND
+14
+V
+BST to SW
+14
+V
+OUT to GND
+Limited to VIN
+SYNC, SS, FB, RAMP to GND
+7
+V
+Storage temperature, Tstg
+–65
+150
+°C
+(1)
+Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply 
+functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions. 
+If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully 
+functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+(2)
+If Military/Aerospace specified devices are required, contact the Texas Instruments Sales Office/Distributors for availability and 
+specifications.
+5.2 ESD Ratings
+VALUE
+UNIT
+V(ESD)
+Electrostatic discharge(3)
+Human body model (HBM), per ANSI/ESDA/JEDEC JS-001, all pins(1)
+±2
+kV
+Charged-device model (CDM), per JEDEC specification JESD22- 
+C101(2)
+±500
+V
+(1)
+JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)
+JEDEC document JEP157 states that 250V CDM allows safe manufacturing with a standard ESD control process.
+(3)
+The human-body model is a 100-pF capacitor discharged through a 1.5-kΩ resistor into each pin.
+5.3 Recommended Operating Conditions
+MIN
+MAX
+UNIT
+VIN
+6
+75
+V
+Operation Junction Temperature
+−40
+125
+°C
+5.4 Thermal Information
+THERMAL METRIC(1)
+LM5576
+UNIT
+PWP (HTSSOP)
+20 PINS
+RθJA
+Junction-to-ambient thermal resistance
+40
+°C/W
+RθJC(top)
+Junction-to-case (top) thermal resistance
+33.6
+°C/W
+RθJB
+Junction-to-board thermal resistance
+6.9
+°C/W
+ψJT
+Junction-to-top characterization paramete
+1.3
+°C/W
+ψJB
+Junction-to-board characterization parameter
+14.8
+°C/W
+(1)
+For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application 
+note.
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+5
+Product Folder Links: LM5576
+
+
+PAGE 6
+5.5 Electrical Characteristics
+Typical values correspond to TJ = 25°C, VIN = 48 V, RT = 32.4kΩ. Minimum and maximum limits apply over –40°C to 125°C 
+junction temperature range unless otherwise stated.(1)
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+STARTUP REGULATOR
+VCC Reg
+VCC Regulator Output
+6.85
+7.15
+7.45
+V
+VCC LDO Mode turn-off
+9
+V
+VCC Current Limit
+VCC = 0 V,
+25
+mA
+VCC SUPPLY
+VCC UVLO Threshold
+VCC Increasing 
+5.03
+5.35
+5.67
+V
+VCC Undervoltage Hysteresis
+0.25
+V
+Bias Current (Iin)
+FB = 1.3 V.
+2
+4.5
+mA
+Shutdown Current (Iin)
+SD = 0 V.
+48
+85
+µA
+SHUTDOWN THRESHOLDS
+Shutdown Threshold
+0.47
+0.7
+0.9
+V
+Shutdown Hysteresis
+0.1
+V
+Standby Threshold
+1.17
+1.225
+1.28
+V
+Standby Hysteresis
+0.1
+V
+SD Pull-up Current Source
+5
+µA
+SWITCH CHARACTERISTICS
+Buck Switch Rds(on)
+170
+340
+mΩ
+BOOST UVLO
+3.8
+V
+BOOST UVLO Hysteresis
+0.8
+V
+Pre-charge Switch Rds(on)
+70
+Ω
+Pre-charge Switch on-time
+265
+ns
+CURRENT LIMIT
+Cycle by Cycle Current Limit Delay
+RAMP = 2.5 V.
+75
+ns
+SOFT-START
+SS Current Source
+7
+10
+14
+µA
+OSCILLATOR
+Frequency1
+180
+200
+220
+kHz
+Frequency2
+RT = 11 kΩ.
+425
+485
+545
+kHz
+SYNC Source Impedance
+11
+kΩ
+SYNC Sink Impedance
+110
+Ω
+SYNC Threshold (falling)
+1.4
+V
+SYNC Frequency
+RT = 11 kΩ. 
+550
+kHz
+SYNC Pulse Width Minimum
+15
+ns
+RAMP GENERATOR
+Ramp Current 1
+VIN = 60 V, VOUT = 10 V.
+235
+275
+315
+µA
+Ramp Current 1
+VIN = 36 V, VOUT = 10 V.
+136
+160
+184
+µA
+Ramp Current 2
+VIN = 10 V, VOUT = 10 V.
+18
+25
+32
+µA
+PWM COMPARATOR
+Forced Off-time
+416
+500
+575
+ns
+Min On-time
+80
+ns
+COMP to PWM Comparator Offset
+0.7
+V
+ERROR AMPLIFIER
+Feedback Voltage
+Vfb = COMP.
+1.207
+1.225
+1.243
+µV
+FB Bias Current
+10
+nA
+DC Gain
+70
+dB
+COMP Sink / Source Current
+3
+mA
+Unity Gain Bandwidth
+3
+MHz
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+6
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 7
+5.5 Electrical Characteristics (continued)
+Typical values correspond to TJ = 25°C, VIN = 48 V, RT = 32.4kΩ. Minimum and maximum limits apply over –40°C to 125°C 
+junction temperature range unless otherwise stated.(1)
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+DIODE SENSE RESISTANCE
+DSENSE
+42
+mΩ
+THERMAL SHUTDOWN
+Tsd
+Thermal Shutdown Threshold
+165
+°C
+Thermal Shutdown hysteresis
+25
+°C
+(1)
+Minimum and Maximum limits are 100% production tested at 25°C. Limits over the operating temperature range are ensured through 
+correlation using Statistical Quality Control (SQC) methods. Limits are used to calculate Texas Instruments' Average Outgoing Quality 
+Level (AOQL).
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+7
+Product Folder Links: LM5576
+
+
+PAGE 8
+5.6 Typical Characteristics
+RT (k:)
+OSCILLATOR FREQUENCY (kHz)
+1
+10
+100
+1000
+10
+100
+1000
+Figure 5-1. Oscillator Frequency vs RT 
+Figure 5-2. Oscillator Frequency vs Temperature (Q0) FOSC = 
+200 kHz
+TEMPERATURE (oC)
+NORMALIZED OSCILLATOR FREQUENCY
+-50
+-25
+0
+25
+50
+75
+100
+125
+0.990
+0.995
+1.000
+1.005
+1.010
+Figure 5-3. Oscillator Frequency vs Temperature (Q1) FOSC = 
+200 kHz
+Figure 5-4. Soft-Start Current vs Temperature (Q0)
+TEMPERATURE (oC)
+NORMALIZED SOFTSTART CURRENT
+-50
+-25
+0
+25
+50
+75
+100
+125
+0.90
+0.95
+1.00
+1.05
+1.10
+Figure 5-5. Soft-Start Current vs Temperature (Q1)
+0
+4
+16
+20
+24
+ICC (mA)
+0
+2
+4
+6
+8
+VCC (V)
+8
+12
+Figure 5-6. VCC vs ICC VIN = 12 V
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+8
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 9
+5.6 Typical Characteristics (continued)
+0
+2
+4
+6
+8
+10
+0
+2
+4
+6
+8
+10
+VCC (V)
+VIN (V)
+Ramp Up
+Ramp Down
+Figure 5-7. VCC vs VIN RL = 7 kω
+PHASE (°)
+10k
+100k
+1M
+10M
+100M
+FREQUENCY (Hz)
+-30
+-20
+-10
+0
+10
+20
+30
+40
+50
+GAIN (dB)
+-135
+-90
+-45
+0
+45
+90
+135
+180
+225
+GAIN
+PHASE
+Figure 5-8. Error Amplifier Gain/Phase AVCL = 101
+0.5
+1
+1.5
+2
+2.5
+3
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+EFFICIENCY (%)
+IOUT (A)
+VIN = 24V
+VIN = 48V
+VIN = 75V
+VIN = 7V
+Figure 5-9. Demoboard Efficiency vs IOUT and VIN 
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+9
+Product Folder Links: LM5576
+
+
+PAGE 10
+6 Detailed Description
+6.1 Overview
+The LM5576 switching regulator features all of the functions necessary to implement an efficient high voltage 
+buck regulator using a minimum of external components. This easy to use regulator integrates a 75 V N-Channel 
+buck switch with an output current capability of 3 Amps. The regulator control method is based on current mode 
+control uses an emulated current ramp. Peak current mode control provides inherent line voltage feed-forward, 
+cycle-by-cycle current limiting, and ease-of-loop compensation. The use of an emulated control ramp reduces 
+noise sensitivity of the pulse width modulation circuit, which allows reliable processing of very small duty cycles 
+necessary in high input voltage applications. The operating frequency is user programmable from 50 kHz to 500 
+kHz. An oscillator synchronization pin allows multiple LM5576 regulators to self-synchronize or be synchronized 
+to an external clock. The output voltage can be set as low as 1.225 V. Fault protection features include current 
+limiting, thermal shutdown, and remote shutdown capability. The device is available in the 20-pin HTSSOP 
+package that features an exposed pad to help thermal dissipation.
+The functional block diagram and typical application of the LM5576 are shown in the Section 6.2 section. The 
+LM5576 can be applied in numerous applications to efficiently step-down a high, unregulated input voltage. The 
+device is designed for telecom, industrial power bus voltage ranges.
+6.2 Functional Block Diagram
+FB
+SW
+RT
+VIN
+BST
+SD
+5V
+S
+R
+Q
+Q
+AGND
+IS
+CLK
++
+SS
+PRE
+ 
+3, 4
+2
+11
+7
+6
+5
+8
+9
+12
+10
+13, 14
+1
+SD
+Ir
+LM5576
+SHUTDOWN
+STANDBY
+7V
+REGULATOR
+SYNC
+SYNC
+OSCILLATOR
+RAMP
+OUT
+PGND
+CLK
+CLK
+COMP
+ERROR
+AMP
+R3
+21k
+C3
+330p
+C11
+330p
+R7
+10
+C9
+22
+C10
+150
+R6
+1.65k
+R5
+5.11k
+L1
+33 PH
+C7
+0.022
+C8
+0.47
+D1
+CSHD6-100C
+15, 16
+19
+17, 18
+20
+THERMAL
+SHUTDOWN
+UVLO
+UVLO
+CLK
+DIS
+VCC
+LEVEL
+SHIFT
+DRIVER
+1.225V
+1.225V
+0.7V
+0.7V
+R4
+49.9k
+C5
+0.01
+C6
+open
+R2
+OPEN
+C12
+OPEN
+C4
+0.01
+C2
+2.2
+C1
+2.2
+R1
+OPEN
+7V ± 75V
+VIN
+VIN
+2.1V
+PWM
+C_LIMIT
+10 PA
+5 PA
+VIN
+TRACK
+SAMPLE
+and
+HOLD
+0.5V/A
+RAMP GENERATOR
+Ir = (5 PA x (VIN ± VOUT))
++ 25 PA
+6.3 Feature Description
+6.3.1 Shutdown / Standby
+The LM5576 contains a dual-level shutdown (SD) circuit. When the SD pin voltage is below 0.7 V, the regulator 
+is in a low current shutdown mode. When the SD pin voltage is greater than 0.7 V but less than 1.225 V, the 
+regulator is in standby mode. In standby mode the VCC regulator is active but the output switch is disabled. 
+When the SD pin voltage exceeds 1.225 V, the output switch is enabled and normal operation begins. An 
+internal 5-µA pullup current source configures the regulator to be fully operational if the SD pin is left open.
+An external set-point voltage divider from VIN to GND can be used to set the operational input range of the 
+regulator. The divider must be designed such that the voltage at the SD pin is greater than 1.225 V when VIN is 
+in the desired operating range. The internal 5-µA pullup current source must be included in calculations of the 
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+10
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 11
+external set-point divider. Hysteresis of 0.1 V is included for both the shutdown and standby thresholds. The SD 
+pin is internally clamped with a 1-kΩ resistor and an 8-V Zener clamp. The voltage at the SD pin must never 
+exceed 14 V. If the voltage at the SD pin exceeds 8 V, the bias current will increase at a rate of 1 mA/V.
+The SD pin can also be used to implement various remote enable and disable functions. Pulling the SD pin 
+below the 0.7-V threshold totally disables the controller. If the SD pin voltage is more than 1.225 V, the regulator 
+will be operational.
+6.3.2 Soft Start
+The soft-start feature allows the regulator to gradually reach the initial steady-state operating point, thus reducing 
+start-up stresses and surges. The internal soft-start current source, set to 10 µA, gradually increases the voltage 
+of an external soft-start capacitor connected to the SS pin. The soft-start capacitor voltage is connected to 
+the reference input of the error amplifier. Various sequencing and tracking schemes can be implemented using 
+external circuits that limit or clamp the voltage level of the SS pin.
+In the event a fault is detected (overtemperature, VCC UVLO, SD) the soft-start capacitor is discharged. When 
+the fault condition is no longer present a new soft-start sequence commences.
+6.3.3 Thermal Protection
+Internal Thermal Shutdown circuitry is provided to protect the integrated circuit in the event the maximum 
+junction temperature is exceeded. When activated, typically at 165°C,the controller is forced into a low power 
+reset state, disabling the output driver and the bias regulator. This feature is provided to prevent catastrophic 
+failures from accidental device overheating.
+6.4 Device Functional Modes
+6.4.1 High Voltage Start-Up Regulator
+The LM5576 contains a dual-mode internal high voltage start-up regulator that provides theCC bias supply for the 
+PWM controller and boot-strap MOSFET gate driver. The input pin (VIN) can be connected directly to the input 
+voltage, as high as 75 V. For input voltages less than 9 V, a low dropout switch connects VCC directly to VIN. In 
+this supply range, VCC is approximately equal to VIN. For VIN voltage greater than 9 V, the low dropout switch is 
+disabled and the VCC regulator is enabled to maintain VCC at approximately 7 V. The wide operating range of 6 V 
+to 75 V is achieved through the use of this dual-mode regulator.
+The output of the VCC regulator is current limited to 25 mA. Upon power up, the regulator sources current into 
+the capacitor connected to the VCC pin. When the voltage at the VCC pin exceeds the VCC UVLO threshold of 
+5.35 V and the SD pin is greater than 1.225 V, the output switch is enabled and a soft-start sequence begins. 
+The output switch remains enabled until VCC falls below 5.0 V or the SD pin falls below 1.125 V.
+An auxiliary supply voltage can be applied to the VCC pin to reduce the IC power dissipation. If the auxiliary 
+voltage is greater than 7.3 V, the internal regulator will essentially shut off, reducing the IC power dissipation. 
+The VCC regulator series pass transistor includes a diode between VCC and VIN that must not be forward biased 
+in normal operation. Therefore the auxiliary VCC voltage must never exceed the VIN voltage.
+In high voltage applications, take extra care to make sure the VIN pin does not exceed the absolute maximum 
+voltage rating of 76 V. During line or load transients, voltage ringing on the VIN line that exceeds the absolute 
+maximum ratings can damage the IC. Both careful printed-circuit board layout and the use of quality bypass 
+capacitors placed close to the VIN and GND pins are essential.
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+11
+Product Folder Links: LM5576
+
+
+PAGE 12
+VIN
+VCC
+Internal Enable Signal
+9V
+7V
+5.25V
+Figure 6-1. VIN and VCC Sequencing
+6.4.2 Oscillator and Sync Capability
+The LM5576 oscillator frequency is set by a single external resistor connected between the RT pin and the 
+AGND pin. The RT resistor must be placed very close to the device and connected directly to the pins of the 
+IC (RT and AGND).To set a desired oscillator frequency (F), the necessary value for the RT resistor can be 
+calculated from Equation 1.
+RT =
+- 580 x 10-9
+135 x 10-12
+F
+1
+(1)
+The SYNC pin can be used to synchronize the internal oscillator to an external clock. The external clock must 
+be of higher frequency than the free-running frequency set by the RT resistor. A clock circuit with an open-drain 
+output is the recommended interface from the external clock to the SYNC pin. The clock pulse duration must be 
+greater than 15 ns.
+SYNC
+AGND
+LM5576
+SW
+CLK
+SYNC
+SW
+500 ns
+Figure 6-2. Sync From External Clock
+SYNC
+LM5576
+UP TO 5 TOTAL
+DEVICES
+LM5576
+SYNC
+Figure 6-3. Sync From Multiple Devices
+Multiple LM5576 devices can be synchronized together simply by connecting the SYNC pins together. In this 
+configuration all of the devices will be synchronized to the highest frequency device. The diagram in Figure 6-4 
+shows the SYNC input and output features of the LM5576. The internal oscillator circuit drives the SYNC pin with 
+a strong pulldown and weak pullup inverter. When the SYNC pin is pulled low either by the internal oscillator or 
+an external clock, the ramp cycle of the oscillator is terminated and a new oscillator cycle begins. Thus, if the 
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+12
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 13
+SYNC pins of several LM5576 ICs are connected together, the IC with the highest internal clock frequency will 
+pull the connected SYNC pins low first and terminate the oscillator ramp cycles of the other ICs. The LM5576 
+with the highest programmed clock frequency will serve as the controller and control the switching frequency of 
+the all the devices with lower oscillator frequency.
+SYNC
+10k
+S
+R
+Q
+Q
+DEADTIME
+ONE-SHOT
+5V
+2.5V
+I = f(RT)
+Figure 6-4. Simplified Oscillator Block Diagram and Sync I/O Circuit
+6.4.3 Error Amplifier and PWM Comparator
+The internal high gain error amplifier generates an error signal proportional to the difference between the 
+regulated output voltage and an internal precision reference (1.225 V). The output of the error amplifier is 
+connected to the COMP pin allowing the user to provide loop compensation components, generally a type II 
+network, as shown in the Section 6.2 section. This network creates a pole at DC, a zero and a noise-reducing, 
+high-frequency pole. The PWM comparator compares the emulated current sense signal from the RAMP 
+generator to the error amplifier output voltage at the COMP pin.
+6.4.4 Ramp Generator
+The ramp signal used in the pulse width modulator for current mode control is typically derived directly from the 
+buck switch current. This switch current corresponds to the positive slope portion of the output inductor current. 
+Using this signal for the PWM ramp simplifies the control loop transfer function to a single pole response and 
+provides inherent input voltage feed-forward compensation. The disadvantage of using the buck switch current 
+signal for PWM control is the large leading edge spike due to circuit parasitics that must be filtered or blanked. 
+Also, the current measurement can introduce significant propagation delays. The filtering, blanking time, and 
+propagation delay limit the minimum achievable pulse width. In applications where the input voltage can be 
+relatively large in comparison to the output voltage, controlling small pulse widths and duty cycles is necessary 
+for regulation. The LM5576 uses a unique ramp generator, which does not actually measure the buck switch 
+current but rather reconstructs the signal. Reconstructing or emulating the inductor current provides a ramp 
+signal to the PWM comparator that is free of leading edge spikes and measurement or filtering delays. The 
+current reconstruction is comprised of two elements: a sample and hold DC level and an emulated current ramp.
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+13
+Product Folder Links: LM5576
+
+
+PAGE 14
+RAMP
+(
+)
+(
+)
+ON
+IN
+OUT
+RAMP
+t
+5
+V
+V
+25
+C
+m ´
+-
+-
+m ´
+tON
+Sample and Hold DC Level
+0.5V/A
+Figure 6-5. Composition of Current Sense Signal
+The sample and hold DC level shown in Figure 6-5 is derived from a measurement of the re-circulating Schottky 
+diode anode current. The re-circulating diode anode must be connected to the IS pin. The diode current flows 
+through an internal current sense resistor between the IS and PGND pins. The voltage level across the sense 
+resistor is sampled and held just prior to the onset of the next conduction interval of the buck switch. The diode 
+current sensing and sample and hold provide the DC level of the reconstructed current signal. The positive 
+slope inductor current ramp is emulated by an external capacitor connected from the RAMP pin to AGND and 
+an internal voltage controlled current source. The ramp current source that emulates the inductor current is a 
+function of the VIN and VOUT voltages per Equation 2.
+IRAMP = (5 µ × (VIN – VOUT)) + 25 µA
+(2)
+Proper selection of the RAMP capacitor depends upon the selected value of the output inductor. Use Equation 3 
+to select a value of CRAMP.
+CRAMP = L × 10–5
+(3)
+where
+•
+L is the value of the output inductor in Henrys
+With this value, the scale factor of the emulated current ramp will be approximately equal to the scale factor 
+of the DC level sample and hold (0.5 V/A). The CRAMP capacitor must be placed very close to the device and 
+connected directly to the pins of the IC (RAMP and AGND).
+For duty cycles greater than 50%, peak current mode control circuits are subject to sub-harmonic oscillation. 
+Sub-harmonic oscillation is normally characterized by observing alternating wide and narrow pulses at the 
+switch node. Adding a fixed slope voltage ramp (slope compensation) to the current sense signal prevents this 
+oscillation. The 25 µA of offset current provided from the emulated current source adds some fixed slope to 
+the ramp signal. In some high output voltage, high duty cycle applications, additional slope can be required. In 
+these applications, a pullup resistor can be added between the VCC and RAMP pins to increase the ramp slope 
+compensation.
+For VOUT > 7.5 V:
+Calculate optimal slope current, IOS = VOUT × 5 µA/V.
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+14
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 15
+For example, at VOUT = 10 V, IOS = 50 µA.
+Use Equation 4 to install a resistor from the RAMP pin to VCC:
+RRAMP = VCC / (IOS – 25 µA)
+(4)
+RAMP
+VCC
+CRAMP
+RRAMP
+Figure 6-6. RRAMP to VCC for VOUT > 7.5 V
+Note that the emulated ramp signal on CRAMP is applied to the current limit comparator as described in the 
+Section 6.4.7. Increasing the ramp slope will result in lower current limit threshold. This can lower the output 
+current capability of the part to less than 3 A in some conditions. The resulting current limit threshold can be 
+calculated by Equation 5.
+(5)
+where
+•
+VCL = 2.1 V
+•
+gm = 5 µA/V
+•
+Ioffset = 25 µA
+•
+A x Rs = 0.5 V/A
+•
+VCC = 7 V
+•
+T = switching period
+•
+D = duty cycle (approximately VOUT / VIN)
+•
+L = inductor value
+•
+CRAMP = ramp capacitor value
+•
+RRAMP = ramp resistor value
+If the recommended CRAMP and RRAMP values are used, then Equation 6 can calculate the current limit 
+threshold:
+(6)
+6.4.5 Maximum Duty Cycle / Input Dropout Voltage
+There is a forced off-time of 500 ns implemented each cycle to ensure sufficient time for the diode current to be 
+sampled. This forced off-time limits the maximum duty cycle of the buck switch. The maximum duty cycle varies 
+with the operating frequency (see Equation 7).
+DMAX = 1 – Fs × 500 ns
+(7)
+where
+•
+Fs is the oscillator frequency
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+15
+Product Folder Links: LM5576
+
+
+PAGE 16
+Limiting the maximum duty cycle raises the input dropout voltage. The input dropout voltage is the lowest input 
+voltage required to maintain regulation of the output voltage. Use Equation 8 to calculate an approximation of the 
+input dropout voltage.
+VinMIN =
+Vout + VD
+1 - Fs x 500 ns
+(8)
+where
+•
+VD is the voltage drop across the re-circulatory diode
+Operating at high switching frequency raises the minimum input voltage necessary to maintain regulation.
+6.4.6 Boost Pin
+The LM5576 integrates an N-Channel buck switch and associated floating high voltage level shift / gate driver. 
+This gate driver circuit works in conjunction with an internal diode and an external bootstrap capacitor. A 
+0.022-µF ceramic capacitor, connected with short traces between the BST pin and SW pin, is recommended. 
+During the off-time of the buck switch, the SW pin voltage is approximately –0.5 V and the bootstrap capacitor 
+is charged from VCC through the internal bootstrap diode. When operating with a high PWM duty cycle, the buck 
+switch will be forced off each cycle for 500 ns to ensure that the bootstrap capacitor is recharged.
+Under very light load conditions or when the output voltage is pre-charged, the SW voltage will not remain low 
+during the off-time of the buck switch. If the inductor current falls to zero and the SW pin rises, the bootstrap 
+capacitor will not receive sufficient voltage to operate the buck switch gate driver. For these applications, 
+the PRE pin can be connected to the SW pin to pre-charge the bootstrap capacitor. The internal pre-charge 
+MOSFET and diode connected between the PRE pin and PGND turns on each cycle for 265 ns just prior to the 
+onset of a new switching cycle. If the SW pin is at a normal negative voltage level (continuous conduction mode), 
+then no current will flow through the pre-charge MOSFET/diode. For output voltages more than 5 V, a minimum 
+load current can still be required to ensure that the SW voltage is pulled low enough to recharge the bootstrap 
+capacitor.
+6.4.7 Current Limit
+The LM5576 contains a unique current monitoring scheme for control and overcurrent protection. When set 
+correctly, the emulated current sense signal provides a signal which is proportional to the buck switch current 
+with a scale factor of 0.5 V/A. The emulated ramp signal is applied to the current limit comparator. If the 
+emulated ramp signal exceeds 2.1 V (4.2 A) the present current cycle is terminated (cycle-by-cycle current 
+limiting). In applications with small output inductance and high input voltage the switch current can overshoot 
+due to the propagation delay of the current limit comparator. If an overshoot must occur, the diode current 
+sampling circuit will detect the excess inductor current during the off-time of the buck switch. If the sample and 
+hold DC level exceeds the 2.1-V current limit threshold, the buck switch will be disabled and skip pulses until 
+the diode current sampling circuit detects the inductor current has decayed below the current limit threshold. 
+This approach prevents current runaway conditions due to propagation delays or inductor saturation because the 
+inductor current is forced to decay following any current overshoot.
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+16
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 17
+7 Application and Implementation
+Note
+Information in the following applications sections is not part of the TI component specification, 
+and TI does not warrant its accuracy or completeness. TI’s customers are responsible for 
+determining suitability of components for their purposes, as well as validating and testing their design 
+implementation to confirm system functionality.
+7.1 Application Information
+7.1.1 Bias Power Dissipation Reduction
+Buck regulators operating with high input voltage can dissipate an appreciable amount of power for the bias 
+of the IC. The VCC regulator must step-down the input voltage VIN to a nominal VCC level of 7 V. The large 
+voltage drop across the VCC regulator translates into a large power dissipation within the regulator. There are 
+several techniques that can significantly reduce this bias regulator power dissipation. Figure 7-1 and VCC Figure 
+7-2 depict two methods to bias the IC from the output voltage. In each case the internal VCC regulator is used 
+to initially bias the VCC pin. After the output voltage is established, the VCC pin potential is raised above the 
+nominal 7-V regulation level, which effectively disables the internal VCC regulator. The voltage applied to the 
+VCC pin must never exceed 14 V. The VCC voltage must never be larger than the VIN voltage.
+BST
+SW
+VCC
+IS
+GND
+LM5576
+VOUT
+D2
+D1
+L1
+COUT
+Figure 7-1. VCC Bias From VOUT for 8 V < VOUT < 14 V
+BST
+SW
+VCC
+IS
+GND
+LM5576
+COUT
+D1
+L1
+D2
+VOUT
+Figure 7-2. VCC Bias With Additional Winding on the Output Inductor
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+17
+Product Folder Links: LM5576
+
+
+PAGE 18
+7.2 Typical Application
+FB
+SW
+RT
+VIN
+BST
+SD
+5V
+S
+R
+Q
+Q
+AGND
+IS
+CLK
++
+SS
+PRE
+ 
+3, 4
+2
+11
+7
+6
+5
+8
+9
+12
+10
+13, 14
+1
+SD
+Ir
+LM5576
+SHUTDOWN
+STANDBY
+7V
+REGULATOR
+SYNC
+SYNC
+OSCILLATOR
+RAMP
+OUT
+PGND
+CLK
+CLK
+COMP
+ERROR
+AMP
+R3
+21k
+C3
+330p
+C11
+330p
+R7
+10
+C9
+22
+C10
+150
+R6
+1.65k
+R5
+5.11k
+L1
+33 PH
+C7
+0.022
+C8
+0.47
+D1
+CSHD6-100C
+15, 16
+19
+17, 18
+20
+THERMAL
+SHUTDOWN
+UVLO
+UVLO
+CLK
+DIS
+VCC
+LEVEL
+SHIFT
+DRIVER
+1.225V
+1.225V
+0.7V
+0.7V
+R4
+49.9k
+C5
+0.01
+C6
+open
+R2
+OPEN
+C12
+OPEN
+C4
+0.01
+C2
+2.2
+C1
+2.2
+R1
+OPEN
+7V ± 75V
+VIN
+VIN
+2.1V
+PWM
+C_LIMIT
+10 PA
+5 PA
+VIN
+TRACK
+SAMPLE
+and
+HOLD
+0.5V/A
+RAMP GENERATOR
+Ir = (5 PA x (VIN ± VOUT))
++ 25 PA
+Figure 7-3. Typical Application
+7.2.1 Design Requirements
+The circuit shown in Figure 7-3 is configured for the following specifications:
+•
+VOUT = 5 V
+•
+VIN = 7 V to 75 V
+•
+Fs = 300 kHz
+•
+Minimum load current (for CCM) = 250 mA
+•
+Maximum load current = 3 A
+7.2.2 Detailed Design Procedure
+7.2.2.1 Custom Design With WEBENCH® Tools
+Click here to create a custom design using the LM5576 device with the WEBENCH® Power Designer.
+1.
+Start by entering the input voltage (VIN), output voltage (VOUT), and output current (IOUT) requirements.
+2.
+Optimize the design for key parameters such as efficiency, footprint, and cost using the optimizer dial.
+3.
+Compare the generated design with other possible solutions from Texas Instruments.
+The WEBENCH Power Designer provides a customized schematic along with a list of materials with real-time 
+pricing and component availability.
+In most cases, these actions are available:
+•
+Run electrical simulations to see important waveforms and circuit performance
+•
+Run thermal simulations to understand board thermal performance
+•
+Export customized schematic and layout into popular CAD formats
+•
+Print PDF reports for the design, and share the design with colleagues
+Get more information about WEBENCH tools at www.ti.com/WEBENCH.
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+18
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 19
+7.2.2.2 External Components
+The procedure for calculating the external components is shown with the following design example. The Bill of 
+Materials for this design is listed in Table 7-1.
+Table 7-1. 5 V, 3 A Demo Board Bill of Materials
+ITEM
+PART NUMBER
+DESCRIPTION
+VALUE
+C
+1
+C4532X7R2A225M
+CAPACITOR, CER, TDK
+2.2 µ, 100 V
+C
+2
+C4532X7R2A225M
+CAPACITOR, CER, TDK
+2.2 µ, 100 V
+C
+3
+C0805C331G1GAC
+CAPACITOR, CER, KEMET
+330 p, 100 V
+C
+4
+C2012X7R2A103K
+CAPACITOR, CER, TDK
+0.01 µ, 100 V
+C
+5
+C2012X7R2A103K
+CAPACITOR, CER, TDK
+0.01 µ, 100 V
+C
+6
+OPEN
+NOT USED
+C
+7
+C2012X7R2A223K
+CAPACITOR, CER, TDK
+0.022 µ, 100 V
+C
+8
+C2012X7R1C474M
+CAPACITOR, CER, TDK
+0.47 µ, 16 V
+C
+9
+C3225X7R1C226M
+CAPACITOR, CER, TDK
+22 µ, 16 V
+C
+10
+EEFHE0J151R
+CAPACITOR, SP, PANASONIC
+150 µ, 6.3 V
+C
+11
+C0805C331G1GAC
+CAPACITOR, CER, KEMET
+330 p, 100 V
+C
+12
+OPEN
+NOT USED
+D
+1
+CSHD6-100C
+DIODE, 100V, CENTRAL
+6CWQ10FN
+DIODE, 100V, IR (D1-ALT)
+L
+1
+DR127-330
+INDUCTOR, COOPER
+33 µH
+R
+1
+OPEN
+NOT USED
+R
+2
+OPEN
+NOT USED
+R
+3
+CRCW08052102F
+RESISTOR
+21 kΩ
+R
+4
+CRCW08054992F
+RESISTOR
+49.9 kΩ
+R
+5
+CRCW08055111F
+RESISTOR
+5.11 kΩ
+R
+6
+CRCW08051651F
+RESISTOR
+1.65 kΩ
+R
+7
+CRCW2512100J
+RESISTOR
+10, 1 W
+U
+1
+LM5576
+REGULATOR, TEXAS INSTRUMENTS
+7.2.2.3 R3 (RT)
+RT sets the oscillator switching frequency. Generally, higher frequency applications are smaller but have higher 
+losses. Operation at 300 kHz was selected for this example as a reasonable compromise for both small size and 
+high efficiency. The value of RT for 300-kHz switching frequency can be calculated by Equation 9:
+9
+3
+T
+12
+1
+580 10
+300 10
+R
+135 10
+-
+-
+æ
+ö
+æ
+ö -
+´
+ç
+÷
+ç
+÷
+´
+è
+ø
+è
+ø
+=
+´
+(9)
+The nearest standard value of 21 kΩ was chosen for RT.
+7.2.2.4 L1
+The inductor value is determined based on the operating frequency, load current, ripple current, and the 
+minimum and maximum input voltage (VIN(min), VIN(max)).
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+19
+Product Folder Links: LM5576
+
+
+PAGE 20
+IPK+
+L1 Current
+0 mA
+IPK-
+IO
+IRIPPLE
+1/Fs
+Figure 7-4. Inductor Current Waveform
+To keep the circuit in continuous conduction mode (CCM), the maximum ripple current IRIPPLE must be less than 
+twice the minimum load current, or 0.5 Ap-p. With this value of ripple current, use Equation 10 and Equation 11 
+to calculate the value of inductor (L1).
+(
+)
+(
+)
+(
+)
+OUT
+OUT
+IN max
+RIPPLE
+S
+IN max
+V
+V
+V
+L1
+I
+F
+V
+´
+-
+=
+´
+´
+(10)
+L1 =
+5V x (75V ± 5V)
+0.5A x 300 kHz x 75V  = 31 PH
+(11)
+This procedure provides a guide to select the value of L1. The nearest standard value (33 µH) is used. L1 must 
+be rated for the peak current (IPK+) to prevent saturation. During normal loading conditions, the peak current 
+occurs at maximum load current plus maximum ripple. During an overload condition the peak current is limited 
+to 4.2 A nominal (5.1 A maximum). The selected inductor (see Table 7-1) has a conservative 6.2-Amp saturation 
+current rating. For this manufacturer, the saturation rating is defined as the current necessary for the inductance 
+to reduce by 30%, at 20°C.
+7.2.2.5 C3 (CRAMP)
+With the inductor value selected, use Equation 12 to calculate the value of C3 (CRAMP) necessary for the 
+emulation ramp circuit.
+CRAMP = L × 10–5
+(12)
+where
+•
+L is in Henrys
+With L1 selected for 33 µH the recommended value for C3 is 330 pF.
+7.2.2.6 C9, C10
+The output capacitors, C9 and C10, smooth the inductor ripple current and provide a source of charge for 
+transient loading conditions. For this design, a 22-µF ceramic capacitor and a 150-µF SP organic capacitor were 
+selected. The ceramic capacitor provides ultra-low ESR to reduce the output ripple voltage and noise spikes, 
+while the SP capacitor provides a large bulk capacitance in a small volume for transient loading conditions. Use 
+Equation 13 to calculate an approximation for the output ripple voltage.
+'VOUT = 'IL x
+1
+8 x FS x COUT
+§
+¨
+©
+ESR +
+§
+¨
+©
+(13)
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+20
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 21
+7.2.2.7 D1
+A Schottky type re-circulating diode is required for all LM5576 applications. Ultra-fast diodes are not 
+recommended and can result in damage to the IC due to reverse recovery current transients. The near ideal 
+reverse recovery characteristics and low forward voltage drop are particularly important diode characteristics 
+for high input voltage and low output voltage applications common to the LM5576. The reverse recovery 
+characteristic determines how long the current surge lasts each cycle when the buck switch is turned on. The 
+reverse recovery characteristics of Schottky diodes minimize the peak instantaneous power in the buck switch 
+occurring during turn-on each cycle. The resulting switching losses of the buck switch are significantly reduced 
+when using a Schottky diode. The reverse breakdown rating must be selected for the maximum VIN, plus some 
+safety margin.
+The forward voltage drop has a significant impact on the conversion efficiency, especially for applications with 
+a low output voltage. Rated current for diodes vary widely from various manufacturers. The worst case is to 
+assume a short-circuit load condition. In this case, the diode carries the output current almost continuously. 
+For the LM5576, this current can be as high as 4.2 A. Assuming a worst-case, 1-V drop across the diode, the 
+maximum diode power dissipation can be as high as 4.2 W. For the reference design, a 100-V Schottky in a 
+DPAK package was selected.
+7.2.2.8 C1, C2
+The regulator supply voltage has a large source impedance at the switching frequency. Good-quality input 
+capacitors are necessary to limit the ripple voltage at the VIN pin while supplying most of the switch current 
+during the on-time. When the buck switch turns on, the current into the VIN pin steps to the lower peak of the 
+inductor current waveform, ramps up to the peak value, then drops to zero at turnoff. The average current into 
+VIN during the on-time is the load current. The input capacitance must be selected for RMS current rating and 
+minimum ripple voltage. A good approximation for the required ripple current rating necessary is IRMS > IOUT / 2.
+Quality ceramic capacitors with a low ESR must be selected for the input filter. To allow for capacitor tolerances 
+and voltage effects, two 2.2-µF, 100-V ceramic capacitors will be used. If step input voltage transients are 
+expected near the maximum rating of the LM5576, a careful evaluation of ringing and possible spikes at the 
+device VIN pin must be completed. An additional damping network or input voltage clamp can be required in 
+these cases.
+7.2.2.9 C8
+The capacitor at the VCC pin provides noise filtering and stability for the VCC regulator. The recommended value 
+of C8 must be no smaller than 0.1 µF, and must be a good-quality, low-ESR, ceramic capacitor. A value of 0.47 
+µF was selected for this design.
+7.2.2.10 C7
+The bootstrap capacitor between the BST and the SW pins supplies the gate current to charge the buck switch 
+gate at turnon. The recommended value of C7 is 0.022 µF, and must be a good-quality, low-ESR, ceramic 
+capacitor.
+7.2.2.11 C4
+The capacitor at the SS pin determines the soft-start time, that is, the time for the reference voltage and the 
+output voltage, to reach the final regulated value. Equation 14 determines the time.
+SS
+C4 1.225V
+t
+10 A
+´
+=
+m
+(14)
+For this application, a C4 value of 0.01 µF was chosen which corresponds to a soft-start time of 1 ms.
+7.2.2.12 R5, R6
+R5 and R6 set the output voltage level. Use Equation 15 to calculate the ratio of these resistors.
+R5/R6 = (VOUT / 1.225 V) – 1
+(15)
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+21
+Product Folder Links: LM5576
+
+
+PAGE 22
+For a 5-V output, the R5/R6 ratio calculates to 3.082. The resistors must be chosen from standard value 
+resistors. A good starting point is selection in the range of 1.0 kΩ to 10 kΩ. Values of 5.11 kΩ for R5, and 1.65 
+kΩ for R6 were selected.
+7.2.2.13 R1, R2, C12
+A voltage divider can be connected to the SD pin to set a minimum operating voltage VIN (min) for the regulator. 
+If this feature is required, the easiest approach to select the divider resistor values is to select a value for R1 
+(between 10 kΩ and 100 kΩ recommended) then calculate R2 from Equation 16.
+R2 = 1.225 x
+R1
+VIN(min) + (5 x 10-6 x R1) ± 1.225
+§
+¨
+©
+§¨©
+(16)
+Capacitor C12 provides filtering for the divider. The voltage at the SD pin must never exceed 8 V, when using an 
+external set-point divider it can be necessary to clamp the SD pin at high input voltage conditions. The reference 
+design uses the full range of the LM5576 (6 V to 75 V); therefore these components can be omitted. With the SD 
+pin open circuit, the LM5576 responds after the VCC UVLO threshold is satisfied.
+7.2.2.14 R7, C11
+A snubber network across the power diode reduces ringing and spikes at the switching node. Excessive ringing 
+and spikes can cause erratic operation and couple spikes and noise to the output. Voltage spikes beyond the 
+rating of the LM5576 or the re-circulating diode can damage these devices. Selecting the values for the snubber 
+is best accomplished through empirical methods. First, make sure the lead lengths for the snubber connections 
+are very short. For the current levels typical for the LM5576, a resistor value between 5 Ω and 20 Ω is adequate. 
+Increasing the value of the snubber capacitor results in more damping but higher losses. Select a minimum 
+value of C11 that provides adequate damping of the SW pin waveform at high load.
+7.2.2.15 R4, C5, C6
+These components configure the error amplifier gain characteristics to accomplish a stable overall loop gain. 
+One advantage of current mode control is the ability to close the loop with only two feedback components, R4 
+and C5. The overall loop gain is the product of the modulator gain and the error amplifier gain. Use Equation 17 
+to calculate the DC modulator gain of the LM5576.
+DC Gain(MOD) = Gm(MOD) × RLOAD = 2 × RLOAD
+(17)
+The dominant low frequency pole of the modulator is determined by the load resistance (RLOAD,) and output 
+capacitance (COUT). Use Equation 18 to calculate the corner frequency of this pole.
+fp(MOD) = 1 / (2π RLOAD COUT)
+(18)
+For RLOAD = 5 Ω and COUT = 177 µF, then fp(MOD) = 180 Hz
+DC Gain(MOD) = 2 × 5 = 10 = 20 dB
+For the design example of Figure 7-3 the measured modulator gain vs. frequency characteristic is shown in 
+Figure 7-5.
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+22
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 23
+REF LEVEL
+0.000 dB
+0.0 deg
+100
+1k
+START  50.000 Hz
+10k
+STOP  50 000.000 Hz
+/DIV
+10.000 dB
+45.000 deg
+0
+GAIN
+PHASE
+Figure 7-5. Gain and Phase of Modulator R = 5 Ω and C = 177 µF Loadout
+Components R4 and C5 configure the error amplifier as a type II configuration that has a pole at DC and a zero 
+at fZ = 1 / (2πR4C5). The error amplifier zero cancels the modulator pole, which leaves a single pole response at 
+the crossover frequency of the loop gain. A single pole response at the crossover frequency yields a very stable 
+loop with 90 degrees of phase margin.
+For the design example, a target loop bandwidth (crossover frequency) of 20 kHz was selected. The 
+compensation network zero (fZ) must be selected at least an order of magnitude less than the target crossover 
+frequency. This constrains the product of R4 and C5 for a desired compensation network zero 1 / (2π R4 C5) to 
+be less than 2 kHz. Increasing R4, while proportionally decreasing C5, increases the error amp gain. Conversely, 
+decreasing R4 while proportionally increasing C5, decreases the error amp gain. For the design example C5 
+was selected for 0.01 µF and R4 was selected for 49.9 kΩ. These values configure the compensation network 
+zero at 320 Hz. The error amp gain at frequencies greater than fZ is: R4 / R5, which is approximately 10 (20 dB).
+REF LEVEL
+0.000 dB
+0.0 deg
+100
+1k
+START  50.000 Hz
+10k
+STOP  50 000.000 Hz
+/DIV
+10.000 dB
+45.000 deg
+0
+GAIN
+PHASE
+Figure 7-6. Error Amplifier Gain and Phase
+The overall loop can be predicted as the sum (in dB) of the modulator gain and the error amp gain.
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+23
+Product Folder Links: LM5576
+
+
+PAGE 24
+REF LEVEL
+0.000 dB
+0.0 deg
+100
+1k
+START  50.000 Hz
+10k
+STOP  50 000.000 Hz
+/DIV
+10.000 dB
+45.000 deg
+0
+GAIN
+PHASE
+Figure 7-7. Overall Loop Gain and Phase
+If a network analyzer is available, the modulator gain can be measured and the error amplifier gain can be 
+configured for the desired loop transfer function. If a network analyzer is not available, the error amplifier 
+compensation components can be designed with the guidelines given. Step load transient tests can be 
+performed to verify acceptable performance. The step load goal is minimum overshoot with a damped response. 
+C6 can be added to the compensation network to decrease noise susceptibility of the error amplifier. The value 
+of C6 must be sufficiently small because the addition of this capacitor adds a pole in the error amplifier transfer 
+function. This pole must be well beyond the loop crossover frequency. Use Equation 19 to calculate a good 
+approximation of the location of the pole added by C6.
+fp2 = fz × C5 / C6.
+(19)
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+24
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 25
+7.2.3 Application Curves
+RT (k:)
+OSCILLATOR FREQUENCY (kHz)
+1
+10
+100
+1000
+10
+100
+1000
+Figure 7-8. Oscillator Frequency vs RT 
+0.5
+1
+1.5
+2
+2.5
+3
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+EFFICIENCY (%)
+IOUT (A)
+VIN = 24V
+VIN = 48V
+VIN = 75V
+VIN = 7V
+Figure 7-9. Demoboard Efficiency vs IOUT and VIN 
+REF LEVEL
+0.000 dB
+0.0 deg
+100
+1k
+START  50.000 Hz
+10k
+STOP  50 000.000 Hz
+/DIV
+10.000 dB
+45.000 deg
+0
+GAIN
+PHASE
+Figure 7-10. Gain and Phase of Modulator R = 5 Ω 
+and C = 177 µF Loadout
+REF LEVEL
+0.000 dB
+0.0 deg
+100
+1k
+START  50.000 Hz
+10k
+STOP  50 000.000 Hz
+/DIV
+10.000 dB
+45.000 deg
+0
+GAIN
+PHASE
+Figure 7-11. Error Amplifier Gain and Phase
+REF LEVEL
+0.000 dB
+0.0 deg
+100
+1k
+START  50.000 Hz
+10k
+STOP  50 000.000 Hz
+/DIV
+10.000 dB
+45.000 deg
+0
+GAIN
+PHASE
+Figure 7-12. Overall Loop Gain and Phase
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+25
+Product Folder Links: LM5576
+
+
+PAGE 26
+7.3 Power Supply Recommendations
+The characteristics of the input supply must be compatible with the specifications found in this data sheet. In 
+addition, the input supply must be capable of delivering the required input current to the loaded regulator. The 
+average input current can be estimated with the following equation
+IIN  =  
+  VOUT  × IOUT
+η × VIN
+Where η is the efficiency.
+If the regulator is connected to the input supply through long wires or PCB traces, special care is required to 
+achieve good performance. The parasitic inductance and resistance of the input cables can have an adverse 
+effect on the operation of the regulator. The parasitic inductance, in combination with the low-ESR, ceramic 
+input capacitors, can form an underdamped resonant circuit, resulting in overvoltage transients at the input to 
+the regulator. The parasitic resistance can cause the voltage at the VIN pin to dip whenever a load transient is 
+applied to the output. If the application is operating close to the minimum input voltage, this dip can cause the 
+regulator to momentarily shut down and reset. The best way to solve these kinds of issues is to limit the distance 
+from the input supply to the regulator or plan to use an aluminum or tantalum input capacitor in parallel with the 
+ceramics. The moderate ESR of these types of capacitors help dampen the input resonant circuit and reduce 
+any overshoots. A value in the range of 20µF to 100µF is usually sufficient to provide input damping and help to 
+hold the input voltage steady during large load transients.
+Sometimes, for other system considerations, an input filter is used in front of the regulator. This action can lead 
+to instability, as well as some of the effects mentioned above, unless designed carefully. The AN-2162 Simple 
+Success With Conducted EMI From DC/DC Converters application note provides helpful suggestions when 
+designing an input filter for any switching regulator. In some cases, a transient voltage suppressor (TVS) is used 
+on the input of regulators. One class of this device has a snap-back characteristic (thyristor type). TI does not 
+recommend the use of a device with this type of characteristic. When the TVS fires, the clamping voltage falls to 
+a very low value. If this voltage is less than the output voltage of the regulator, the output capacitors discharge 
+through the device back to the input. This uncontrolled current flow can damage the device.
+7.4 Layout
+7.4.1 Layout Guidelines
+The circuit in Figure 7-3 serves as both a block diagram of the LM5576 and a typical application board schematic 
+for the LM5576. In a buck regulator, there are two loops where currents are switched very fast. The first loop 
+starts from the input capacitors, to the regulator VIN pin, to the regulator SW pin, to the inductor, and then 
+out to the load. The second loop starts from the output capacitor ground, to the regulator PGND pins, to the 
+regulator IS pins, to the diode anode, to the inductor, and then out to the load. Minimize the loop area of these 
+two loops to reduce the stray inductance and minimizes noise and possible erratic operation. A ground plane in 
+the printed-circuit board (PCB) is recommended as a means to connect the input filter capacitors to the output 
+filter capacitors and the PGND pins of the regulator. Connect all of the low power ground connections (CSS, RT, 
+CRAMP) directly to the regulator AGND pin. Connect the AGND and PGND pins together through the topside 
+copper area covering the entire underside of the device. Place several vias in this underside copper area to the 
+ground plane.
+The two highest power dissipating components are the re-circulating diode and the LM5576 regulator IC. The 
+easiest method to determine the power dissipated within the LM5576 is to measure the total conversion losses 
+(PIN – POUT) then subtract the power losses in the Schottky diode, output inductor and snubber resistor. Use 
+Equation 20 to calculate an approximation for the Schottky diode loss.
+P = (1 – D) × IOUT × VFWD
+(20)
+Use Equation 21 to calculate an approximation for the output inductor power.
+P = IOUT 2 × R × 1.1
+(21)
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+26
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 27
+where
+•
+R is the DC resistance of the inductor
+•
+and the 1.1 factor is an approximation for the AC losses.
+If a snubber is used, use Equation 22 to calculate an approximation for the damping resistor power dissipation.
+P = VIN 2 × Fsw × Csnub
+(22)
+where
+•
+Fsw is the switching frequency
+•
+and Csnub is the snubber capacitor.
+The regulator has an exposed thermal pad to help power dissipation. Add several vias under the device to the 
+ground plane to greatly reduce the regulator junction temperature. Select a diode with an exposed pad to help 
+the power dissipation of the diode.
+7.4.2 Layout Example
+Figure 7-13. Silkscreen
+Figure 7-14. Component Side
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+27
+Product Folder Links: LM5576
+
+
+PAGE 28
+Figure 7-15. Solder Side
+7.4.3 Power Dissipation
+The most significant variables that affect the power dissipated by the LM5576 are the output current, input 
+voltage, and operating frequency. The power dissipated while operating near the maximum output current and 
+maximum input voltage can be appreciable. The operating frequency of the LM5576 evaluation board has been 
+designed for 300 kHz. When operating at 3-A output current with a 70-V input the power dissipation of the 
+LM5576 regulator is approximately 2.5 W.
+7.4.4 Thermal Considerations
+The junction-to-ambient thermal resistance of the LM5576 varies with the application. The most significant 
+variables are the area of copper in the PCB, the number of vias under the IC exposed pad and the amount of 
+forced air cooling provided. Referring to the evaluation board artwork, the area under the LM5576 (component 
+side) is covered with copper and there are five connection vias to the solder side ground plane. Additional vias 
+under the IC have diminishing value as more vias are added. The integrity of the solder connection from the IC 
+exposed pad to the PCB is critical. Excessive voids will greatly diminish the thermal dissipation capacity. The 
+junction-to-ambient thermal resistance of the LM5576 mounted in the evaluation board varies from 45°C/W with 
+no airflow to 25°C/W with 900 LFM (Linear Feet per Minute). With a 25°C ambient temperature and no airflow, 
+the predicted junction temperature for the LM5576 will be 25 + (45 × 2.5) = 137.5°C. If the evaluation board 
+is operated at 3-A output current and 70-V input voltage for a prolonged period of time, the thermal shutdown 
+protection within the IC will activate. The IC turns off, allowing the junction to cool, followed by restart with the 
+soft-start capacitor reset to zero.
+One or more of the following modifications prevent the thermal shutdown from being activated: apply forced air 
+cooling, reduce the maximum input voltage, lower the maximum output current, reduce the operating frequency, 
+add more heat sinking to the PCB. For example, applying forced air cooling of 225 LFM reduces the LM5576 
+thermal resistance to approximately 30°C/W. The junction temperature reduces to 25 + (2.5 × 30) = 100°C. If the 
+maximum input voltage for the application is 48 V, then the IC power dissipation reduces to 2 W (at 3-A output 
+current). With the same forced air cooling, the junction temperature reduces to 25 + (2 × 30) = 85°C.
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+28
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 29
+8 Device and Documentation Support
+8.1 Device Support
+8.1.1 Development Support
+8.1.1.1 Custom Design With WEBENCH® Tools
+Click here to create a custom design using the LM5576 device with the WEBENCH® Power Designer.
+1.
+Start by entering the input voltage (VIN), output voltage (VOUT), and output current (IOUT) requirements.
+2.
+Optimize the design for key parameters such as efficiency, footprint, and cost using the optimizer dial.
+3.
+Compare the generated design with other possible solutions from Texas Instruments.
+The WEBENCH Power Designer provides a customized schematic along with a list of materials with real-time 
+pricing and component availability.
+In most cases, these actions are available:
+•
+Run electrical simulations to see important waveforms and circuit performance
+•
+Run thermal simulations to understand board thermal performance
+•
+Export customized schematic and layout into popular CAD formats
+•
+Print PDF reports for the design, and share the design with colleagues
+Get more information about WEBENCH tools at www.ti.com/WEBENCH.
+8.2 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on 
+Notifications to register and receive a weekly digest of any product information that has changed. For change 
+details, review the revision history included in any revised document.
+8.3 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight 
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do 
+not necessarily reflect TI's views; see TI's Terms of Use.
+8.4 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+WEBENCH® is a registered trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+8.5 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled 
+with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may 
+be more susceptible to damage because very small parametric changes could cause the device not to meet its published 
+specifications.
+8.6 Glossary
+TI Glossary 
+This glossary lists and explains terms, acronyms, and definitions.
+www.ti.com
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+Copyright © 2025 Texas Instruments Incorporated
+Submit Document Feedback
+29
+Product Folder Links: LM5576
+
+
+PAGE 30
+9 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision J (October 2014) to Revision K (November 2025)
+Page
+•
+Deleted SIMPLE SWITCHER® branding from the data sheet........................................................................... 1
+•
+Moved the automotive device to a standalone data sheet (SNOSB24)............................................................. 1
+•
+Added WEBENCH links throughout the document.............................................................................................1
+•
+Updated the numbering format for tables, figures, and cross-references throughout the document................. 1
+•
+Changed all instances of legacy terminology to controller and peripheral......................................................... 1
+•
+Updated Figure 4-1 ............................................................................................................................................3
+•
+Moved the storage temperature information to the Absolute Maximum Ratings table.......................................5
+•
+Updated table note to the latest standards.........................................................................................................5
+•
+Added Charged-device model (CDM) spec to the ESD Ratings table............................................................... 5
+•
+Added the latest information to the Thermal Information table...........................................................................5
+•
+Changed Bias Current (Iin) from 3.4mA to 2mA.................................................................................................6
+•
+Changed Shutdown Current (Iin) from 57uA to 48uA.........................................................................................6
+•
+Changed BOOST UVLO Hysteresis from 0.56V to 0.8V....................................................................................6
+•
+Changed FB Bias Current from 17nA to 10nA................................................................................................... 6
+•
+Updated the Power Supply Recommendations section................................................................................... 26
+•
+Added the Power Dissipation section...............................................................................................................28
+•
+Added the Thermal Considerations section......................................................................................................28
+Changes from Revision I (April 2013) to Revision J (October 2014)
+Page
+•
+Added Pin Configuration and Functions section, Handling Rating table, Feature Description section, Device 
+Functional Modes, Application and Implementation section, Power Supply Recommendations section, Layout 
+section, Device and Documentation Support section, and Mechanical, Packaging, and Orderable Information
+section ............................................................................................................................................................... 1
+10 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most 
+current data available for the designated devices. This data is subject to change without notice and revision of 
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+LM5576
+SNVS447K – JANUARY 2007 – REVISED NOVEMBER 2025
+www.ti.com
+30
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LM5576
+
+
+PAGE 31
+PACKAGE OPTION ADDENDUM
+www.ti.com
+20-Apr-2026
+PACKAGING INFORMATION
+Orderable part number
+Status
+(1)
+Material type
+(2)
+Package | Pins
+Package qty | Carrier
+RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C)
+Part marking
+(6)
+LM5576MH/NOPB
+Active
+Production
+HTSSOP (PWP) | 20
+73 | TUBE
+Yes
+SN
+Level-1-260C-UNLIM
+-40 to 125
+LM5576
+MH
+LM5576MH/NOPB.A
+Active
+Production
+HTSSOP (PWP) | 20
+73 | TUBE
+Yes
+SN
+Level-1-260C-UNLIM
+-40 to 125
+LM5576
+MH
+LM5576MH/NOPB.B
+Active
+Production
+HTSSOP (PWP) | 20
+73 | TUBE
+Yes
+SN
+Level-1-260C-UNLIM
+-40 to 125
+LM5576
+MH
+LM5576MHX/NOPB
+Active
+Production
+HTSSOP (PWP) | 20
+2500 | LARGE T&R
+Yes
+Call TI | Sn
+Level-1-260C-UNLIM
+-40 to 125
+LM5576
+MH
+LM5576MHX/NOPB.A
+Active
+Production
+HTSSOP (PWP) | 20
+2500 | LARGE T&R
+Yes
+Call TI
+Level-1-260C-UNLIM
+-40 to 125
+LM5576
+MH
+LM5576MHX/NOPB.B
+Active
+Production
+HTSSOP (PWP) | 20
+2500 | LARGE T&R
+Yes
+Call TI
+Level-1-260C-UNLIM
+-40 to 125
+LM5576
+MH
+ 
+(1) Status:  For more details on status, see our product life cycle.
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+ 
+(4) Lead finish/Ball material:  Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+ 
+(5) MSL rating/Peak reflow:  The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+ 
+(6) Part marking:  There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+ 
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+ 
+Addendum-Page 1
+
+
+PAGE 32
+PACKAGE OPTION ADDENDUM
+www.ti.com
+20-Apr-2026
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+ 
+ OTHER QUALIFIED VERSIONS OF LM5576 :
+• Automotive : LM5576-Q1
+ NOTE: Qualified Version Definitions:
+• Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+Addendum-Page 2
+
+
+PAGE 33
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TAPE AND REEL INFORMATION
+Reel Width (W1)
+REEL DIMENSIONS
+A0
+B0
+K0
+W
+Dimension designed to accommodate the component length
+Dimension designed to accommodate the component thickness
+Overall width of the carrier tape
+Pitch between successive cavity centers
+Dimension designed to accommodate the component width
+TAPE DIMENSIONS
+K0
+ P1
+B0 W
+A0
+Cavity
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Pocket Quadrants
+Sprocket Holes
+Q1
+Q1
+Q2
+Q2
+Q3
+Q3
+Q4
+Q4
+User Direction of Feed
+P1
+Reel
+Diameter
+ 
+*All dimensions are nominal
+Device
+Package
+Type
+Package
+Drawing
+Pins
+SPQ
+Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+LM5576MHX/NOPB
+HTSSOP
+PWP
+20
+2500
+330.0
+16.4
+6.95
+7.0
+1.4
+8.0
+16.0
+Q1
+Pack Materials-Page 1
+
+
+PAGE 34
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+W
+L
+H
+ 
+*All dimensions are nominal
+Device
+Package Type
+Package Drawing
+Pins
+SPQ
+Length (mm)
+Width (mm)
+Height (mm)
+LM5576MHX/NOPB
+HTSSOP
+PWP
+20
+2500
+356.0
+356.0
+35.0
+Pack Materials-Page 2
+
+
+PAGE 35
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TUBE
+ 
+ 
+L - Tube length
+T - Tube  
+height
+W - Tube  
+width
+B - Alignment groove width
+ 
+ 
+*All dimensions are nominal
+Device
+Package Name
+Package Type
+Pins
+SPQ
+L (mm)
+W (mm)
+T (µm)
+B (mm)
+LM5576MH/NOPB
+PWP
+HTSSOP
+20
+73
+495
+8
+2514.6
+4.06
+LM5576MH/NOPB.A
+PWP
+HTSSOP
+20
+73
+495
+8
+2514.6
+4.06
+LM5576MH/NOPB.B
+PWP
+HTSSOP
+20
+73
+495
+8
+2514.6
+4.06
+Pack Materials-Page 3
+
+
+PAGE 36
+
+
+PAGE 37
+MECHANICAL DATA
+PWP0020A
+www.ti.com
+MXA20A (Rev C)
+
+
+PAGE 38
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE 
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” 
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD 
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate 
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable 
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an 
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license 
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully 
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on 
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable 
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products 
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

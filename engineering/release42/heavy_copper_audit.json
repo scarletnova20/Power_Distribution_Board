@@ -1,0 +1,94 @@
+{
+  "board_sha256": "0718fcf4ad4816b4e065f5e90765419605ba5d6a86b6edd38c2f94c208bd1287",
+  "source": "https://www.pcbway.com/pcb_prototype/Thick_Copper_PCBs.html",
+  "published_4oz_minimum_track_and_spacing_mm": 0.3302,
+  "tracks_below_published_width_by_layer": {
+    "F.Cu": 441,
+    "B.Cu": 293,
+    "In2.Cu": 112,
+    "In1.Cu": 54
+  },
+  "track_widths": [
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.2,
+      "count": 291
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.3,
+      "count": 2
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 0.8,
+      "count": 13
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 1.0,
+      "count": 10
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 1.2,
+      "count": 6
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 1.5,
+      "count": 1
+    },
+    {
+      "layer": "B.Cu",
+      "width_mm": 1.8,
+      "count": 3
+    },
+    {
+      "layer": "F.Cu",
+      "width_mm": 0.2,
+      "count": 441
+    },
+    {
+      "layer": "In1.Cu",
+      "width_mm": 0.2,
+      "count": 54
+    },
+    {
+      "layer": "In1.Cu",
+      "width_mm": 0.8,
+      "count": 1
+    },
+    {
+      "layer": "In1.Cu",
+      "width_mm": 1.5,
+      "count": 4
+    },
+    {
+      "layer": "In2.Cu",
+      "width_mm": 0.2,
+      "count": 112
+    },
+    {
+      "layer": "In2.Cu",
+      "width_mm": 0.8,
+      "count": 1
+    },
+    {
+      "layer": "In2.Cu",
+      "width_mm": 1.0,
+      "count": 3
+    },
+    {
+      "layer": "In2.Cu",
+      "width_mm": 1.2,
+      "count": 5
+    },
+    {
+      "layer": "In2.Cu",
+      "width_mm": 2.8,
+      "count": 4
+    }
+  ],
+  "scope": "Width-only screen; pad spacing, copper necks, drill and stackup acceptance still need process review"
+}

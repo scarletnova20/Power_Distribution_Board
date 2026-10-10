@@ -1,0 +1,860 @@
+[
+  {
+    "ref": "R9",
+    "side": "F",
+    "bounds": [
+      83.495,
+      216.245,
+      86.505,
+      217.755
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "U3",
+    "side": "F",
+    "bounds": [
+      76.875,
+      213.17,
+      83.125,
+      216.775
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "RL1",
+    "side": "F",
+    "bounds": [
+      86.745,
+      215.995,
+      88.255,
+      219.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R20",
+    "side": "F",
+    "bounds": [
+      62.245,
+      215.495,
+      63.755,
+      218.505
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J6",
+    "side": "F",
+    "bounds": [
+      86.405,
+      219.405,
+      89.995,
+      228.075
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C15",
+    "side": "F",
+    "bounds": [
+      83.495,
+      214.245,
+      86.505,
+      215.755
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "U5",
+    "side": "F",
+    "bounds": [
+      71.925,
+      197.62,
+      76.075,
+      201.225
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C21",
+    "side": "F",
+    "bounds": [
+      72.495,
+      201.475,
+      74.505,
+      204.925
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "TP2",
+    "side": "F",
+    "bounds": [
+      83.725,
+      211.225,
+      86.275,
+      213.775
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "H1",
+    "side": "F",
+    "bounds": [
+      59.025,
+      189.025,
+      65.975,
+      195.975
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "H3",
+    "side": "F",
+    "bounds": [
+      59.025,
+      224.025,
+      65.975,
+      230.975
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R3",
+    "side": "F",
+    "bounds": [
+      77.145,
+      197.545,
+      84.855,
+      201.455
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "TP1",
+    "side": "F",
+    "bounds": [
+      79.725,
+      218.225,
+      82.275,
+      220.775
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C18",
+    "side": "F",
+    "bounds": [
+      77.495,
+      221.245,
+      80.505,
+      222.755
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R10",
+    "side": "F",
+    "bounds": [
+      75.04,
+      201.885,
+      82.96,
+      206.115
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "Q1",
+    "side": "F",
+    "bounds": [
+      63.928173,
+      198.155,
+      71.705,
+      203.845
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R19",
+    "side": "F",
+    "bounds": [
+      62.245,
+      208.495,
+      63.755,
+      211.505
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J1",
+    "side": "F",
+    "bounds": [
+      66.725,
+      190.475,
+      80.275,
+      197.025
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R13",
+    "side": "F",
+    "bounds": [
+      75.245,
+      225.495,
+      76.755,
+      228.505
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C13",
+    "side": "F",
+    "bounds": [
+      86.725,
+      206.975,
+      95.275,
+      215.719698
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "H2",
+    "side": "F",
+    "bounds": [
+      94.025,
+      189.025,
+      100.975,
+      195.975
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "U4",
+    "side": "F",
+    "bounds": [
+      76.925,
+      223.1,
+      81.075,
+      226.725
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J7",
+    "side": "F",
+    "bounds": [
+      90.105,
+      219.405,
+      93.695,
+      228.075
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "H4",
+    "side": "F",
+    "bounds": [
+      94.025,
+      224.025,
+      100.975,
+      230.975
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J8",
+    "side": "F",
+    "bounds": [
+      97.205,
+      215.205,
+      100.795,
+      223.875
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R11",
+    "side": "F",
+    "bounds": [
+      75.04,
+      207.885,
+      82.96,
+      212.115
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C16",
+    "side": "F",
+    "bounds": [
+      83.795,
+      207.275,
+      85.805,
+      210.725
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C19",
+    "side": "F",
+    "bounds": [
+      77.495,
+      227.245,
+      80.505,
+      228.755
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R12",
+    "side": "F",
+    "bounds": [
+      62.245,
+      201.495,
+      63.755,
+      204.505
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "NT3",
+    "side": "F",
+    "bounds": [
+      81.25,
+      206.75,
+      82.75,
+      207.25
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R18",
+    "side": "F",
+    "bounds": [
+      77.245,
+      216.995,
+      78.755,
+      220.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J12",
+    "side": "F",
+    "bounds": [
+      80.425,
+      190.475,
+      93.975,
+      197.025
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "TP3",
+    "side": "F",
+    "bounds": [
+      88.725,
+      216.725,
+      91.275,
+      219.275
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R15",
+    "side": "F",
+    "bounds": [
+      74.745,
+      212.495,
+      76.255,
+      215.505
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C20",
+    "side": "F",
+    "bounds": [
+      72.795,
+      205.075,
+      74.805,
+      208.525
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R16",
+    "side": "F",
+    "bounds": [
+      74.745,
+      215.995,
+      76.255,
+      219.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "D3",
+    "side": "F",
+    "bounds": [
+      72.98,
+      226.295,
+      75.02,
+      229.745
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "Q2",
+    "side": "F",
+    "bounds": [
+      63.928173,
+      205.155,
+      71.705,
+      210.845
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C17",
+    "side": "F",
+    "bounds": [
+      73.995,
+      219.245,
+      77.005,
+      220.755
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J5",
+    "side": "F",
+    "bounds": [
+      82.705,
+      219.405,
+      86.295,
+      228.075
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "D2",
+    "side": "F",
+    "bounds": [
+      85.03,
+      198.625,
+      94.925,
+      205.375
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "NT2",
+    "side": "F",
+    "bounds": [
+      78.25,
+      206.75,
+      79.75,
+      207.25
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R14",
+    "side": "F",
+    "bounds": [
+      60.495,
+      199.745,
+      63.505,
+      201.255
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "Q3",
+    "side": "F",
+    "bounds": [
+      63.928173,
+      212.155,
+      71.705,
+      217.845
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C14",
+    "side": "F",
+    "bounds": [
+      81.245,
+      220.995,
+      82.755,
+      224.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R17",
+    "side": "F",
+    "bounds": [
+      72.745,
+      215.995,
+      74.255,
+      219.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "U2",
+    "side": "F",
+    "bounds": [
+      73.1,
+      220.925,
+      76.725,
+      225.075
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "Q4",
+    "side": "F",
+    "bounds": [
+      64.828173,
+      219.155,
+      72.605,
+      224.845
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R8",
+    "side": "F",
+    "bounds": [
+      91.695,
+      215.845,
+      96.305,
+      218.155
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R21",
+    "side": "F",
+    "bounds": [
+      63.245,
+      219.995,
+      64.755,
+      223.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "U1",
+    "side": "B",
+    "bounds": [
+      81.525,
+      207.025,
+      89.475,
+      214.175
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J3",
+    "side": "B",
+    "bounds": [
+      80.475,
+      190.725,
+      94.025,
+      194.275
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C3",
+    "side": "B",
+    "bounds": [
+      89.995,
+      214.245,
+      93.005,
+      215.755
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R7",
+    "side": "B",
+    "bounds": [
+      86.995,
+      200.245,
+      90.005,
+      201.755
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J4",
+    "side": "B",
+    "bounds": [
+      60.725,
+      198.075,
+      65.275,
+      213.625
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C2",
+    "side": "B",
+    "bounds": [
+      90.525,
+      202.475,
+      94.475,
+      208.525
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C5",
+    "side": "B",
+    "bounds": [
+      92.245,
+      208.995,
+      93.755,
+      212.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R5",
+    "side": "B",
+    "bounds": [
+      87.495,
+      216.745,
+      90.505,
+      218.255
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J10",
+    "side": "B",
+    "bounds": [
+      94.725,
+      197.225,
+      99.275,
+      212.775
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C11",
+    "side": "B",
+    "bounds": [
+      86.495,
+      214.745,
+      89.505,
+      216.255
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "D1",
+    "side": "B",
+    "bounds": [
+      74.975,
+      195.265,
+      82.17,
+      206.415
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "L1",
+    "side": "B",
+    "bounds": [
+      72.575,
+      206.825,
+      81.425,
+      216.175
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "NT1",
+    "side": "B",
+    "bounds": [
+      84.25,
+      206.25,
+      85.75,
+      206.75
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C8",
+    "side": "B",
+    "bounds": [
+      82.275,
+      197.995,
+      85.725,
+      200.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C12",
+    "side": "B",
+    "bounds": [
+      93.245,
+      212.995,
+      94.755,
+      216.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C9",
+    "side": "B",
+    "bounds": [
+      61.525,
+      213.8,
+      70.475,
+      220.95
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J2",
+    "side": "B",
+    "bounds": [
+      66.225,
+      221.075,
+      83.775,
+      230.475
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R1",
+    "side": "B",
+    "bounds": [
+      90.495,
+      200.745,
+      93.505,
+      202.255
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "BEC1",
+    "side": "B",
+    "bounds": [
+      65.975,
+      190.725,
+      79.525,
+      194.275
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C4",
+    "side": "B",
+    "bounds": [
+      89.245,
+      222.495,
+      90.755,
+      225.505
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C7",
+    "side": "B",
+    "bounds": [
+      81.775,
+      214.495,
+      85.225,
+      216.505
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C1",
+    "side": "B",
+    "bounds": [
+      83.975,
+      202.025,
+      90.025,
+      205.975
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R4",
+    "side": "B",
+    "bounds": [
+      95.245,
+      212.995,
+      96.755,
+      216.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C10",
+    "side": "B",
+    "bounds": [
+      70.675,
+      217.325,
+      75.325,
+      219.675
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R6",
+    "side": "B",
+    "bounds": [
+      97.245,
+      212.995,
+      98.755,
+      216.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "J11",
+    "side": "B",
+    "bounds": [
+      90.625,
+      216.625,
+      98.175,
+      220.175
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "R2",
+    "side": "B",
+    "bounds": [
+      89.245,
+      225.995,
+      90.755,
+      229.005
+    ],
+    "hardware_collisions": []
+  },
+  {
+    "ref": "C6",
+    "side": "B",
+    "bounds": [
+      82.495,
+      200.245,
+      85.505,
+      201.755
+    ],
+    "hardware_collisions": []
+  }
+]

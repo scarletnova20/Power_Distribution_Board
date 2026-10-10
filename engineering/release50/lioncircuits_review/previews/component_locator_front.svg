@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1300" viewBox="0 0 1400 1300">
+<rect width="1400" height="1300" fill="white"/>
+<text x="30" y="35" font-size="24">PDB_50A front component locator — REVIEW HOLD</text>
+<text x="30" y="65" font-size="17">Native top-view coordinates on both sides; bottom is NOT mirrored. Numbers locate component centers.</text>
+<rect x="30" y="110" width="840" height="840" fill="#edf5ef" stroke="black" stroke-width="2"/>
+<circle cx="776.9999999999999" cy="540.0" r="3" fill="#999"/>
+<circle cx="633.0000000000001" cy="540.0" r="3" fill="#999"/>
+<circle cx="705.0" cy="540.0" r="10" fill="white" stroke="#17456b"/>
+<text x="705.0" y="544.0" font-size="11" text-anchor="middle" fill="#17456b">1</text>
+<text x="900" y="112" font-size="16">1: C13 (92.75, 210.50)</text>
+<circle cx="490.0" cy="795.5000000000001" r="3" fill="#999"/>
+<circle cx="490.0" cy="764.4999999999999" r="3" fill="#999"/>
+<circle cx="490.0" cy="780.0" r="10" fill="white" stroke="#17456b"/>
+<text x="490.0" y="784.0" font-size="11" text-anchor="middle" fill="#17456b">2</text>
+<text x="900" y="136" font-size="16">2: C14 (82.00, 222.50)</text>
+<circle cx="570.5000000000001" cy="608.0000000000001" r="3" fill="#999"/>
+<circle cx="601.5" cy="608.0000000000001" r="3" fill="#999"/>
+<circle cx="586.0" cy="608.0000000000001" r="10" fill="white" stroke="#17456b"/>
+<text x="586.0" y="612.0000000000001" font-size="11" text-anchor="middle" fill="#17456b">3</text>
+<text x="900" y="160" font-size="16">3: C15 (86.80, 213.90)</text>
+<circle cx="536.0" cy="591.0000000000002" r="3" fill="#999"/>
+<circle cx="536.0" cy="628.9999999999998" r="3" fill="#999"/>
+<circle cx="536.0" cy="610.0" r="10" fill="white" stroke="#17456b"/>
+<text x="536.0" y="614.0" font-size="11" text-anchor="middle" fill="#17456b">4</text>
+<text x="900" y="184" font-size="16">4: C16 (84.30, 214.00)</text>
+<circle cx="344.4999999999999" cy="730.0" r="3" fill="#999"/>
+<circle cx="375.5000000000001" cy="730.0" r="3" fill="#999"/>
+<circle cx="360.0" cy="730.0" r="10" fill="white" stroke="#17456b"/>
+<text x="360.0" y="734.0" font-size="11" text-anchor="middle" fill="#17456b">5</text>
+<text x="900" y="208" font-size="16">5: C17 (75.50, 220.00)</text>
+<circle cx="414.4999999999999" cy="770.0" r="3" fill="#999"/>
+<circle cx="445.5000000000001" cy="770.0" r="3" fill="#999"/>
+<circle cx="430.0" cy="770.0" r="10" fill="white" stroke="#17456b"/>
+<text x="430.0" y="774.0" font-size="11" text-anchor="middle" fill="#17456b">6</text>
+<text x="900" y="232" font-size="16">6: C18 (79.00, 222.00)</text>
+<circle cx="414.4999999999999" cy="890.0" r="3" fill="#999"/>
+<circle cx="445.5000000000001" cy="890.0" r="3" fill="#999"/>
+<circle cx="430.0" cy="890.0" r="10" fill="white" stroke="#17456b"/>
+<text x="430.0" y="894.0" font-size="11" text-anchor="middle" fill="#17456b">7</text>
+<text x="900" y="256" font-size="16">7: C19 (79.00, 228.00)</text>
+<circle cx="325.99999999999994" cy="485.0" r="3" fill="#999"/>
+<circle cx="325.99999999999994" cy="446.9999999999999" r="3" fill="#999"/>
+<circle cx="325.99999999999994" cy="466.0000000000002" r="10" fill="white" stroke="#17456b"/>
+<text x="325.99999999999994" y="470.0000000000002" font-size="11" text-anchor="middle" fill="#17456b">8</text>
+<text x="900" y="280" font-size="16">8: C20 (73.80, 206.80)</text>
+<circle cx="320.0" cy="413.0000000000001" r="3" fill="#999"/>
+<circle cx="320.0" cy="375.0" r="3" fill="#999"/>
+<circle cx="320.0" cy="393.9999999999998" r="10" fill="white" stroke="#17456b"/>
+<text x="320.0" y="397.9999999999998" font-size="11" text-anchor="middle" fill="#17456b">9</text>
+<text x="900" y="304" font-size="16">9: C21 (73.50, 203.20)</text>
+<circle cx="581.9999999999999" cy="370.0" r="3" fill="#999"/>
+<circle cx="718.0000000000001" cy="370.0" r="3" fill="#999"/>
+<circle cx="650.0" cy="370.0" r="10" fill="white" stroke="#17456b"/>
+<text x="650.0" y="374.0" font-size="11" text-anchor="middle" fill="#17456b">10</text>
+<text x="900" y="328" font-size="16">10: D2 (90.00, 202.00)</text>
+<circle cx="330.0" cy="908.75" r="3" fill="#999"/>
+<circle cx="330.0" cy="871.25" r="3" fill="#999"/>
+<circle cx="330.0" cy="890.0" r="10" fill="white" stroke="#17456b"/>
+<text x="330.0" y="894.0" font-size="11" text-anchor="middle" fill="#17456b">11</text>
+<text x="900" y="352" font-size="16">11: D3 (74.00, 228.00)</text>
+<circle cx="100.0" cy="180.0" r="3" fill="#999"/>
+<circle cx="100.0" cy="180.0" r="10" fill="white" stroke="#17456b"/>
+<text x="100.0" y="184.0" font-size="11" text-anchor="middle" fill="#17456b">12</text>
+<text x="900" y="376" font-size="16">12: H1 (62.50, 192.50)</text>
+<circle cx="800.0" cy="180.0" r="3" fill="#999"/>
+<circle cx="800.0" cy="180.0" r="10" fill="white" stroke="#17456b"/>
+<text x="800.0" y="184.0" font-size="11" text-anchor="middle" fill="#17456b">13</text>
+<text x="900" y="400" font-size="16">13: H2 (97.50, 192.50)</text>
+<circle cx="100.0" cy="880.0" r="3" fill="#999"/>
+<circle cx="100.0" cy="880.0" r="10" fill="white" stroke="#17456b"/>
+<text x="100.0" y="884.0" font-size="11" text-anchor="middle" fill="#17456b">14</text>
+<text x="900" y="424" font-size="16">14: H3 (62.50, 227.50)</text>
+<circle cx="800.0" cy="880.0" r="3" fill="#999"/>
+<circle cx="800.0" cy="880.0" r="10" fill="white" stroke="#17456b"/>
+<text x="800.0" y="884.0" font-size="11" text-anchor="middle" fill="#17456b">15</text>
+<text x="900" y="448" font-size="16">15: H4 (97.50, 227.50)</text>
+<circle cx="250.0" cy="205.0" r="3" fill="#999"/>
+<circle cx="390.0" cy="205.0" r="3" fill="#999"/>
+<circle cx="320.0" cy="205.0" r="10" fill="white" stroke="#17456b"/>
+<text x="320.0" y="209.0" font-size="11" text-anchor="middle" fill="#17456b">16</text>
+<text x="900" y="472" font-size="16">16: J1 (73.50, 193.75)</text>
+<circle cx="524.0" cy="205.0" r="3" fill="#999"/>
+<circle cx="664.0" cy="205.0" r="3" fill="#999"/>
+<circle cx="594.0" cy="205.0" r="10" fill="white" stroke="#17456b"/>
+<text x="594.0" y="209.0" font-size="11" text-anchor="middle" fill="#17456b">17</text>
+<text x="900" y="496" font-size="16">17: J12 (87.20, 193.75)</text>
+<circle cx="540.0" cy="753.9999999999998" r="3" fill="#999"/>
+<circle cx="540.0" cy="804.8000000000002" r="3" fill="#999"/>
+<circle cx="540.0" cy="855.6" r="3" fill="#999"/>
+<circle cx="540.0" cy="753.9999999999998" r="10" fill="white" stroke="#17456b"/>
+<text x="540.0" y="757.9999999999998" font-size="11" text-anchor="middle" fill="#17456b">18</text>
+<text x="900" y="520" font-size="16">18: J5 (84.50, 221.20)</text>
+<circle cx="614.0" cy="753.9999999999998" r="3" fill="#999"/>
+<circle cx="614.0" cy="804.8000000000002" r="3" fill="#999"/>
+<circle cx="614.0" cy="855.6" r="3" fill="#999"/>
+<circle cx="614.0" cy="753.9999999999998" r="10" fill="white" stroke="#17456b"/>
+<text x="614.0" y="757.9999999999998" font-size="11" text-anchor="middle" fill="#17456b">19</text>
+<text x="900" y="544" font-size="16">19: J6 (88.20, 221.20)</text>
+<circle cx="688.0000000000001" cy="753.9999999999998" r="3" fill="#999"/>
+<circle cx="688.0000000000001" cy="804.8000000000002" r="3" fill="#999"/>
+<circle cx="688.0000000000001" cy="855.6" r="3" fill="#999"/>
+<circle cx="688.0000000000001" cy="753.9999999999998" r="10" fill="white" stroke="#17456b"/>
+<text x="688.0000000000001" y="757.9999999999998" font-size="11" text-anchor="middle" fill="#17456b">20</text>
+<text x="900" y="568" font-size="16">20: J7 (91.90, 221.20)</text>
+<circle cx="830.0" cy="670.0" r="3" fill="#999"/>
+<circle cx="830.0" cy="720.7999999999998" r="3" fill="#999"/>
+<circle cx="830.0" cy="771.6000000000003" r="3" fill="#999"/>
+<circle cx="830.0" cy="670.0" r="10" fill="white" stroke="#17456b"/>
+<text x="830.0" y="674.0" font-size="11" text-anchor="middle" fill="#17456b">21</text>
+<text x="900" y="592" font-size="16">21: J8 (99.00, 217.00)</text>
+<circle cx="420.0" cy="470.0" r="3" fill="#999"/>
+<circle cx="440.0" cy="470.0" r="3" fill="#999"/>
+<circle cx="430.0" cy="470.0" r="10" fill="white" stroke="#17456b"/>
+<text x="430.0" y="474.0" font-size="11" text-anchor="middle" fill="#17456b">22</text>
+<text x="900" y="616" font-size="16">22: NT2 (79.00, 207.00)</text>
+<circle cx="480.0" cy="470.0" r="3" fill="#999"/>
+<circle cx="500.0" cy="470.0" r="3" fill="#999"/>
+<circle cx="490.0" cy="470.0" r="10" fill="white" stroke="#17456b"/>
+<text x="490.0" y="474.0" font-size="11" text-anchor="middle" fill="#17456b">23</text>
+<text x="900" y="640" font-size="16">23: NT3 (82.00, 207.00)</text>
+<circle cx="194.00000000000006" cy="315.5000000000001" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="338.5000000000002" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="361.4999999999998" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="384.4999999999999" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="315.5000000000001" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="338.5000000000002" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="361.4999999999998" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="384.4999999999999" r="3" fill="#999"/>
+<circle cx="242.5" cy="315.5000000000001" r="3" fill="#999"/>
+<circle cx="242.5" cy="338.5000000000002" r="3" fill="#999"/>
+<circle cx="242.5" cy="361.4999999999998" r="3" fill="#999"/>
+<circle cx="242.5" cy="384.4999999999999" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="388.1" r="3" fill="#999"/>
+<circle cx="223.49999999999994" cy="350.0" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="310.0999999999999" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="336.70000000000016" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="363.29999999999984" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="389.9000000000001" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="311.9" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="337.3000000000002" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="337.3000000000002" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="362.6999999999998" r="3" fill="#999"/>
+<circle cx="210.0" cy="350.0" r="10" fill="white" stroke="#17456b"/>
+<text x="210.0" y="354.0" font-size="11" text-anchor="middle" fill="#17456b">24</text>
+<text x="900" y="664" font-size="16">24: Q1 (68.00, 201.00)</text>
+<circle cx="194.00000000000006" cy="455.5000000000001" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="478.5000000000002" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="501.4999999999998" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="524.4999999999999" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="455.5000000000001" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="478.5000000000002" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="501.4999999999998" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="524.4999999999999" r="3" fill="#999"/>
+<circle cx="242.5" cy="455.5000000000001" r="3" fill="#999"/>
+<circle cx="242.5" cy="478.5000000000002" r="3" fill="#999"/>
+<circle cx="242.5" cy="501.4999999999998" r="3" fill="#999"/>
+<circle cx="242.5" cy="524.4999999999999" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="528.1" r="3" fill="#999"/>
+<circle cx="223.49999999999994" cy="490.0" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="450.0999999999999" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="476.70000000000016" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="503.29999999999984" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="529.9000000000001" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="451.9" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="477.3000000000002" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="477.3000000000002" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="502.6999999999998" r="3" fill="#999"/>
+<circle cx="210.0" cy="490.0" r="10" fill="white" stroke="#17456b"/>
+<text x="210.0" y="494.0" font-size="11" text-anchor="middle" fill="#17456b">25</text>
+<text x="900" y="688" font-size="16">25: Q2 (68.00, 208.00)</text>
+<circle cx="194.00000000000006" cy="595.5000000000001" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="618.5000000000002" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="641.4999999999998" r="3" fill="#999"/>
+<circle cx="194.00000000000006" cy="664.4999999999999" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="595.5000000000001" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="618.5000000000002" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="641.4999999999998" r="3" fill="#999"/>
+<circle cx="218.49999999999994" cy="664.4999999999999" r="3" fill="#999"/>
+<circle cx="242.5" cy="595.5000000000001" r="3" fill="#999"/>
+<circle cx="242.5" cy="618.5000000000002" r="3" fill="#999"/>
+<circle cx="242.5" cy="641.4999999999998" r="3" fill="#999"/>
+<circle cx="242.5" cy="664.4999999999999" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="668.1" r="3" fill="#999"/>
+<circle cx="223.49999999999994" cy="630.0" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="590.0999999999999" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="616.7000000000002" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="643.2999999999998" r="3" fill="#999"/>
+<circle cx="268.49999999999994" cy="669.9000000000001" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="591.9" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="617.3000000000002" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="617.3000000000002" r="3" fill="#999"/>
+<circle cx="153.49999999999994" cy="642.6999999999998" r="3" fill="#999"/>
+<circle cx="210.0" cy="630.0" r="10" fill="white" stroke="#17456b"/>
+<text x="210.0" y="634.0" font-size="11" text-anchor="middle" fill="#17456b">26</text>
+<text x="900" y="712" font-size="16">26: Q3 (68.00, 215.00)</text>
+<circle cx="211.9999999999999" cy="735.5000000000001" r="3" fill="#999"/>
+<circle cx="211.9999999999999" cy="758.5000000000002" r="3" fill="#999"/>
+<circle cx="211.9999999999999" cy="781.4999999999998" r="3" fill="#999"/>
+<circle cx="211.9999999999999" cy="804.4999999999999" r="3" fill="#999"/>
+<circle cx="236.50000000000006" cy="735.5000000000001" r="3" fill="#999"/>
+<circle cx="236.50000000000006" cy="758.5000000000002" r="3" fill="#999"/>
+<circle cx="236.50000000000006" cy="781.4999999999998" r="3" fill="#999"/>
+<circle cx="236.50000000000006" cy="804.4999999999999" r="3" fill="#999"/>
+<circle cx="260.5000000000001" cy="735.5000000000001" r="3" fill="#999"/>
+<circle cx="260.5000000000001" cy="758.5000000000002" r="3" fill="#999"/>
+<circle cx="260.5000000000001" cy="781.4999999999998" r="3" fill="#999"/>
+<circle cx="260.5000000000001" cy="804.4999999999999" r="3" fill="#999"/>
+<circle cx="171.50000000000006" cy="808.1" r="3" fill="#999"/>
+<circle cx="241.50000000000006" cy="770.0" r="3" fill="#999"/>
+<circle cx="286.50000000000006" cy="730.0999999999999" r="3" fill="#999"/>
+<circle cx="286.50000000000006" cy="756.7000000000002" r="3" fill="#999"/>
+<circle cx="286.50000000000006" cy="783.2999999999998" r="3" fill="#999"/>
+<circle cx="286.50000000000006" cy="809.9000000000001" r="3" fill="#999"/>
+<circle cx="171.50000000000006" cy="731.9" r="3" fill="#999"/>
+<circle cx="171.50000000000006" cy="757.3000000000002" r="3" fill="#999"/>
+<circle cx="171.50000000000006" cy="757.3000000000002" r="3" fill="#999"/>
+<circle cx="171.50000000000006" cy="782.6999999999998" r="3" fill="#999"/>
+<circle cx="228.0000000000001" cy="770.0" r="10" fill="white" stroke="#17456b"/>
+<text x="228.0000000000001" y="774.0" font-size="11" text-anchor="middle" fill="#17456b">27</text>
+<text x="900" y="736" font-size="16">27: Q4 (68.90, 222.00)</text>
+<circle cx="386.80000000000007" cy="410.0" r="3" fill="#999"/>
+<circle cx="473.19999999999993" cy="410.0" r="3" fill="#999"/>
+<circle cx="430.0" cy="410.0" r="10" fill="white" stroke="#17456b"/>
+<text x="430.0" y="414.0" font-size="11" text-anchor="middle" fill="#17456b">28</text>
+<text x="900" y="760" font-size="16">28: R10 (79.00, 204.00)</text>
+<circle cx="386.80000000000007" cy="530.0" r="3" fill="#999"/>
+<circle cx="473.19999999999993" cy="530.0" r="3" fill="#999"/>
+<circle cx="430.0" cy="530.0" r="10" fill="white" stroke="#17456b"/>
+<text x="430.0" y="534.0" font-size="11" text-anchor="middle" fill="#17456b">29</text>
+<text x="900" y="784" font-size="16">29: R11 (79.00, 210.00)</text>
+<circle cx="110.0" cy="406.4999999999998" r="3" fill="#999"/>
+<circle cx="110.0" cy="373.5000000000002" r="3" fill="#999"/>
+<circle cx="110.0" cy="390.0" r="10" fill="white" stroke="#17456b"/>
+<text x="110.0" y="394.0" font-size="11" text-anchor="middle" fill="#17456b">30</text>
+<text x="900" y="808" font-size="16">30: R12 (63.00, 203.00)</text>
+<circle cx="370.0" cy="886.4999999999998" r="3" fill="#999"/>
+<circle cx="370.0" cy="853.5000000000002" r="3" fill="#999"/>
+<circle cx="370.0" cy="870.0" r="10" fill="white" stroke="#17456b"/>
+<text x="370.0" y="874.0" font-size="11" text-anchor="middle" fill="#17456b">31</text>
+<text x="900" y="832" font-size="16">31: R13 (76.00, 227.00)</text>
+<circle cx="73.49999999999994" cy="340.0" r="3" fill="#999"/>
+<circle cx="106.50000000000006" cy="340.0" r="3" fill="#999"/>
+<circle cx="90.0" cy="340.0" r="10" fill="white" stroke="#17456b"/>
+<text x="90.0" y="344.0" font-size="11" text-anchor="middle" fill="#17456b">32</text>
+<text x="900" y="856" font-size="16">32: R14 (62.00, 200.50)</text>
+<circle cx="360.0" cy="626.4999999999998" r="3" fill="#999"/>
+<circle cx="360.0" cy="593.5000000000002" r="3" fill="#999"/>
+<circle cx="360.0" cy="610.0" r="10" fill="white" stroke="#17456b"/>
+<text x="360.0" y="614.0" font-size="11" text-anchor="middle" fill="#17456b">33</text>
+<text x="900" y="880" font-size="16">33: R15 (75.50, 214.00)</text>
+<circle cx="360.0" cy="696.4999999999998" r="3" fill="#999"/>
+<circle cx="360.0" cy="663.5000000000002" r="3" fill="#999"/>
+<circle cx="360.0" cy="680.0" r="10" fill="white" stroke="#17456b"/>
+<text x="360.0" y="684.0" font-size="11" text-anchor="middle" fill="#17456b">34</text>
+<text x="900" y="904" font-size="16">34: R16 (75.50, 217.50)</text>
+<circle cx="320.0" cy="696.4999999999998" r="3" fill="#999"/>
+<circle cx="320.0" cy="663.5000000000002" r="3" fill="#999"/>
+<circle cx="320.0" cy="680.0" r="10" fill="white" stroke="#17456b"/>
+<text x="320.0" y="684.0" font-size="11" text-anchor="middle" fill="#17456b">35</text>
+<text x="900" y="928" font-size="16">35: R17 (73.50, 217.50)</text>
+<circle cx="410.0" cy="716.4999999999998" r="3" fill="#999"/>
+<circle cx="410.0" cy="683.5000000000002" r="3" fill="#999"/>
+<circle cx="410.0" cy="700.0" r="10" fill="white" stroke="#17456b"/>
+<text x="410.0" y="704.0" font-size="11" text-anchor="middle" fill="#17456b">36</text>
+<text x="900" y="952" font-size="16">36: R18 (78.00, 218.50)</text>
+<circle cx="110.0" cy="546.4999999999998" r="3" fill="#999"/>
+<circle cx="110.0" cy="513.5000000000002" r="3" fill="#999"/>
+<circle cx="110.0" cy="530.0" r="10" fill="white" stroke="#17456b"/>
+<text x="110.0" y="534.0" font-size="11" text-anchor="middle" fill="#17456b">37</text>
+<text x="900" y="976" font-size="16">37: R19 (63.00, 210.00)</text>
+<circle cx="110.0" cy="686.4999999999998" r="3" fill="#999"/>
+<circle cx="110.0" cy="653.5000000000002" r="3" fill="#999"/>
+<circle cx="110.0" cy="670.0" r="10" fill="white" stroke="#17456b"/>
+<text x="110.0" y="674.0" font-size="11" text-anchor="middle" fill="#17456b">38</text>
+<text x="900" y="1000" font-size="16">38: R20 (63.00, 217.00)</text>
+<circle cx="130.0" cy="776.4999999999998" r="3" fill="#999"/>
+<circle cx="130.0" cy="743.5000000000002" r="3" fill="#999"/>
+<circle cx="130.0" cy="760.0" r="10" fill="white" stroke="#17456b"/>
+<text x="130.0" y="764.0" font-size="11" text-anchor="middle" fill="#17456b">39</text>
+<text x="900" y="1024" font-size="16">39: R21 (64.00, 221.50)</text>
+<circle cx="410.7499999999999" cy="320.0" r="3" fill="#999"/>
+<circle cx="529.2500000000001" cy="320.0" r="3" fill="#999"/>
+<circle cx="470.0" cy="320.0" r="10" fill="white" stroke="#17456b"/>
+<text x="470.0" y="324.0" font-size="11" text-anchor="middle" fill="#17456b">40</text>
+<text x="900" y="1048" font-size="16">40: R3 (81.00, 199.50)</text>
+<circle cx="700.7499999999999" cy="670.0" r="3" fill="#999"/>
+<circle cx="759.2500000000001" cy="670.0" r="3" fill="#999"/>
+<circle cx="730.0" cy="670.0" r="10" fill="white" stroke="#17456b"/>
+<text x="730.0" y="674.0" font-size="11" text-anchor="middle" fill="#17456b">41</text>
+<text x="900" y="1072" font-size="16">41: R8 (94.00, 217.00)</text>
+<circle cx="533.5" cy="670.0" r="3" fill="#999"/>
+<circle cx="566.5" cy="670.0" r="3" fill="#999"/>
+<circle cx="550.0" cy="670.0" r="10" fill="white" stroke="#17456b"/>
+<text x="550.0" y="674.0" font-size="11" text-anchor="middle" fill="#17456b">42</text>
+<text x="900" y="1096" font-size="16">42: R9 (85.00, 217.00)</text>
+<circle cx="600.0" cy="696.4999999999998" r="3" fill="#999"/>
+<circle cx="600.0" cy="663.5000000000002" r="3" fill="#999"/>
+<circle cx="600.0" cy="680.0" r="10" fill="white" stroke="#17456b"/>
+<text x="600.0" y="684.0" font-size="11" text-anchor="middle" fill="#17456b">43</text>
+<text x="900" y="1120" font-size="16">43: RL1 (87.50, 217.50)</text>
+<circle cx="470.0" cy="720.0" r="3" fill="#999"/>
+<circle cx="470.0" cy="720.0" r="10" fill="white" stroke="#17456b"/>
+<text x="470.0" y="724.0" font-size="11" text-anchor="middle" fill="#17456b">44</text>
+<text x="900" y="1144" font-size="16">44: TP1 (81.00, 219.50)</text>
+<circle cx="65.99999999999994" cy="560.0" r="3" fill="#999"/>
+<circle cx="65.99999999999994" cy="560.0" r="10" fill="white" stroke="#17456b"/>
+<text x="65.99999999999994" y="564.0" font-size="11" text-anchor="middle" fill="#17456b">45</text>
+<text x="900" y="1168" font-size="16">45: TP2 (60.80, 211.50)</text>
+<circle cx="650.0" cy="690.0" r="3" fill="#999"/>
+<circle cx="650.0" cy="690.0" r="10" fill="white" stroke="#17456b"/>
+<text x="650.0" y="694.0" font-size="11" text-anchor="middle" fill="#17456b">46</text>
+<text x="1130" y="112" font-size="16">46: TP3 (90.00, 218.00)</text>
+<circle cx="330.99999999999994" cy="812.7499999999998" r="3" fill="#999"/>
+<circle cx="350.0" cy="812.7499999999998" r="3" fill="#999"/>
+<circle cx="369.00000000000006" cy="812.7499999999998" r="3" fill="#999"/>
+<circle cx="369.00000000000006" cy="767.2500000000002" r="3" fill="#999"/>
+<circle cx="330.99999999999994" cy="767.2500000000002" r="3" fill="#999"/>
+<circle cx="350.0" cy="790.0" r="10" fill="white" stroke="#17456b"/>
+<text x="350.0" y="794.0" font-size="11" text-anchor="middle" fill="#17456b">47</text>
+<text x="1130" y="136" font-size="16">47: U2 (75.00, 223.00)</text>
+<circle cx="405.99999999999994" cy="610.0" r="3" fill="#999"/>
+<circle cx="405.99999999999994" cy="620.0" r="3" fill="#999"/>
+<circle cx="405.99999999999994" cy="630.0" r="3" fill="#999"/>
+<circle cx="405.99999999999994" cy="640.0" r="3" fill="#999"/>
+<circle cx="405.99999999999994" cy="650.0" r="3" fill="#999"/>
+<circle cx="494.00000000000006" cy="650.0" r="3" fill="#999"/>
+<circle cx="494.00000000000006" cy="640.0" r="3" fill="#999"/>
+<circle cx="494.00000000000006" cy="630.0" r="3" fill="#999"/>
+<circle cx="494.00000000000006" cy="620.0" r="3" fill="#999"/>
+<circle cx="494.00000000000006" cy="610.0" r="3" fill="#999"/>
+<circle cx="450.0" cy="630.0" r="10" fill="white" stroke="#17456b"/>
+<text x="450.0" y="634.0" font-size="11" text-anchor="middle" fill="#17456b">48</text>
+<text x="1130" y="160" font-size="16">48: U3 (80.00, 215.00)</text>
+<circle cx="407.24999999999994" cy="811.0000000000002" r="3" fill="#999"/>
+<circle cx="407.24999999999994" cy="830.0" r="3" fill="#999"/>
+<circle cx="407.24999999999994" cy="848.9999999999998" r="3" fill="#999"/>
+<circle cx="452.75000000000006" cy="848.9999999999998" r="3" fill="#999"/>
+<circle cx="452.75000000000006" cy="811.0000000000002" r="3" fill="#999"/>
+<circle cx="430.0" cy="830.0" r="10" fill="white" stroke="#17456b"/>
+<text x="430.0" y="834.0" font-size="11" text-anchor="middle" fill="#17456b">49</text>
+<text x="1130" y="184" font-size="16">49: U4 (79.00, 225.00)</text>
+<circle cx="304.00000000000006" cy="300.5000000000001" r="3" fill="#999"/>
+<circle cx="304.00000000000006" cy="313.5000000000002" r="3" fill="#999"/>
+<circle cx="304.00000000000006" cy="326.4999999999998" r="3" fill="#999"/>
+<circle cx="304.00000000000006" cy="339.4999999999999" r="3" fill="#999"/>
+<circle cx="355.99999999999994" cy="339.4999999999999" r="3" fill="#999"/>
+<circle cx="355.99999999999994" cy="326.4999999999998" r="3" fill="#999"/>
+<circle cx="355.99999999999994" cy="313.5000000000002" r="3" fill="#999"/>
+<circle cx="355.99999999999994" cy="300.5000000000001" r="3" fill="#999"/>
+<circle cx="330.0" cy="320.0" r="10" fill="white" stroke="#17456b"/>
+<text x="330.0" y="324.0" font-size="11" text-anchor="middle" fill="#17456b">50</text>
+<text x="1130" y="208" font-size="16">50: U5 (74.00, 199.50)</text>
+<text x="30" y="1000" font-size="18">Coordinate labels are mm. Use native pad numbers and netlist pinout for wiring.</text>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "board_sha256": "0718fcf4ad4816b4e065f5e90765419605ba5d6a86b6edd38c2f94c208bd1287",
+  "mesh_mm": 0.2,
+  "scope": "PGND DC resistance screening only, ideal equipotential solder-land contacts; not a thermal rating",
+  "limitations": [
+    "Copper assumed uniformly 100 C and 70 um on all four layers",
+    "Plating is assumed, not measured or fabricator accepted",
+    "Rasterized pads omit rounded corners; vias use lumped barrel conductance",
+    "Mesh convergence must be checked",
+    "No harness, connector, solder-joint or solder-void resistance",
+    "No prediction of temperature rise"
+  ],
+  "results": [
+    {
+      "plating_um_assumed": 20.0,
+      "resistance_ohm_at_100C": 0.0007829042801198809,
+      "drop_V_at_80A": 0.06263234240959048,
+      "copper_and_via_loss_W_at_80A": 5.0105873927672375,
+      "iterations": 2240,
+      "relative_residual": 9.863800441930243e-10,
+      "current_balance_relative": 1.6441523075425858e-08
+    },
+    {
+      "plating_um_assumed": 25.0,
+      "resistance_ohm_at_100C": 0.0007735223101860635,
+      "drop_V_at_80A": 0.06188178481488508,
+      "copper_and_via_loss_W_at_80A": 4.950542785190806,
+      "iterations": 2217,
+      "relative_residual": 9.876708492305444e-10,
+      "current_balance_relative": 1.0581863245626629e-08
+    }
+  ]
+}

@@ -1,0 +1,2768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\hridd\KiCAD designs\Swayatt_PCB\Swayatt_PCB\Swayatt_PCB.kicad_sch</source>
+    <date>2026-09-07T18:48:25</date>
+    <tool>Eeschema 10.0.3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Swayatt_PCB - electrical corrections / RELEASE HOLD</title>
+        <company/>
+        <rev>WIP-40mm</rev>
+        <date/>
+        <source>Swayatt_PCB.kicad_sch</source>
+        <comment number="1" value="80 A power path, fuse, cooling and FC interface remain unqualified"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BEC1">
+      <value>Conn_01x04</value>
+      <footprint>Swayatt_Local:BEC_Wire_4</footprint>
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:BEC_Wire_4</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ccd6fe2-d499-4674-b04f-6e06234ebc4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="BT1">
+      <value>BATTERY HARNESS EXTERNAL</value>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab9d5bd8-985e-4a3c-bf64-fe8636a330c4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>2.2u 100V X7R</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1812_4532Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a69fbd9-c2d1-4a26-99fa-753dae7097e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>2.2u 100V X7R</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1812_4532Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b289fa33-e2e3-4108-9162-6879468c4302</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>330p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8472ac85-737c-43b9-a798-63a2b93f0303</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>10n 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc5f1c52-fab0-477b-bac2-f43bc2b4586a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>470n 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2a9a062-3753-44ce-b975-357837ebe20a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>10n 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70ccff71-c21d-41cc-a6eb-f0da2d16414a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>22n 100V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fbd03149-be5a-4d55-9770-e4685d9f2f78</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>330p 100V C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0a66a45-9698-400d-b821-5760ae684b44</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>150u 10V polymer ESR&lt;=30mR</value>
+      <footprint>Capacitor_SMD:C_Elec_6.3x5.8</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_Elec_6.3x5.8</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>54c85f81-e2c0-4cee-80f7-42bb1418cce8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>22u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee8e98d1-904b-46d6-8a50-fe32411d78bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>22p C0G</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7f1c2e9-a890-4d90-8a3c-25007831ec46</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>10n C0G</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06e352df-deca-4d88-a19b-df437ec869a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>47u 100V EEUFS2A470L</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77649823-f6ce-4a0c-b2ae-67c2502eb8b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100n 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c4e40f9-50a2-4ceb-a6e0-20bf02db0286</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100n 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edea3c0c-1dc4-46a9-beba-a7b1fe0c3db9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100n 100V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8dd26dc-9f9a-428c-9d67-cac010f1248e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100n 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eab636dc-5b9c-4d17-937a-2f3b7745d3be</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>1u 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c525c259-f996-4e50-a00f-e0c2a583ccaf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>1u 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e22d7d60-8d63-4b3b-8a19-e2c5f26893e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>1u 25V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3680740b-a964-483d-a2ea-34b7d6b9c197</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>100n 100V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11d34dc3-8d03-4dd7-bf4c-09198f73b704</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>STPS5H100B</value>
+      <footprint>Swayatt_Local:STPS5H100B</footprint>
+      <description>Schottky diode</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:STPS5H100B</field>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9dc703d5-9f7f-4307-8fa8-d910ee14bb6e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>SMCJ28CA bidirectional</value>
+      <footprint>Diode_SMD:D_SMC</footprint>
+      <description>Schottky diode</description>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SMC</field>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS thyrector"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb3a4a99-bc57-41bf-b8cc-fdaff5d6d75e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>GREEN</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <description>Schottky diode</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e42ff99d-f3ef-4817-bd51-909bdd15868f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>80A 58V 142.5631.5802 EXTERNAL</value>
+      <description>Fuse</description>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Fuse</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_Fuse" description="Fuse"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4e5aed9-c9bd-407f-9903-42b47a84092f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>4-6S FUSED INPUT 25.2V MAX</value>
+      <footprint>Swayatt_Local:Power_Wire_2</footprint>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:Power_Wire_2</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01b4a99b-c5d4-48e6-a7e1-faefc8a6e457</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>PIXHAWK 6X DIGITAL POWER</value>
+      <footprint>Connector_Molex:Molex_CLIK-Mate_502494-0670_1x06-1MP_P2.00mm_Horizontal</footprint>
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Connector_Molex:Molex_CLIK-Mate_502494-0670_1x06-1MP_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a996f836-339a-414d-8eba-c9d83ac1d105</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>BEC_5V_SERVOS</value>
+      <footprint>Swayatt_Local:BEC_Wire_4</footprint>
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:BEC_Wire_4</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7b9ba4b-9417-4638-89be-07904f3ad9d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>BEC_9V_SERVOS</value>
+      <footprint>Swayatt_Local:BEC_Wire_4</footprint>
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:BEC_Wire_4</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc84c8bf-1c6c-421f-888e-43a0a1177c7f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>Servo_5V_1</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5bc5bc03-359e-44f2-9584-aeb4e08e54b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>Servo_5V_2</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8de4fb67-e72c-4e2d-8d87-1f0b854230d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>Servo_5V_3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31b24d70-abf5-4946-be4e-8b75b8c71261</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J8">
+      <value>Servo_9V_1</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4ad3104-fde5-400c-a1f7-4329e0985773</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J10">
+      <value>BEC_12V_DJI</value>
+      <footprint>Swayatt_Local:BEC_Wire_4</footprint>
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:BEC_Wire_4</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>25398179-5690-430e-9462-ee8fab985833</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J11">
+      <value>DJI_PWR_OUT</value>
+      <footprint>Swayatt_Local:Aux_Wire_2</footprint>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:Aux_Wire_2</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>123e9e2d-32eb-41b8-9319-45d7d877003e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J12">
+      <value>SPEEDYBEE ESC BATTERY 4-6S</value>
+      <footprint>Swayatt_Local:Power_Wire_2</footprint>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:Power_Wire_2</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_Generic_Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97f6e4e9-cc08-48fd-935b-ff1aa113d416</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>33u DR127-330-R</value>
+      <footprint>Swayatt_Local:DR127</footprint>
+      <description>Inductor</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:DR127</field>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_L" description="Inductor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c75f10d-eada-48d6-be18-f29b2c7c369a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="NT1">
+      <value>NetTie_2</value>
+      <footprint>NetTie:NetTie-2_SMD_Pad0.5mm</footprint>
+      <description>Net tie, 2 pins</description>
+      <fields>
+        <field name="Footprint">NetTie:NetTie-2_SMD_Pad0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Net tie, 2 pins</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_NetTie_2" description="Net tie, 2 pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="net tie short"/>
+      <property name="ki_fp_filters" value="Net*Tie*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d46d906-ec06-4d53-b11f-b57773dc7c4c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="NT2">
+      <value>NetTie_2</value>
+      <footprint>NetTie:NetTie-2_SMD_Pad0.5mm</footprint>
+      <description>Net tie, 2 pins</description>
+      <fields>
+        <field name="Footprint">NetTie:NetTie-2_SMD_Pad0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Net tie, 2 pins</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_NetTie_2" description="Net tie, 2 pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="net tie short"/>
+      <property name="ki_fp_filters" value="Net*Tie*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0ba0896-8bce-4e42-b97a-7c361d7a5f6d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="NT3">
+      <value>NetTie_2</value>
+      <footprint>NetTie:NetTie-2_SMD_Pad0.5mm</footprint>
+      <description>Net tie, 2 pins</description>
+      <fields>
+        <field name="Footprint">NetTie:NetTie-2_SMD_Pad0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Net tie, 2 pins</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_NetTie_2" description="Net tie, 2 pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="net tie short"/>
+      <property name="ki_fp_filters" value="Net*Tie*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72abaa86-bd42-4466-830d-a5d8fa09ef3a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>ISC027N10NM6 100V 2.7mR</value>
+      <footprint>Swayatt_Local:ISC027N10NM6_GDS</footprint>
+      <description>P-MOSFET transistor, drain/gate/source</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:ISC027N10NM6_GDS</field>
+        <field name="Datasheet"/>
+        <field name="Description">P-MOSFET transistor, drain/gate/source</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Transistor_FET_Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32274823-e680-4685-90c1-fd45bfcef8ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>ISC027N10NM6 100V 2.7mR</value>
+      <footprint>Swayatt_Local:ISC027N10NM6_GDS</footprint>
+      <description>P-MOSFET transistor, drain/gate/source</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:ISC027N10NM6_GDS</field>
+        <field name="Datasheet"/>
+        <field name="Description">P-MOSFET transistor, drain/gate/source</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Transistor_FET_Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>176bf2cf-280c-4ab1-bb68-65e02e36db90</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q3">
+      <value>ISC027N10NM6 100V 2.7mR</value>
+      <footprint>Swayatt_Local:ISC027N10NM6_GDS</footprint>
+      <description>P-MOSFET transistor, drain/gate/source</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:ISC027N10NM6_GDS</field>
+        <field name="Datasheet"/>
+        <field name="Description">P-MOSFET transistor, drain/gate/source</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Transistor_FET_Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48015c0e-3573-42de-89a2-21ff9e69c77f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q4">
+      <value>ISC027N10NM6 100V 2.7mR</value>
+      <footprint>Swayatt_Local:ISC027N10NM6_GDS</footprint>
+      <description>P-MOSFET transistor, drain/gate/source</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:ISC027N10NM6_GDS</field>
+        <field name="Datasheet"/>
+        <field name="Description">P-MOSFET transistor, drain/gate/source</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Transistor_FET_Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0929004-461b-4dcb-baf8-a2268ad3b393</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>90.9k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad145f34-db8e-4056-a56a-618d94370904</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edf4bd97-530c-485d-801e-eca82781f411</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10, 1W</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_2512_6332Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba411be2-eb1a-4b2d-98cb-d2976caf748d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>21k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99431a4c-b432-4160-8601-a273ba65a63e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>5.11k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8fccab41-b7f3-4e89-b760-568e227a0019</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>1.65k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4c5982c-11a5-41e1-951a-6fcd5d3b5cf3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>49.9k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2dfaddd-bb1a-4cee-944a-35e830ccfe4e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>20k 1% 0.25W</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac1fac6e-9c6a-4c28-8cd0-e14d9713da26</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>1.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73290f49-c682-45a3-b06e-7dfdec0bd295</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>500u 3W 1% WSLP2512L5000FEA</value>
+      <footprint>Swayatt_Local:WSLP2512_L5000</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:WSLP2512_L5000</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b9507bb-37c5-426c-82b8-9635690d0be0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>500u 3W 1% WSLP2512L5000FEA</value>
+      <footprint>Swayatt_Local:WSLP2512_L5000</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Swayatt_Local:WSLP2512_L5000</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c2b75b3-e6d1-4a78-be55-fc99254748ce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>4.7R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d05b709a-c50f-40a9-8e73-234cf6424c9a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>1k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f378e713-a9a5-4c6f-9292-da1e92ac065b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>1M gate-source bleed</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51b29957-0dd7-4d4b-8952-944aa0344248</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>10R 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>868892ff-dc63-4901-a41b-a2fbd2faf2a8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10R 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5e347d23-6a2e-45e9-b5b7-61112cf7155a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>791feba8-2c07-4046-b115-6e109985e7d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d58d696-5762-4757-a235-7b0c3b18e0c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>4.7R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b570276f-1c5e-4d3f-9034-febeb228411e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>4.7R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4f36ea75-fbf3-445b-9352-64292999e3fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>4.7R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de9abac4-5ac1-40e0-bc75-73e2745ca299</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RL1">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Device_R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>57f64c44-5b94-4e9e-af56-51b1cd36abf7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>5V_PI AUX</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4aeeeb6-f58c-4f6d-b241-1d871908caf3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>CURRENT ANALOG TEST</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07022e4e-c3f4-41ff-8701-9ec484edc0d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>VOLTAGE ANALOG TEST</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Connector_TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>82550abe-2d06-463a-8d4b-decfbb4e7197</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>LM5576MH</value>
+      <footprint>Package_SO:HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm</footprint>
+      <description>6V to 75V, 3A Wide Vin Step-Down Regulator</description>
+      <fields>
+        <field name="MF">Texas Instruments</field>
+        <field name="PACKAGE">TSSOP-20</field>
+        <field name="MPN">LM5576MH</field>
+        <field name="Price">None</field>
+        <field name="Package">HTSSOP-20 Texas Instruments</field>
+        <field name="OC_FARNELL">1325422</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/LM5576MH/NOPB/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">LM5576MH/NOPB</field>
+        <field name="SUPPLIER">NationalSemiconductor</field>
+        <field name="OC_NEWARK">32M1276</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/LM5576MH/NOPB/Texas+Instruments/view-part/?ref=eda</field>
+        <field name="Footprint">Package_SO:HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">6V to 75V, 3A Wide Vin Step-Down Regulator</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="LM5576MH_LM5576MH" description="6V to 75V, 3A Wide Vin Step-Down Regulator"/>
+      <property name="MF" value="Texas Instruments"/>
+      <property name="PACKAGE" value="TSSOP-20"/>
+      <property name="MPN" value="LM5576MH"/>
+      <property name="Price" value="None"/>
+      <property name="Package" value="HTSSOP-20 Texas Instruments"/>
+      <property name="OC_FARNELL" value="1325422"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/LM5576MH/NOPB/Texas+Instruments/view-part/?ref=snap"/>
+      <property name="MP" value="LM5576MH/NOPB"/>
+      <property name="SUPPLIER" value="NationalSemiconductor"/>
+      <property name="OC_NEWARK" value="32M1276"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/LM5576MH/NOPB/Texas+Instruments/view-part/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12c042f9-4713-4974-804f-a8f0a610169e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="2"/>
+            <pin num="11"/>
+            <pin num="8"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="6"/>
+            <pin num="12"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>INA169NA_3KG4</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <description>2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</description>
+      <fields>
+        <field name="MF">Texas Instruments</field>
+        <field name="Package">SOT-23-5 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">INA169NA/3KG4</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="INA169NA_3KG4_INA169NA_3KG4" description="2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125"/>
+      <property name="MF" value="Texas Instruments"/>
+      <property name="Package" value="SOT-23-5 Texas Instruments"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap"/>
+      <property name="MP" value="INA169NA/3KG4"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47985dc5-15df-4059-b332-6356dbe2977e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>INA228AIDGSR I2C=0x45</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <description>2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</description>
+      <fields>
+        <field name="MF">Texas Instruments</field>
+        <field name="Package">SOT-23-5 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">INA169NA/3KG4</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda</field>
+        <field name="Footprint">Package_SO:MSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Custom_INA228" description=""/>
+      <property name="MF" value="Texas Instruments"/>
+      <property name="Package" value="SOT-23-5 Texas Instruments"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap"/>
+      <property name="MP" value="INA169NA/3KG4"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d6362ed-3a30-4790-a5f5-24620e512e54</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="8"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>TLV75533PDBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <description>2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</description>
+      <fields>
+        <field name="MF">Texas Instruments</field>
+        <field name="Package">SOT-23-5 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">INA169NA/3KG4</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Regulator_Linear_TLV75533PDBV" description="500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"/>
+      <property name="MF" value="Texas Instruments"/>
+      <property name="Package" value="SOT-23-5 Texas Instruments"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap"/>
+      <property name="MP" value="INA169NA/3KG4"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <property name="ki_keywords" value="LDO Regulator Fixed Positive"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98e8245b-d3c1-484d-b660-facc44ece60a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>LM74502HDDFR REVERSE ONLY</value>
+      <footprint>Swayatt_Local:LM74502_DDF8</footprint>
+      <description>2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</description>
+      <fields>
+        <field name="MF">Texas Instruments</field>
+        <field name="Package">SOT-23-5 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">INA169NA/3KG4</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda</field>
+        <field name="Footprint">Swayatt_Local:LM74502_DDF8</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</field>
+      </fields>
+      <libsource lib="Swayatt_Local" part="Custom_LM74502H" description=""/>
+      <property name="MF" value="Texas Instruments"/>
+      <property name="Package" value="SOT-23-5 Texas Instruments"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap"/>
+      <property name="MP" value="INA169NA/3KG4"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Swayatt_PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67e01f2e-cf9b-4ec9-a7c9-3b05cea3923d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="7"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Swayatt_Local" part="Connector_Generic_Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Connector_Generic_Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Connector_Generic_Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Connector_Generic_Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Connector_TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Custom_INA228">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">INA228</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="~{ALERT}" type="open_collector"/>
+        <pin num="4" name="SDA" type="bidirectional"/>
+        <pin num="5" name="SCL" type="input"/>
+        <pin num="6" name="VS" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VBUS" type="input"/>
+        <pin num="9" name="IN-" type="input"/>
+        <pin num="10" name="IN+" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Custom_LM74502H">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM74502H</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="VCAP" type="passive"/>
+        <pin num="5" name="VS" type="power_in"/>
+        <pin num="6" name="GATE" type="output"/>
+        <pin num="7" name="OV" type="input"/>
+        <pin num="8" name="SRC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_C_Polarized">
+      <description>Polarized capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_D_TVS">
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Bidirectional transient-voltage-suppression diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_Fuse">
+      <description>Fuse</description>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_LED">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_NetTie_2">
+      <description>Net tie, 2 pins</description>
+      <footprints>
+        <fp>Net*Tie*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">NT</field>
+        <field name="Value">NetTie_2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Net tie, 2 pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Device_R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="INA169NA_3KG4_INA169NA_3KG4">
+      <description>2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">INA169NA_3KG4</field>
+        <field name="Footprint">INA169NA_3KG4:SOT95P280X145-5N</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.7 to 60V, 440kHz Variable gain current sense amplifier 5-SOT-23 -40 to 125</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="Package">SOT-23-5 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">INA169NA/3KG4</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/INA169NA/3KG4/Texas+Instruments/view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VIN+" type="input"/>
+        <pin num="4" name="VIN-" type="input"/>
+        <pin num="5" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="LM5576MH_LM5576MH">
+      <description>6V to 75V, 3A Wide Vin Step-Down Regulator</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM5576MH</field>
+        <field name="Footprint">LM5576MH:SOP65P640X110-21N</field>
+        <field name="Datasheet"/>
+        <field name="Description">6V to 75V, 3A Wide Vin Step-Down Regulator</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="PACKAGE">TSSOP-20</field>
+        <field name="MPN">LM5576MH</field>
+        <field name="Price">None</field>
+        <field name="Package">HTSSOP-20 Texas Instruments</field>
+        <field name="OC_FARNELL">1325422</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/LM5576MH/NOPB/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">LM5576MH/NOPB</field>
+        <field name="SUPPLIER">NationalSemiconductor</field>
+        <field name="OC_NEWARK">32M1276</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/LM5576MH/NOPB/Texas+Instruments/view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_out"/>
+        <pin num="2" name="SD" type="input"/>
+        <pin num="3" name="VIN_2" type="power_in"/>
+        <pin num="4" name="VIN" type="power_in"/>
+        <pin num="5" name="SYNC" type="bidirectional"/>
+        <pin num="6" name="COMP" type="output"/>
+        <pin num="7" name="FB" type="input"/>
+        <pin num="8" name="RT" type="input"/>
+        <pin num="9" name="RAMP" type="output"/>
+        <pin num="10" name="AGND" type="power_in"/>
+        <pin num="11" name="SS" type="output"/>
+        <pin num="12" name="OUT" type="input"/>
+        <pin num="13" name="PGND_2" type="power_in"/>
+        <pin num="14" name="PGND" type="power_in"/>
+        <pin num="15" name="IS_2" type="input"/>
+        <pin num="16" name="IS" type="input"/>
+        <pin num="17" name="SW_2" type="power_out"/>
+        <pin num="18" name="SW" type="passive"/>
+        <pin num="19" name="PRE" type="passive"/>
+        <pin num="20" name="BST" type="input"/>
+        <pin num="21" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Regulator_Linear_TLV75533PDBV">
+      <description>500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv755p.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV75533PDBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description">500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Swayatt_Local" part="Transistor_FET_Q_NMOS_GDS">
+      <description>N-MOSFET transistor, gate/drain/source</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">N-MOSFET transistor, gate/drain/source</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Swayatt_Local">
+      <uri>${KIPRJMOD}/Swayatt_Local.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3" class="Default">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="A1_1" pintype="input"/>
+      <node ref="U3" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U3" pin="6" pinfunction="VS_6" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+    </net>
+    <net code="2" name="/5V_PI" class="Default">
+      <node ref="BEC1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="3" name="/5V_Servo" class="Default">
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="4" name="/9V_Servo" class="Default">
+      <node ref="J4" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="5" name="/12V_DJI" class="Default">
+      <node ref="J10" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J11" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="/BAT_FUSED" class="Default">
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="A1_1" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="EN_1" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="VS_5" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="SRC_8" pintype="input"/>
+    </net>
+    <net code="7" name="/BAT_RAW" class="Default">
+      <node ref="BT1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="F1" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="/BST" class="Default">
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="BST_20" pintype="input"/>
+    </net>
+    <net code="9" name="/BUCK_BIAS" class="Default">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VCC_1" pintype="power_out"/>
+    </net>
+    <net code="10" name="/CHARGE_PUMP" class="Default">
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="VCAP_4" pintype="passive"/>
+    </net>
+    <net code="11" name="/COMP" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="COMP_6" pintype="output"/>
+    </net>
+    <net code="12" name="/COMP_RC" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/Current" class="Default">
+      <node ref="RL1" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="OUT_1" pintype="output"/>
+    </net>
+    <net code="14" name="/DIG_SENSE_N" class="Default">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="IN-_9" pintype="input"/>
+    </net>
+    <net code="15" name="/DIG_SENSE_P" class="Default">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="IN+_10" pintype="input"/>
+    </net>
+    <net code="16" name="/FB" class="Default">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="FB_7" pintype="input"/>
+    </net>
+    <net code="17" name="/GATE_Q1" class="Default">
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="/GATE_Q2" class="Default">
+      <node ref="Q2" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="/GATE_Q3" class="Default">
+      <node ref="Q3" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="/GATE_Q4" class="Default">
+      <node ref="Q4" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="21" name="/GNDA" class="Default">
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="NT1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="RL1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="AGND_10" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="22" name="/IS_RETURN" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="IS_2_15" pintype="input"/>
+      <node ref="U1" pin="16" pinfunction="IS_16" pintype="input"/>
+    </net>
+    <net code="23" name="/LED_A" class="Default">
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="24" name="/NMOS_DRIVE" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="GATE_6" pintype="output"/>
+    </net>
+    <net code="25" name="/PGND" class="Default">
+      <node ref="BEC1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="BEC1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="BT1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A2_2" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J10" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J10" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J11" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J12" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J7" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J8" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="NT1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="PGND_2_13" pintype="power_in"/>
+      <node ref="U1" pin="14" pinfunction="PGND_14" pintype="power_in"/>
+      <node ref="U1" pin="21" pinfunction="EP_21" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U5" pin="7" pinfunction="OV_7" pintype="input"/>
+    </net>
+    <net code="26" name="/RAMP" class="Default">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="RAMP_9" pintype="output"/>
+    </net>
+    <net code="27" name="/RT" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="RT_8" pintype="input"/>
+    </net>
+    <net code="28" name="/SCL" class="Default">
+      <node ref="J2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="SCL_5" pintype="input"/>
+    </net>
+    <net code="29" name="/SD" class="Default">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="SD_2" pintype="input"/>
+    </net>
+    <net code="30" name="/SDA" class="Default">
+      <node ref="J2" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="SDA_4" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/SENSE_N" class="Default">
+      <node ref="NT3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="VIN-_4" pintype="input"/>
+    </net>
+    <net code="32" name="/SENSE_P" class="Default">
+      <node ref="NT2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="VIN+_3" pintype="input"/>
+    </net>
+    <net code="33" name="/SNUB" class="Default">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="/SS" class="Default">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="SS_11" pintype="output"/>
+    </net>
+    <net code="35" name="/SW" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="SW_2_17" pintype="power_out"/>
+      <node ref="U1" pin="18" pinfunction="SW_18" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="PRE_19" pintype="passive"/>
+    </net>
+    <net code="36" name="/VCC" class="Default">
+      <node ref="NT2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="D_2" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="D_2" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="D_2" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="D_2" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="37" name="/Vin" class="Default">
+      <node ref="BEC1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="J10" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J12" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="NT3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VIN_2_3" pintype="power_in"/>
+      <node ref="U1" pin="4" pinfunction="VIN_4" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="VBUS_8" pintype="input"/>
+    </net>
+    <net code="38" name="/Voltage" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="39" name="/out" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="OUT_12" pintype="input"/>
+      <node ref="U2" pin="5" pinfunction="V+_5" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U4" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="40" name="unconnected-(J5-Pin_1-Pad1)" class="Default">
+      <node ref="J5" pin="1" pinfunction="Pin_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(J6-Pin_1-Pad1)" class="Default">
+      <node ref="J6" pin="1" pinfunction="Pin_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(J7-Pin_1-Pad1)" class="Default">
+      <node ref="J7" pin="1" pinfunction="Pin_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(J8-Pin_1-Pad1)" class="Default">
+      <node ref="J8" pin="1" pinfunction="Pin_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U1-SYNC-Pad5)" class="Default">
+      <node ref="U1" pin="5" pinfunction="SYNC_5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U3-~{ALERT}-Pad3)" class="Default">
+      <node ref="U3" pin="3" pinfunction="~{ALERT}_3" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U4-NC-Pad4)" class="Default">
+      <node ref="U4" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U5-NC-Pad3)" class="Default">
+      <node ref="U5" pin="3" pinfunction="NC_3" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

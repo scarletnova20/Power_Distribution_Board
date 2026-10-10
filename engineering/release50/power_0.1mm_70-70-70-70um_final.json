@@ -1,0 +1,282 @@
+{
+  "board_sha256": "2e4d05f12bc72531dcada6fc47e0fdf4d2bd0b96a49bade119e1369da682a20c",
+  "parameters": {
+    "mesh": 0.1,
+    "copper": 70,
+    "plating": 18,
+    "temperature": 125,
+    "mosfet_mohm": 5.4,
+    "copper_layers": "70,70,70,70",
+    "tag": "_final"
+  },
+  "current_A": 50,
+  "paths": {
+    "positive": {
+      "resistance_ohm": 0.0036833487780922242,
+      "loss_W_at_50A": 9.20837194523056,
+      "drop_V_at_50A": 0.1841674389046112,
+      "current_balance_relative": 4.313153711571462e-09
+    },
+    "ground": {
+      "resistance_ohm": 0.0007710730462543785,
+      "loss_W_at_50A": 1.9276826156359463,
+      "drop_V_at_50A": 0.03855365231271893,
+      "current_balance_relative": 5.617298904403009e-10
+    }
+  },
+  "loss_breakdown_W": {
+    "Q1": 1.6363462240248259,
+    "Q2": 0.8368280500238439,
+    "Q3": 0.5632968199899047,
+    "Q4": 0.5324956926511564,
+    "R10": 0.3016756839361139,
+    "R11": 0.3559458831711243,
+    "ground_copper": 1.8349844681295315,
+    "ground_vias": 0.09269814874102612,
+    "positive_copper": 4.111081125331699,
+    "positive_vias": 0.8707024379454668
+  },
+  "component_current_A": {
+    "Q1": 17.407672978405696,
+    "Q2": 12.448620703187277,
+    "Q3": 10.213433601098918,
+    "Q4": 9.930272577020121,
+    "R10": 23.966675420753514,
+    "R11": 26.03332429886975
+  },
+  "peak_via_segments": [
+    {
+      "uuid": "c7fdc8af-13c5-4365-bdba-5b2ec20a5f60",
+      "xy_mm": [
+        64.0,
+        196.4
+      ],
+      "segment": 0,
+      "net": "/BAT_FUSED",
+      "A": 8.095777102168087,
+      "W": 0.02540440640680052
+    },
+    {
+      "uuid": "c7fdc8af-13c5-4365-bdba-5b2ec20a5f60",
+      "xy_mm": [
+        64.0,
+        196.4
+      ],
+      "segment": 1,
+      "net": "/BAT_FUSED",
+      "A": 8.095777101314331,
+      "W": 0.0912676822570337
+    },
+    {
+      "uuid": "131ca978-a27c-4a0c-845a-2e9e40c86fea",
+      "xy_mm": [
+        84.0,
+        205.5
+      ],
+      "segment": 0,
+      "net": "/Vin",
+      "A": 7.960056183456463,
+      "W": 0.024559766478558825
+    },
+    {
+      "uuid": "131ca978-a27c-4a0c-845a-2e9e40c86fea",
+      "xy_mm": [
+        84.0,
+        205.5
+      ],
+      "segment": 1,
+      "net": "/Vin",
+      "A": 7.9600561834547685,
+      "W": 0.08823323512663672
+    },
+    {
+      "uuid": "287279a3-8286-40b3-8a3e-884e47f611c1",
+      "xy_mm": [
+        84.8,
+        206.0
+      ],
+      "segment": 1,
+      "net": "/Vin",
+      "A": 6.793565268884759,
+      "W": 0.06426809714828605
+    },
+    {
+      "uuid": "287279a3-8286-40b3-8a3e-884e47f611c1",
+      "xy_mm": [
+        84.8,
+        206.0
+      ],
+      "segment": 0,
+      "net": "/Vin",
+      "A": 6.79356526885867,
+      "W": 0.01788905796897315
+    },
+    {
+      "uuid": "3fe02035-a68e-4590-a9e7-42de1cc4afe9",
+      "xy_mm": [
+        62.4,
+        196.4
+      ],
+      "segment": 1,
+      "net": "/BAT_FUSED",
+      "A": 5.82497778360034,
+      "W": 0.047248549845218264
+    },
+    {
+      "uuid": "3fe02035-a68e-4590-a9e7-42de1cc4afe9",
+      "xy_mm": [
+        62.4,
+        196.4
+      ],
+      "segment": 0,
+      "net": "/BAT_FUSED",
+      "A": 5.824977783195411,
+      "W": 0.013151658202510606
+    },
+    {
+      "uuid": "fa45d2ba-2055-472b-8786-4b34a824a430",
+      "xy_mm": [
+        61.2,
+        196.0
+      ],
+      "segment": 0,
+      "net": "/BAT_FUSED",
+      "A": 5.055067165716357,
+      "W": 0.00990480266973468
+    },
+    {
+      "uuid": "fa45d2ba-2055-472b-8786-4b34a824a430",
+      "xy_mm": [
+        61.2,
+        196.0
+      ],
+      "segment": 1,
+      "net": "/BAT_FUSED",
+      "A": 5.055067165518956,
+      "W": 0.035583920699601035
+    },
+    {
+      "uuid": "e5e07051-0353-4964-95ff-657fa89d0ccd",
+      "xy_mm": [
+        87.2,
+        205.2
+      ],
+      "segment": 0,
+      "net": "/Vin",
+      "A": 4.4364911725540885,
+      "W": 0.0076290631602423074
+    },
+    {
+      "uuid": "9aff48c9-c901-4a7e-bfce-b9347ce9d42d",
+      "xy_mm": [
+        91.2,
+        194.0
+      ],
+      "segment": 0,
+      "net": "/PGND",
+      "A": 4.411509765008017,
+      "W": 0.007543388176354731
+    },
+    {
+      "uuid": "9a5822d3-e79a-4c93-8504-f58c706dd81c",
+      "xy_mm": [
+        87.0,
+        207.0
+      ],
+      "segment": 1,
+      "net": "/Vin",
+      "A": 4.3447554120000245,
+      "W": 0.026286369162343382
+    },
+    {
+      "uuid": "9a5822d3-e79a-4c93-8504-f58c706dd81c",
+      "xy_mm": [
+        87.0,
+        207.0
+      ],
+      "segment": 0,
+      "net": "/Vin",
+      "A": 4.344755411903543,
+      "W": 0.007316824405688147
+    },
+    {
+      "uuid": "09e2c835-955d-48de-82a8-26f5d3a3b56c",
+      "xy_mm": [
+        90.4,
+        197.2
+      ],
+      "segment": 0,
+      "net": "/PGND",
+      "A": 4.255963628138719,
+      "W": 0.007020819091192292
+    },
+    {
+      "uuid": "3eb16568-638d-41af-aa57-0ba0d2e917ac",
+      "xy_mm": [
+        79.4,
+        196.15
+      ],
+      "segment": 0,
+      "net": "/PGND",
+      "A": 4.181302482967418,
+      "W": 0.006776651307655244
+    },
+    {
+      "uuid": "9bcfc552-6fac-4ca9-8b1d-98958d8f7552",
+      "xy_mm": [
+        87.0,
+        206.25
+      ],
+      "segment": 1,
+      "net": "/Vin",
+      "A": 4.032660063569931,
+      "W": 0.02264556526339069
+    },
+    {
+      "uuid": "9bcfc552-6fac-4ca9-8b1d-98958d8f7552",
+      "xy_mm": [
+        87.0,
+        206.25
+      ],
+      "segment": 0,
+      "net": "/Vin",
+      "A": 4.032660063526832,
+      "W": 0.00630340476390185
+    },
+    {
+      "uuid": "fc60288a-6937-40c1-a026-fe4a489979c2",
+      "xy_mm": [
+        88.8,
+        206.8
+      ],
+      "segment": 0,
+      "net": "/Vin",
+      "A": 3.876152501553217,
+      "W": 0.00582362870102277
+    },
+    {
+      "uuid": "b7f4eb7b-cbe5-4d32-aaf9-e0d64f283bf1",
+      "xy_mm": [
+        91.2,
+        192.4
+      ],
+      "segment": 0,
+      "net": "/PGND",
+      "A": 3.8648336649987676,
+      "W": 0.005789666952096092
+    }
+  ],
+  "combined_loop_resistance_ohm": 0.004454421824346603,
+  "solver_relative_residual": 7.173845560864551e-11,
+  "limitations": [
+    "DC 50 A ESC-only case; auxiliary branching changes distribution and needs separate load case",
+    "All copper at specified uniform temperature; no temperature-rise prediction",
+    "RDS hot multiplier is an engineering envelope, not guaranteed hot datasheet maximum",
+    "Ideal equipotential solder lands/device terminals/via annuli; solder and joint resistance excluded",
+    "Circular drill bores removed; fine raster convergence and via-contact approximation remain",
+    "Plating assumed, published average is not guaranteed minimum",
+    "Via segment lengths held at inherited stackup screening values; accepted fabrication stackup still needed",
+    "No fuse, harness, connector, regulator/BEC conversion loss or thermal coupling in this network"
+  ],
+  "qualification": false
+}

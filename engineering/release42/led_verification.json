@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "resistor_on_regulated_output": true,
+    "resistor_to_LED_anode": true,
+    "LED_cathode_grounded": true,
+    "current_limit_1k": true,
+    "LED_in_assembly": true
+  },
+  "board_sha256": "bba225e1480d85443def2e79173236150f8c53b37b45844f93623032e605ff5a",
+  "indicator": "5V ON; rail energized only, not precision power-good or whole-board self-test",
+  "estimated_current_mA_at_5V_with_assumed_2V_LED": 3.0,
+  "resistor_loss_mW_at_same_assumption": 9.0,
+  "exact_LED_MPN": "UNSELECTED; green 0805 assembly selection remains open",
+  "manufacturing_release": false
+}

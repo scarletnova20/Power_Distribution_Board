@@ -1,0 +1,436 @@
+{
+  "team_name": "Team_RotorFPV",
+  "reference_height_mm": 0.8,
+  "stroke_mm": 0.16,
+  "maximum_silk_reference_distance_mm": 4.5,
+  "references": [
+    {
+      "reference": "Q2",
+      "x_mm": 63.6,
+      "y_mm": 207.55,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "U3",
+      "x_mm": 82.65,
+      "y_mm": 217.3,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C18",
+      "x_mm": 81.75,
+      "y_mm": 225.25,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "Q1",
+      "x_mm": 65.85,
+      "y_mm": 197.2,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "H1",
+      "x_mm": 62.55,
+      "y_mm": 196.9,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "D1",
+      "x_mm": 78.45,
+      "y_mm": 198.55,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "Q3",
+      "x_mm": 63.6,
+      "y_mm": 214.6,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C3",
+      "x_mm": 96.75,
+      "y_mm": 215.5,
+      "angle_deg": 90,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "RL1",
+      "x_mm": 85.5,
+      "y_mm": 218.8,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "H2",
+      "x_mm": 97.5,
+      "y_mm": 196.9,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R3",
+      "x_mm": 83.85,
+      "y_mm": 202.3,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R7",
+      "x_mm": 91.2,
+      "y_mm": 209.35,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "U2",
+      "x_mm": 72.15,
+      "y_mm": 225.7,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "TP3",
+      "x_mm": 90.0,
+      "y_mm": 215.95,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C1",
+      "x_mm": 88.8,
+      "y_mm": 206.5,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C12",
+      "x_mm": 94.05,
+      "y_mm": 208.75,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C9",
+      "x_mm": 66.0,
+      "y_mm": 221.8,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "R16",
+      "x_mm": 73.35,
+      "y_mm": 215.2,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C11",
+      "x_mm": 88.5,
+      "y_mm": 214.75,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "H3",
+      "x_mm": 62.25,
+      "y_mm": 223.15,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C15",
+      "x_mm": 85.35,
+      "y_mm": 211.6,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C20",
+      "x_mm": 73.8,
+      "y_mm": 209.2,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R17",
+      "x_mm": 73.35,
+      "y_mm": 213.4,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R5",
+      "x_mm": 99.3,
+      "y_mm": 215.2,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C16",
+      "x_mm": 84.3,
+      "y_mm": 209.8,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R13",
+      "x_mm": 76.65,
+      "y_mm": 229.45,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "U1",
+      "x_mm": 85.5,
+      "y_mm": 214.75,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C10",
+      "x_mm": 82.95,
+      "y_mm": 218.5,
+      "angle_deg": 90,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "J10",
+      "x_mm": 94.95,
+      "y_mm": 205.0,
+      "angle_deg": 90,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "NT3",
+      "x_mm": 83.7,
+      "y_mm": 204.55,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C5",
+      "x_mm": 91.95,
+      "y_mm": 206.2,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "R4",
+      "x_mm": 89.7,
+      "y_mm": 216.55,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C4",
+      "x_mm": 91.95,
+      "y_mm": 202.75,
+      "angle_deg": 90,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "R12",
+      "x_mm": 61.35,
+      "y_mm": 203.05,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "J11",
+      "x_mm": 94.35,
+      "y_mm": 220.9,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "R15",
+      "x_mm": 73.8,
+      "y_mm": 211.6,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R2",
+      "x_mm": 94.95,
+      "y_mm": 200.5,
+      "angle_deg": 90,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "U4",
+      "x_mm": 81.45,
+      "y_mm": 227.65,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R19",
+      "x_mm": 61.35,
+      "y_mm": 208.9,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C6",
+      "x_mm": 84.9,
+      "y_mm": 216.7,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C19",
+      "x_mm": 79.5,
+      "y_mm": 229.6,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R8",
+      "x_mm": 94.05,
+      "y_mm": 218.95,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "Q4",
+      "x_mm": 68.85,
+      "y_mm": 225.7,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R14",
+      "x_mm": 61.95,
+      "y_mm": 198.85,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R21",
+      "x_mm": 62.4,
+      "y_mm": 220.75,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "C7",
+      "x_mm": 80.55,
+      "y_mm": 209.95,
+      "angle_deg": 90,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "J8",
+      "x_mm": 99.0,
+      "y_mm": 214.6,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "TP2",
+      "x_mm": 60.75,
+      "y_mm": 213.55,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "J7",
+      "x_mm": 94.2,
+      "y_mm": 221.2,
+      "angle_deg": 0,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "D3",
+      "x_mm": 72.0,
+      "y_mm": 227.65,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "R1",
+      "x_mm": 91.05,
+      "y_mm": 198.85,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "NT1",
+      "x_mm": 87.3,
+      "y_mm": 216.55,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "BEC1",
+      "x_mm": 72.75,
+      "y_mm": 194.95,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C8",
+      "x_mm": 81.45,
+      "y_mm": 196.45,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "C2",
+      "x_mm": 86.55,
+      "y_mm": 195.7,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "R20",
+      "x_mm": 61.35,
+      "y_mm": 217.0,
+      "angle_deg": 90,
+      "side": "F.Silkscreen"
+    },
+    {
+      "reference": "J4",
+      "x_mm": 66.0,
+      "y_mm": 205.9,
+      "angle_deg": 90,
+      "side": "B.Silkscreen"
+    },
+    {
+      "reference": "J3",
+      "x_mm": 87.3,
+      "y_mm": 190.0,
+      "angle_deg": 0,
+      "side": "B.Silkscreen"
+    }
+  ],
+  "assembly_only_references": [
+    "C13",
+    "C14",
+    "C17",
+    "C21",
+    "D2",
+    "H4",
+    "J1",
+    "J12",
+    "J2",
+    "J5",
+    "J6",
+    "L1",
+    "NT2",
+    "R10",
+    "R11",
+    "R18",
+    "R6",
+    "R9",
+    "TP1",
+    "U5"
+  ]
+}

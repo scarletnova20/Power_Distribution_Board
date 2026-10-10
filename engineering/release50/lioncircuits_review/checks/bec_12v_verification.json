@@ -1,0 +1,20 @@
+{
+  "board_sha256": "c9c3f9b4b2eaea11e62d7a06adaa5d6bd7cebcf41989441f326c62a01ae33d8d",
+  "schematic_sha256": "2de4e2f3ab637efa632e02aa7f5b397b02a7ac9873eb71ee6ed84d99edd869bd",
+  "net_renames": {
+    "/9V_Servo": "/12V_Servo",
+    "/9V_DJI": "/12V_DJI"
+  },
+  "full_connectivity_preserved": true,
+  "five_volt_branches_unchanged": true,
+  "12V_servo_pins": [
+    "J4.3",
+    "J8.2"
+  ],
+  "12V_DJI_pins": [
+    "J10.3",
+    "J11.1"
+  ],
+  "architecture": "External BEC modules retained; this PCB does not set their output voltage",
+  "load_compatibility": "Exact BEC/load models and output currents remain unspecified"
+}

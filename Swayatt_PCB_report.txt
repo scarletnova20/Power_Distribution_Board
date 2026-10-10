@@ -1,0 +1,56 @@
+PCB statistics report
+=====================
+- Date: 07-09-2026 22:26:10
+- Project: Swayatt_PCB
+- Board name: Swayatt_PCB
+
+Board
+-----
+- Width: 40.0000 mm
+- Height: 40.0000 mm
+- Area: 1600.00 mm²
+- Front copper area: 1601.908 mm²
+- Back copper area: 1442.545 mm²
+- Min track clearance: 0.2000 mm
+- Min track width: 0.2000 mm
+- Min drill diameter: 0.3000 mm
+- Board stackup thickness: 1.6000 mm
+
+- Front footprint area: 925.303 mm²
+- Back footprint area: 1038.744 mm²
+- Front component density: 57.83 %
+- Back component density: 64.92 %
+Pads
+----
+- Through hole: 14
+- SMD: 281
+- Connector: 0
+- NPTH: 0
+- Castellated: 0
+- Press-fit: 0
+
+Vias
+----
+- Through vias: 366
+- Blind vias: 0
+- Buried vias: 0
+- Micro vias: 0
+
+Components
+----------
+
+|              | Front Side | Back Side | Total |
+|--------------|------------|-----------|-------|
+|THT:          |          5 |         0 |     5 |
+|SMD:          |         36 |        27 |    63 |
+|Unspecified:  |          5 |         1 |     6 |
+|Total:        |         46 |        28 |    74 |
+
+Drill holes
+-----------
+
+| Count | Shape |    X Size |    Y Size | Plated | Via/Pad | Start Layer | Stop Layer |
+|-------|-------|-----------|-----------|--------|---------|-------------|------------|
+|   366 | Round | 0.3000 mm | 0.3000 mm |    PTH |     Via |        F.Cu |       B.Cu |
+|    12 | Round | 1.0000 mm | 1.0000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
+|     2 | Round | 0.8000 mm | 0.8000 mm |    PTH |     Pad |        F.Cu |       B.Cu |

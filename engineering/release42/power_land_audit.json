@@ -1,0 +1,92 @@
+{
+  "board_sha256": "0718fcf4ad4816b4e065f5e90765419605ba5d6a86b6edd38c2f94c208bd1287",
+  "main_lands": {
+    "J1.1": {
+      "net": "/BAT_FUSED",
+      "vias_fully_inside_6mm_land": 5,
+      "uuids": [
+        "0c96fd1e-29ca-4ff7-8e21-86c36b59dc49",
+        "12b513e4-dcd8-4ec5-b678-636a127eeac9",
+        "380d6726-b66e-4abd-acd5-8579b523ecad",
+        "76341a39-9011-47cb-b448-635de78167ce",
+        "a2a84c6f-3464-4dbc-b334-d6690e6c0336"
+      ]
+    },
+    "J1.2": {
+      "net": "/PGND",
+      "vias_fully_inside_6mm_land": 34,
+      "uuids": [
+        "0517c496-8426-4912-8973-f03e16a889ff",
+        "0565287a-940e-4538-8ef8-355c3a9ab166",
+        "076478c5-31a4-4355-b3d0-c770a5721016",
+        "139068c0-dd6b-44ec-b001-fd24629b3c5d",
+        "14e03c1e-9308-487f-b2cb-258a4938ef7b",
+        "274e4a8e-d161-46cb-8491-323ecc942efc",
+        "32d9cf4a-c288-4078-a37b-f2ab8ea6e38c",
+        "38e221af-9410-4850-b7d0-5a697317255b",
+        "3eb16568-638d-41af-aa57-0ba0d2e917ac",
+        "42e3cf1b-a4e2-4e0c-a2cf-812634c9036f",
+        "4db64cbe-57d3-47a0-9ced-9f2afdc2ac55",
+        "5337fec9-e741-4986-bb96-9a69f9b2a5b3",
+        "53582fb3-6c1a-4445-9cea-3c76b6d44d08",
+        "59a2d444-282a-497f-8635-a3d9bcdb8d10",
+        "5aa01169-89b5-49b8-b3ed-15a9a0232cfc",
+        "5bd4879b-984c-46ff-ab18-fde88dcceda2",
+        "787d2210-27ae-451b-a80c-d7efc1d181f5",
+        "873fb827-da14-4450-8574-16c6f6a93387",
+        "87f064ae-47ec-4ba1-9a97-04afd0b96dcf",
+        "8c095f42-e2dc-4c6c-9eae-cbfc15c03ca5",
+        "8d436f52-937c-499c-b060-2fffda6c453c",
+        "9bd5ae9d-532f-41e2-861d-5c392cea8ba8",
+        "9f9b3f57-2a94-4c62-aa81-9a99a2b876df",
+        "a94f698e-b349-464b-be9e-69edef850522",
+        "ac8fb73f-4b5f-4bf7-aa16-1465d79217be",
+        "b185fb7f-032f-41c9-97ce-c348971ee083",
+        "b4bad7ea-9571-4322-b03d-3c3d34f63021",
+        "c749e010-74e2-402b-b7e2-8056c4ca5608",
+        "d0ae65d1-81ba-4324-997e-ff607ede4495",
+        "dfaa07e3-e0d2-4f32-8ebf-2a13fd663e65",
+        "e3b8641d-4a6e-4b55-a211-78a77fb0c4d0",
+        "ee79b5ab-b407-4c91-9873-0ab42fffb67a",
+        "f0ac592f-b459-40cb-bcee-68824da744ab",
+        "f1dfae65-d794-4f71-a657-baa134ce2054"
+      ]
+    },
+    "J12.1": {
+      "net": "/Vin",
+      "vias_fully_inside_6mm_land": 15,
+      "uuids": [
+        "04f52883-1574-47f2-b13e-e4a226514f35",
+        "0d1f8869-88b8-4ac0-982f-a188d242d7ba",
+        "31a4cb2f-9c24-47e4-b05f-80f0314cde01",
+        "3bb29703-d2ba-40db-a6b0-7ccf2b28d570",
+        "40c4165d-8ffa-4bfd-be28-ea8a7742dfa8",
+        "58947297-cf94-42ef-ac32-5d23c37813a8",
+        "6ff601d5-3a0f-41c9-9bc4-5fa25abae810",
+        "835bb43c-fa0d-4d74-8a3f-7a7825a57c4b",
+        "96beaa88-5cde-4e75-aba5-550253b7d440",
+        "9a02edba-458d-4ace-9b67-0c346ad747e1",
+        "9bf3b893-9c7e-4664-819b-b85ac66d9c2c",
+        "ab556350-1ea6-4a04-b2d4-2144992c26c1",
+        "b89c4d0f-2eb6-4e02-a03c-724e65f26cb6",
+        "c504062f-920f-4f97-a0eb-e6cf9463efce",
+        "cc433649-e817-4273-bc86-902dd0c6baca"
+      ]
+    },
+    "J12.2": {
+      "net": "/PGND",
+      "vias_fully_inside_6mm_land": 6,
+      "uuids": [
+        "6ea9b8c3-f3dc-46ca-8144-a0b2ec14b14e",
+        "85e43d36-e766-4598-92cf-35153ae147d1",
+        "9aff48c9-c901-4a7e-bfce-b9347ce9d42d",
+        "b570208a-01f4-437f-b73a-40083619f67f",
+        "b7f4eb7b-cbe5-4d32-aaf9-e0d64f283bf1",
+        "c99735f1-f79d-4585-9ac5-e638510b1aaf"
+      ]
+    }
+  },
+  "missing_intended_vias": [],
+  "incorrect_net_assignments": [],
+  "scope": "Geometry/net audit only. Does not certify ampacity, plating, solder fill, current sharing or temperature."
+}

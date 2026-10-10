@@ -1,0 +1,86 @@
+{
+  "current_requirement_A": 50,
+  "ambient_C": 50,
+  "MOSFET_cases": [
+    {
+      "gate_V": 10,
+      "datasheet_max_RDS_25C_ohm": 0.0027,
+      "hot_multiplier_ASSUMED": 2,
+      "hot_RDS_ohm_ASSUMED": 0.0054,
+      "equal_share_bank_loss_W": 3.375,
+      "equal_share_each_loss_W": 0.84375,
+      "required_shared_sink_RthSA_C_per_W": 16.22222222222222,
+      "thermal_assumptions": "125C junction target, top RthJC max20C/W, assumed TIM4C/W/device, MOSFET-only shared sink; no cross-heating"
+    },
+    {
+      "gate_V": 8,
+      "datasheet_max_RDS_25C_ohm": 0.0032,
+      "hot_multiplier_ASSUMED": 2,
+      "hot_RDS_ohm_ASSUMED": 0.0064,
+      "equal_share_bank_loss_W": 4.0,
+      "equal_share_each_loss_W": 1.0,
+      "required_shared_sink_RthSA_C_per_W": 12.75,
+      "thermal_assumptions": "125C junction target, top RthJC max20C/W, assumed TIM4C/W/device, MOSFET-only shared sink; no cross-heating"
+    }
+  ],
+  "telemetry": {
+    "shunt_ohm_nominal": 0.00025,
+    "shunt_voltage_V_at_50A": 0.0125,
+    "shunt_max_ohm_at_125C_from_1pct_400ppm": 0.00026260000000000004,
+    "shunt_loss_W_hot_bound": 0.6565000000000001,
+    "analog_V_per_A_nominal": 0.025,
+    "analog_V_at_50A": 1.25,
+    "INA169_offset_A_equivalent_1mV": 4.0,
+    "INA169_note": "1mV max offset at specified datasheet conditions equals 4A; max hot offset not guaranteed by typical drift",
+    "INA169_25C_50A_error_A_screen": 5.55,
+    "INA169_error_scope": "Linear sum: offset, 1% transconductance, assumed1% RL1,1% shunt,0.1% nonlinearity; excludes layout,temperature,ADC and common-mode error",
+    "INA228_50A_25C_error_A_screen": 0.529,
+    "INA228_error_scope": "1uV offset +0.05% gain +1% shunt; excludes Kelvin/temperature/bus layout/calibration",
+    "INA228_125C_error_A_screen": 2.653,
+    "INA228_hot_error_scope": "2uV offset including drift,0.05% gain+20ppm/C*100C,shunt1% plus400ppm/C*100C; not complete assembled accuracy",
+    "INA228_fullscale_A_low_range": 163.84,
+    "INA228_fullscale_A_high_range": 655.36,
+    "INA228_filter_differential_Hz": 79577.47154594767,
+    "voltage_testpoint_scale_Vbattery_per_Vtest": 19.181818181818183,
+    "voltage_testpoint_at_16_8V": 0.8758293838862559,
+    "divider_1pct_output_range_V": [
+      0.8593733853163606,
+      0.8925828511309837
+    ],
+    "voltage_filter_tau_s": 0.00010426540284360189,
+    "voltage_filter_Hz": 1526.4405905631781,
+    "R8_loss_W_at_16_8V": 0.01267896049055502,
+    "ADC_connection": "TP3 only; J2 is I2C, no analog ADC connected; external ADC reference/input clamp unselected",
+    "ADC_protection": "Divider and C15 filtering present; no dedicated clamp/window guarantee; cannot qualify an unspecified ADC"
+  },
+  "transients_and_fuse": {
+    "known_nominal_input_capacitance_F": 5.14e-05,
+    "known_cap_energy_J_at_16_8V": 0.007253568000000001,
+    "ESC_supplied_capacitance_F_published": 0.00047,
+    "ESC_cap_energy_J_nominal": 0.06632640000000001,
+    "energy_with_known_nominal_caps_J": 0.073579968,
+    "scope": "Published supplied ESC capacitor is not verified fitted hardware; excludes onboard ESC/BEC input caps, bias effects, tolerance and startup loads",
+    "energy_per_added_mF_J": 0.14112000000000002,
+    "peak_current_A": null,
+    "lead_inductance_H": null,
+    "surge_voltage_V": null,
+    "TVS_qualification": false,
+    "fuse_MPN": null,
+    "holder_MPN": null,
+    "energy_per_uH_at_50A_J": 0.0012499999999999998,
+    "inrush_equations": "I=C*dV/dt; initial RC current=16.8/R_total; lead overshoot=L*dI/dt; energy=0.5*C*V^2",
+    "fuse_rule": "Rated current after actual temperature/holder derating must carry50A; time-current and I2t must clear before harness/PCB damage, interrupt rating >= verified fault current",
+    "external_series_loss_W_per_milliohm_at_50A": 2.5,
+    "missing_losses": [
+      "fuse",
+      "holder",
+      "main connectors",
+      "wires",
+      "solder contacts",
+      "BEC conversion"
+    ]
+  },
+  "battery_15min_soak_Ah": 12.5,
+  "ideal_pack_runtime_min_at_50A": 10.08,
+  "production_qualified": false
+}

@@ -1,0 +1,32 @@
+PDB_50A — LIONCIRCUITS FEASIBILITY SUBMISSION
+2026-09-11: User confirms this PCB has not yet been uploaded to LionCircuits.
+
+1. Use PDB_50A_LionCircuits_GERBERS_REVIEW_ONLY.zip for a Gerber review/upload.
+   It contains four copper layers, both solder masks, both legends, the board
+   outline and separate plated/non-plated drill files. This is not an approved
+   production release. A viewer rendering successfully is not DFM acceptance.
+
+2. Provide PDB_50A_LionCircuits_REVIEW_HOLD.zip to their engineering reviewer.
+   It adds native source, via-fill schedule, manufacturing requirements,
+   measured feature inventory, DRC findings, BOM review and design record.
+   The Gerber-only ZIP cannot communicate all the required process details.
+
+3. Use SUPPLIER_REVIEW_REQUEST.txt as the accompanying feasibility request.
+   Request Custom, four layers, 42 x 42 mm, nominal 1.6 mm, 2 oz ALL layers,
+   ENIG, green mask and white two-sided legend. All 343 vias need resin fill,
+   planarization and copper capping on both sides. Keep component and mounting
+   holes open. Exact stackup and minimum finished copper/barrel plating are
+   subject to their written proposal.
+
+4. Explicitly disclose 0.20 mm traces, historical 0.16 mm minimum clearances,
+   0.20 mm fine-pitch pad gaps, and 0.30 mm via drills with 0.50/0.60 mm lands.
+   Their published 2 oz 0.254 mm trace/space and 0.1524 mm annulus rules fail
+   this artwork. Ask whether a qualified custom process can accept these
+   features. Otherwise request the viable rule deck and stackup for redesign.
+
+5. Save the written response and proposed CAM/stackup in this directory for
+   engineering review. Do not treat a price quote as technical acceptance.
+   Production release requires closing the process conflicts and rechecking
+   the final native board and corresponding exports.
+
+No upload, message, order or payment has been made by the assistant.

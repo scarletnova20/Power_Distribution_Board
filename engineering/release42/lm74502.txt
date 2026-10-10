@@ -1,0 +1,2083 @@
+
+PAGE 1
+LM74502, LM74502H Low IQ High Side Switch Controller with Reverse Polarity and 
+Overvoltage Protection
+1 Features
+•
+3.2-V to 65-V input range (3.9-V start-up)
+•
+–65-V input reverse voltage rating
+•
+Integrated charge pump to drive
+–
+External back-to-back N-Channel MOSFETs
+–
+External high side switch MOSFET
+–
+External reverse polarity protection MOSFET
+•
+Gate drive variants
+–
+LM74502: 60-μA peak gate drive source 
+capacity
+–
+LM74502H: 11-mA peak gate drive source 
+capacity
+•
+2.3-A peak gate sink current capacity
+•
+Enable pin feature
+•
+45-µA typical operating quiescent current (EN/
+UVLO = High)
+•
+1-µA shutdown current (EN/UVLO = Low)
+•
+Adjustable overvoltage and undervoltage 
+protection
+•
+–40°C to +125°C ambient operating temperature 
+range
+•
+Available in 8-pin SOT-23 package 2.90 mm × 
+1.60 mm
+2 Applications
+•
+Factory automation and control – PLC digital 
+output modules
+•
+Industrial motor drives
+•
+Industrial transport
+•
+Power supply reverse polarity protection
+3 Description
+The LM74502, LM74502H is a controller which 
+operates in conjunction with an external back-to-back 
+connected N-channel MOSFETs to realize a low 
+loss reverse polarity protection and load disconnect 
+solution. The device can also be configured to drive 
+high side MOSFET as a load switch with overvoltage 
+protection . The wide supply input range of 3.2 V 
+to 65 V allows control of many popular DC bus 
+voltages such as 12-V, 24-V and 48-V input systems. 
+The device can withstand and protect the loads 
+from negative supply voltages down to –65 V. The 
+LM74502, LM74502H does not have reverse current 
+blocking and is suitable for input reverse polarity 
+protection only.
+The LM74502 controller provides a charge pump 
+gate drive for an external N-channel MOSFET. with 
+the enable pin low, the controller is off and draws 
+approximately 1 µA of current, thus offering low 
+system current when put into sleep mode. LM74502 
+and LM74502H offers programmable overvoltage and 
+undervoltage protection which cuts off the load from 
+the input source in case of these fault events. The 
+devices are available in a 2.9 mm × 1.6 mm 8-pin 
+DDF package and are specified over a –40°C to 
++125°C temperature range.
+Device Information(1) 
+PART NUMBER
+PACKAGE
+BODY SIZE (NOM)
+LM74502
+SOT-23 (8)
+2.90 mm × 1.60 mm
+LM74502H
+(1)
+For all available packages, see the orderable addendum at 
+the end of the data sheet.
+GND
+GATE
+SRC
+EN / UVLO
+ON
+OFF
+LM74502
+COUT
+VCAP
+CVCAP
+VS
+OV
+VIN
+CIN
+R2 
+R1 
+VOUT
+LM74502 Typical Application Schematic
+GND
+GATE
+SRC
+EN/UVLO
+ON OFF
+LM74502
+COUT
+VCAP
+CVCAP
+VIN
+CIN
+VS
+OV
+R2 
+R1 
+VOUT
+Q1
+LM74502 as a Load Switch Controller with 
+Overvoltage Protection
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+PAGE 2
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Revision History.............................................................. 2
+5 Pin Configuration and Functions...................................3
+6 Specifications.................................................................. 4
+6.1 Absolute Maximum Ratings........................................ 4
+6.2 ESD Ratings............................................................... 4
+6.3 Recommended Operating Conditions.........................4
+6.4 Thermal Information....................................................5
+6.5 Electrical Characteristics.............................................5
+6.6 Switching Characteristics............................................6
+6.7 Typical Characteristics................................................7
+7 Parameter Measurement Information............................9
+8 Detailed Description......................................................10
+8.1 Overview...................................................................10
+8.2 Functional Block Diagram.........................................10
+8.3 Feature Description...................................................10
+8.4 Device Functional Modes..........................................13
+9 Application and Implementation..................................14
+9.1 Application Information............................................. 14
+9.2 Typical Application.................................................... 14
+9.3 Input Surge Stopper Using LM74502, LM74502H....17
+9.4 Fast Turn-On and Turn-Off High Side Switch 
+Driver Using LM74502H..............................................18
+10 Power Supply Recommendations..............................19
+11 Layout...........................................................................19
+11.1 Layout Guidelines................................................... 19
+11.2 Layout Example...................................................... 20
+12 Device and Documentation Support..........................21
+12.1 Receiving Notification of Documentation Updates..21
+12.2 Support Resources................................................. 21
+12.3 Trademarks.............................................................21
+12.4 Electrostatic Discharge Caution..............................21
+12.5 Glossary..................................................................21
+13 Mechanical, Packaging, and Orderable 
+Information.................................................................... 22
+4 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision * (December 2021) to Revision A (May 2022)
+Page
+•
+Removed the product preview note from LM74502H throughout the document................................................ 1
+•
+Updated document title.......................................................................................................................................1
+•
+Added LM74502H to the Pin Configuration and Functions section.................................................................... 3
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+2
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 3
+5 Pin Configuration and Functions
+4
+2
+7
+3
+5
+1
+6
+8
+N.C
+VS
+GATE
+VCAP
+SRC
+EN/UVLO
+GND
+OV
+Figure 5-1. DDF Package 8-Pin SOT-23 LM74502, LM74502H Top View 
+Table 5-1. LM74502, LM74502H Pin Functions
+PIN
+I/O(1)
+DESCRIPTION
+NO.
+NAME
+1
+EN/UVLO
+I
+EN/UVLO Input. Connect to VS pin for always ON operation. Can be driven externally from 
+a micro controller I/O. Pulling the pin low below V(ENF) makes the device enter into low 
+Iq shutdown mode. For UVLO, connect an external resistor ladder from input supply to EN/
+UVLO to ground.
+2
+GND
+G
+Ground pin
+3
+N.C
+—
+No connection
+4
+VCAP
+O
+Charge pump output. Connect to external charge pump capacitor.
+5
+VS
+I
+Input power supply pin to the controller. Connect a 100-nF capacitor across VS and GND 
+pins.
+6
+GATE
+O
+Gate drive output. Connect to gate of the external N-channel MOSFET.
+7
+OV
+I
+Adjustable overvoltage threshold input. Connect a resistor ladder from input supply to OV 
+pin to ground. When the voltage at OV pin exceeds the overvoltage cutoff threshold then the 
+GATE is pulled low. GATE turns ON when the OV pin voltage goes below the OVP falling 
+threshold. Connect OV pin to ground when OV feature is not used.
+8
+SRC
+I
+Source pin. Connect to common source point of external back-to-back connected N-channel 
+MOSFETs or the source pin of the high side switch MOSFET.
+(1)
+I = Input, O = Output, G = GND
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+3
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 4
+6 Specifications
+6.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted)(1)
+MIN
+MAX
+UNIT
+Input Pins
+VS to GND
+–65
+65
+V
+EN/UVLO, OV to GND, V(VS) > 0 V
+–0.3
+65
+V
+EN/UVLO, OV, V(VS) ≤ 0 V
+V(VS)
+(65 + V(VS))
+SRC to GND, V(VS) ≤ 0 V
+(V(VS) + 0.3)
+V
+SRC to GND, V(VS) > 0 V
+–(70 – V(VS))
+V(VS) 
+V
+Output Pins
+GATE to SRC
+0
+15
+V
+VCAP to VS
+–0.3
+15
+V
+Operating junction temperature(2)
+–40
+150
+°C
+Storage temperature, Tstg
+–40
+150
+°C
+(1)
+Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply 
+functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions. 
+If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully 
+functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+(2)
+High junction temperatures degrade operating lifetimes. Operating lifetime is de-rated for junction temperatures greater than 125°C.
+6.2 ESD Ratings
+VALUE
+UNIT
+V(ESD)
+Electrostatic discharge
+Human body model (HBM), per ANSI/ESDA/JEDEC JS-001, all 
+pins(1)
+±2000
+V
+Charged device model (CDM), per ANSI/ESDA/JEDEC JS-002, 
+all pins(2)
+±750
+(1)
+JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)
+JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+6.3 Recommended Operating Conditions
+over operating free-air temperature range (unless otherwise noted)(1)
+MIN
+NOM
+MAX
+UNIT
+Input Pins
+VS to GND
+–60
+60
+V
+EN/UVLO, OV, SRC to GND
+–60
+60
+External 
+capacitance
+VS
+22
+nF
+VCAP to VS
+0.1
+µF
+External 
+MOSFET max 
+VGS rating
+GATE to SRC
+15
+V
+TJ
+Operating junction temperature range(2)
+–40
+150
+°C
+(1)
+Recommended Operating Conditions are conditions under which the device is intended to be functional. For specifications and test
+conditions, see electrical characteristics
+(2)
+High junction temperatures degrade operating lifetimes. Operating lifetime is de-rated for junction temperatures greater than 125°C.
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+4
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 5
+6.4 Thermal Information
+THERMAL METRIC(1)
+LM74502
+LM74502H
+UNIT
+DDF (SOT)
+8 PINS
+RθJA 
+Junction-to-ambient thermal resistance
+133.8
+°C/W
+RθJC(top)
+Junction-to-case (top) thermal resistance
+72.6
+°C/W
+RθJB
+Junction-to-board thermal resistance
+54.5
+°C/W
+ΨJT
+Junction-to-top characterization parameter
+4.6
+°C/W
+ΨJB
+Junction-to-board characterization parameter
+54.2
+°C/W
+(1)
+For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application 
+report, SPRA953.
+6.5 Electrical Characteristics
+TJ = –40°C to +125°C; typical values at TJ = 25°C, V(VS) = 12 V, C(VCAP) = 0.1 µF, V(EN/UVLO) = 3.3 V, over operating free-air 
+temperature range (unless otherwise noted)
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+VS SUPPLY VOLTAGE
+V(VS)
+Operating input voltage
+4
+60
+V
+V (VS_POR)
+VS POR Rising threshold
+3.9
+V
+VS POR Falling threshold
+2.2
+2.8
+3.1
+V
+V(VS POR(Hys))
+VS POR Hysteresis
+0.44
+0.67
+V
+I(SHDN)
+Shutdown Supply Current
+V(EN/UVLO) = 0 V
+0.9
+1.5
+µA
+I(Q)
+Operating Quiescent Current
+IGND
+45
+65
+µA
+I(REV)
+VS pin leakage current during input 
+reverse polarity
+0 V ≤ V(VS) ≤ – 65 V
+100
+150
+µA
+ENABLE INPUT
+V(EN_UVLOF)
+Enable/UVLO falling threshold
+1.027
+1.14
+1.235
+V
+V(EN_UVLOR)
+Enable/UVLO rising threshold
+1.16
+1.24
+1.32
+V(ENF)
+Enable threshold voltage for low IQ 
+shutdown
+0.32
+0.64
+0.94
+V
+V(EN_Hys)
+Enable Hysteresis
+38
+90
+132
+mV
+I(EN/UVLO)
+Enable sink current
+V(EN/UVLO) = 12 V
+3
+5
+µA
+GATE DRIVE
+I(GATE)
+Peak source current
+V(GATE) – V(SRC) = 5 V
+40
+60
+77
+µA
+I(GATE)
+Peak source current
+V(GATE) – V(SRC) = 5 V, LM74502H
+3
+11
+mA
+Peak sink current
+EN= High to Low
+V(GATE) – V(SRC) = 5 V
+2370
+mA
+RDSON
+discharge switch RDSON
+EN = High to Low
+V(GATE) – V(SRC) = 100 mV
+0.4
+2
+Ω
+CHARGE PUMP
+I(VCAP)
+Charge Pump source current (Charge 
+pump on)
+V(VCAP) – V(VS) = 7 V
+162
+300
+600
+µA
+Charge Pump sink current (Charge 
+pump off)
+V(VCAP) – V(VS) = 14 V
+5
+10
+µA
+V(VCAP) – V(VS)
+Charge pump voltage at V(VS) = 3.2 V
+I(VCAP) ≤ 30 µA
+8
+V
+V(VCAP) – V(VS)
+Charge pump turn on voltage
+10.3
+11.6
+13
+V
+V(VCAP) – V(VS)
+Charge pump turn off voltage
+11
+12.4
+13.9
+V
+V(VCAP) – V(VS)
+Charge Pump Enable comparator 
+Hysteresis
+0.45
+0.8
+1.25
+V
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+5
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 6
+6.5 Electrical Characteristics (continued)
+TJ = –40°C to +125°C; typical values at TJ = 25°C, V(VS) = 12 V, C(VCAP) = 0.1 µF, V(EN/UVLO) = 3.3 V, over operating free-air 
+temperature range (unless otherwise noted)
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+V(VCAP UVLO)
+V(VCAP) – V(S)  UV release at rising 
+edge
+5.7
+6.5
+7.5
+V
+V(VCAP UVLO)
+V(VCAP) – V(S) UV threshold at falling 
+edge
+5.05
+5.4
+6.2
+V
+OVERVOLTAGE PROTECTION
+V(OVR)
+Overvoltage threshold input, rising
+1.165
+1.25
+1.333
+V
+V(OVF)
+Overvoltage threshold input, falling
+1.063
+1.143
+1.222
+V
+V(OV_Hys)
+OV Hysteresis
+100
+mV
+I(OV)
+OV Input leakage current
+0 V < V(OV) < 5 V
+12
+50
+110
+nA
+6.6 Switching Characteristics
+TJ = –40°C to +125°C; typical values at TJ = 25°C, V(VS) = 12 V, CIN = C(VCAP) = COUT = 0.1 µF, V(EN/UVLO) = 3.3 V, over 
+operating free-air temperature range (unless otherwise noted)
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+ENTDLY
+EN high to Gate Turn On delay
+V(VCAP) > V(VCAP UVLOR), V(EN/UVLO) > 
+V(EN_UVLOR) to V(GATE-SRC) > 5 V, C(GATE-
+SRC) = 4.7 nF LM74502H
+75
+110
+µs
+tUVLO_OFF(deg
+)_GATE
+GATE Turnoff delay during EN/UVLO
+V(EN/UVLO) ↓ to V(GATE-SRC) < 1 V, C(GATE-
+SRC) = 4.7 nF
+2
+µs
+tOVP_OFF(deg)_
+GATE
+GATE Turnoff delay  during OV
+V(OV) ↑ to V(GATE-SRC) < 1 V, C(GATE-SRC) 
+= 4.7 nF
+0.6
+1
+µs
+tOVP_ON(deg)_G
+ATE
+GATE Turnon delay during OV
+V(OV) ↓ to V(GATE-SRC) > 5 V, C(GATE-SRC) 
+= 4.7 nF
+LM74502H
+5
+10
+µs
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+6
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 7
+6.7 Typical Characteristics
+VS (V)
+Shutdown Current (A)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+0
+1.4
+2.8
+4.2
+5.6
+7
+–40C
+25C
+85C
+125C
+150C
+Figure 6-1. Shutdown Supply Current vs Supply Voltage
+VS (V)
+Quiescent Current (A)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+0
+30
+60
+90
+120
+150
+180
+210
+240
+270
+300
+330
+360
+390
+420
+–40C
+25C
+85C
+125C
+150C
+Figure 6-2. Operating Quiescent Current vs Supply Voltage
+VS (V)
+Charge Pump Current (A)
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+60
+90
+120
+150
+180
+210
+240
+270
+300
+330
+360
+390
+–40C
+25C
+85C
+125C
+150C
+Figure 6-3. Charge Pump Current vs Supply Voltage at VCAP = 6 
+V
+VCAP (V)
+Charge Pump Current (A)
+0
+2
+4
+6
+8
+10
+12
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+–40C
+25C
+85C
+125C
+150C
+Figure 6-4. Charge Pump V-I Characteristics at VS > = 12 V
+VCAP (V)
+Charge Pump Current (A)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+–40C
+25C
+85C
+125C
+150C
+Figure 6-5. Charge Pump V-I Characteristics at VS = 3.2 V
+Free-Air Temperature (C)
+EN/UVLO Threshold (V)
+-40
+0
+40
+80
+120
+160
+1
+1.07
+1.14
+1.21
+1.28
+1.35
+Enable/UVLO rising
+Enable/UVLO falling
+Figure 6-6. EN/UVLO Rising and Falling threshold vs 
+Temperature
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+7
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 8
+6.7 Typical Characteristics (continued)
+Free-Air Temperature (C)
+EN to GATE Turn ON Delay (s)
+-40
+0
+40
+80
+120
+160
+60
+65
+70
+75
+80
+85
+Figure 6-7. Enable to Gate Delay vs Temperature
+(LM74502H-Q1)
+Free-Air Temperature (C)
+Charge Pump ON/OFF Threshold (V)
+-40
+0
+40
+80
+120
+160
+11
+11.6
+12.2
+12.8
+13.4
+14
+VCAP ON
+VCAP OFF
+Figure 6-8. Charge Pump ON and OFF Threshold vs 
+Temperature
+Free-Air Temperature (C)
+Charge Pump UVLO Threshold (V)
+-40
+0
+40
+80
+120
+160
+5
+5.4
+5.8
+6.2
+6.6
+7
+7.4
+VCAP UVLOR
+VCAP UVLOF
+Figure 6-9. Charge Pump UVLO Threshold vs Temperature
+Free-Air Temperature (C)
+VS POR Threshold (V)
+-40
+0
+40
+80
+120
+160
+2.2
+2.4
+2.6
+2.8
+3
+3.2
+VS PORR
+VS PORF
+Figure 6-10. VS POR Threshold vs Temperature
+Free-Air Temperature (C)
+OV Comparator Threshold (V)
+-40
+0
+40
+80
+120
+160
+1
+1.08
+1.16
+1.24
+1.32
+1.4
+OV Rising
+OV Falling
+Figure 6-11. OV Comparator Threshold vs Temperature
+Free-Air Temperature (C)
+OV to GATE Delay (s)
+-40
+0
+40
+80
+120
+160
+0
+1
+2
+3
+4
+5
+6
+GATE OFF
+GATE ON
+Figure 6-12. OV to GATE Delay vs Temperature (LM74502H-Q1)
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+8
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 9
+7 Parameter Measurement Information
+0 V
+12.4 V
+ttOVP_OFF(deg)GATEt
+VGATE – VSRC
+0 V
+VOVR +  
+0 V
+3.3 V
+0 V
+tENTDLYt
+VEN
+VGATE  – VSRC
+90%
+0 V
+ttOVP_ON(deg)GATEt
+0 V
+VOVF –
+1 V
+5 V
+VGATE – VSRC
+0 V
+VEN/UVLOF – 
+VGATE – VSRC
+VENF
+0 V
+ttUVLO_OFF(deg)GATEt
+1 V
+0.1 V
+0.1 V
+0.1 V
+12.4 V
+12.4 V
+12.4 V
+Figure 7-1. Timing Waveforms
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+9
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 10
+8 Detailed Description
+8.1 Overview
+The LM74502 and LM74502H controller has all the features necessary to implement an efficient and fast reverse 
+polarity protection circuit with load disconnect feature. This easy to use reverse polarity protection controller is 
+paired with an external back-to-back connected N-channel MOSFETs to replace other reverse polarity schemes 
+such as a P-channel MOSFETs. The wide input supply range of 4 V to 65 V allows protection and control of 12-V 
+and 24-V input supply systems. The device can withstand and protect the loads from negative supply voltages 
+down to –65 V. An integrated charge pump drives external back-to-back connected N-channel MOSFETs with 
+gate drive voltage of approximately 13 V. LM74502 with its 60-μA peak gate drive strength is suitable for 
+applications that needs inherent inrush current control. LM74502H with its fast gate drive strength of 11-mA peak 
+is suitable for applications which need fast turn-on and turn-off of external MOSFET switch. LM74502 features 
+an adjustable overvoltage protection using the OV pin. with the enable pin low during the standby mode, both the 
+external MOSFETs and controller is off and draws a very low shutdown current of 1 μA.
+8.2 Functional Block Diagram
+VIN
+VS
+VCAP
+CP
+VCAP
+GATE
+SRC
+Gate 
+Driver
+VOUT
+CP
+VS
+Internal 
+Rails
+Charge 
+Pump 
+Enable 
+Logic
+VS
++
++
+EN/UVLO
+1 V
+0.3 V
+1.25 V
+1.14 V
++
+1.25 V
+1.14 V
+Gate Drive 
+Enable 
+Logic
+OV
+OV
+EN
+UVLOb
+EN
+UVLOb
+Reverse 
+Protection Logic
+VS
+LM74502
+LM74502H
+GND
+8.3 Feature Description
+8.3.1 Input Voltage
+The VS pin is used to power the LM74502's internal circuitry, typically drawing 45 µA when enabled and 1 µA 
+when disabled. If the VS pin voltage is greater than the POR Rising threshold, then LM74502 operates in either 
+shutdown mode or conduction mode in accordance with the EN/UVLO pin voltage. The voltage from VS to GND 
+is designed to vary from 65 V to –65 V, allowing the LM74502 to withstand negative voltage transients.
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+10
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 11
+8.3.2 Charge Pump (VCAP)
+The charge pump supplies the voltage necessary to drive the external N-channel MOSFET. An external charge 
+pump capacitor is placed between VCAP and VS pin to provide energy to turn on the external MOSFET. For the 
+charge pump to supply current to the external capacitor the EN/UVLO pin voltage must be above the specified 
+input high threshold, V(EN_IH). When enabled the charge pump sources a charging current of 300 µA typically. If 
+EN/UVLO pins is pulled low, then the charge pump remains disabled. To ensure that the external MOSFET can 
+be driven above its specified threshold voltage, the VCAP to VS voltage must be above the undervoltage lockout 
+threshold, typically 6.5 V, before the internal gate driver is enabled. Use Equation 1 to calculate the initial gate 
+driver enable delay.
+T(DRV_EN) = 75 µs + C(VCAP) × V(VCAP_UVLOR)
+300 µA
+(1)
+where
+•
+C(VCAP) is the charge pump capacitance connected across VS and VCAP pins
+•
+V(VCAP_UVLOR) = 6.5 V (typical)
+To remove any chatter on the gate drive approximately 800 mV of hysteresis is added to the VCAP undervoltage 
+lockout. The charge pump remains enabled until the VCAP to VS voltage reaches 12.4 V, typically, at which point 
+the charge pump is disabled decreasing the current draw on the VS pin. The charge pump remains disabled until 
+the VCAP to VS voltage is below to 11.6 V typically at which point the charge pump is enabled. The voltage 
+between VCAP and VS continue to charge and discharge between 11.6 V and 12.4 V as shown in Figure 8-1. By 
+enabling and disabling the charge pump, the operating quiescent current of the LM74502 is reduced. When the 
+charge pump is disabled it sinks 5-µA typical.
+0 V
+VIN
+VS
+VCAP-VS
+VEN
+6.5 V
+11.6 V
+12.4 V
+GATE DRIVER 
+(GATE to SRC) 
+ENABLE
+TON
+TOFF
+V(VCAP UVLOR)
+TDRV_EN
+Figure 8-1. Charge Pump Operation
+8.3.3 Gate Driver (GATE, SRC)
+The gate driver is used to control the external N-Channel MOSFET by setting the appropriate GATE to SRC 
+voltage.
+Before the gate driver is enabled, the following three conditions must be achieved:
+•
+The EN/UVLO pin voltage must be greater than the specified input high voltage.
+•
+The VCAP to VS voltage must be greater than the undervoltage lockout voltage.
+•
+The VS voltage must be greater than VS POR rising threshold.
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+11
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 12
+If the above conditions are not achieved, then the GATE pin is internally connected to the SRC pin, assuring that 
+the external MOSFET is disabled. After these conditions are achieved, the gate driver operates in the conduction 
+mode enhancing the external MOSFET completely.
+The controller offers two gate drive variants. LM74502 with typical peak gate drive strength of 60 μA is suitable 
+to achieve smooth start-up with inherent inrush current control due to its lower gate drive strength.
+LM74502H with its 11 -mA typical peak gate drive strength is suitable for applications which need faster turn on 
+such as load switch applications.
+LM74502, LM74502H SRC pin is capable of handling negative voltage which also makes it suitable for load 
+disconnect switch applications with loads which are inductive in nature.
+8.3.3.1 Inrush Current Control
+An external circuit as shown in Figure 8-2 can be added on the GATE pin of the LM74502 to have additional 
+inrush current control for the applications which have large capacitive loads.
+GATE
+Q1
+RG
+Cdvdt
+SRC
+LM74502
+Figure 8-2. Inrush Current Limiting Using LM74502
+The CdVdT capacitor is required for slowing down the GATE voltage ramp during power up for inrush current 
+limiting. Use Equation 2 to calculate CdVdT capacitance value.
+Cdvdt =  IGATE × COUT
+IINRUSH
+(2)
+where IGATE is 60 μA (typical), IINRUSH is the inrush current and COUT is the output load capacitance. An extra 
+resistor, RG, in series with the CdVdT capacitor acts as an isolation resistor between Cdvdt and gate of the 
+MOSFET.
+The inrush current control scheme shown in Figure 8-2 is not applicable to LM74502H as its gate drive is 
+optimized for fast turn-on load switch applications.
+8.3.4 Enable (EN/UVLO)
+The LM74502 has an enable pin, EN/UVLO. The enable pin allows for the gate driver to be either enabled or 
+disabled by an external signal. If the EN/UVLO pin voltage is greater than the rising threshold, the gate driver 
+and charge pump operates as described in the Gate Driver (GATE, SRC) and Charge Pump (VCAP) sections. If 
+the enable pin voltage is less than the input low threshold, the charge pump and gate driver are disabled placing 
+the LM74502 in shutdown mode. The EN/UVLO pin can withstand a voltage as large as 65 V and as low as –65 
+V. This feature allows for the EN/UVLO pin to be connected directly to the VS pin if enable functionality is not 
+needed. In conditions where EN/UVLO is left floating, the internal sink current of 3 uA pulls EN/UVLO pin low 
+and disables the device.
+An external resistor divider connected from input to EN/UVLO to ground can be used to implement the input 
+Undervoltage Lockout (UVLO) functionality in the system. When EN/UVLO pin voltage is lower than UVLO 
+comparator falling threshold (VEN/UVLOR) but higher than enable falling threshold (VENF), the device disables gate 
+drive voltage, however, charge pump is kept on. This action ensures quick recovery of gate drive when UVLO 
+condition is removed. If UVLO functionality is not required, connect EN/UVLO pin to VS.
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+12
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 13
+8.3.5 Overvoltage Protection (OV)
+LM74502 provides programmable overvoltage protection feature with OV pin. A resistor divider can be 
+connected from input source to OV pin to ground in order to set overvoltage threshold. An internal comparator 
+compares the input voltage against fixed reference (1.25 V) and disables the gate drive as soon as OV pin 
+voltage goes above the OV comparator reference. When the resistor divider is referred from input supply side, 
+device is configured for overvoltage cutoff functionality. When the resistor divider is referred from output side 
+(VOUT), the device is configured for overvoltage clamp functionality.
+When OV pin voltage goes above OV comparator VOVR threshold (1.25-V typical), the device disables gate 
+drive, however, charge pump remains active. When OV pin voltage falls below VOVF threshold (1.14-V typical), 
+the gate is quickly turned on as charge pump is kept on and the device does not go through the device start-up 
+process. When OV pin is not used, it can be connected to ground.
+8.4 Device Functional Modes
+8.4.1 Shutdown Mode
+The LM74502 enters shutdown mode when the EN/UVLO pin voltage is below the specified input low threshold 
+V(ENF). Both the gate driver and the charge pump are disabled in shutdown mode. During shutdown mode the 
+LM74502 enters low IQ operation with the VS pin only sinking 1 µA of current.
+8.4.2 Conduction Mode
+For the LM74502 to operate in conduction mode the gate driver must be enabled as described in the Gate Driver 
+(GATE, SRC) section. If these conditions are achieved the GATE pin is
+•
+Internally driven through 60-μA current source in case of LM74502
+•
+Internally connected to the VCAP for fast turn-on of external FET in case of LM74502H
+LM74502, LM74502H gate drive is disabled when OV pin voltage is above VOVR threshold or EN/UVLO pin 
+voltage is lower than VEN/UVLOF threshold.
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+13
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 14
+9 Application and Implementation
+Note
+Information in the following applications sections is not part of the TI component specification, 
+and TI does not warrant its accuracy or completeness. TI’s customers are responsible for 
+determining suitability of components for their purposes, as well as validating and testing their design 
+implementation to confirm system functionality.
+9.1 Application Information
+The LM74502 is used with back-to-back connected N-Channel MOSFETs in a typical reverse polarity protection 
+with load disconnect application. The schematic for the 12-V input supply reverse polarity protection is shown in 
+Figure 9-1, where the LM74502 is used to drive the back-to-back connected MOSFETs Q1 and Q2 in series with 
+a 12-V supply.
+9.2 Typical Application
+GND
+GATE
+SRC
+EN / UVLO
+ON
+OFF
+LM74502
+COUT
+220 µF
+VCAP
+VCAP
+220 nF
+VS
+OV
+VIN
+12 V
+CIN
+0.1 µF
+R2 
+R1 
+VOUT
+Q1
+Q2
+100 k  
+3.5 k   
+Figure 9-1. Typical Application Circuit
+9.2.1 Design Requirements
+A design example, with system design parameters listed in Table 9-1 is presented.
+Table 9-1. Design Parameters
+DESIGN PARAMETER
+EXAMPLE VALUE
+Input voltage range
+12-V nominal
+Overvoltage protection
+37 V
+Output current
+5-A full load
+Output capacitance
+220-µF typical output capacitance
+9.2.2 Detailed Design Procedure
+9.2.2.1 Design Considerations
+•
+Input operating voltage range (including overvoltage protection)
+•
+Maximum load current
+9.2.2.2 MOSFET Selection
+The important MOSFET electrical parameters are the maximum continuous drain current ID, the maximum 
+drain-to-source voltage VDS(MAX), the maximum gate-to-source voltage VGS(MAX) and the drain-to-source On 
+resistance RDSON.
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+14
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 15
+The maximum continuous drain current, ID, rating must exceed the maximum continuous load current. The 
+maximum drain-to-source voltage, VDS(MAX), must be high enough to withstand the highest differential voltage 
+seen in the application. This requirement would include any anticipated fault conditions. The maximum VGS 
+LM74502 can drive is 13.9 V, so a MOSFET with 15-V minimum VGS rating must be selected. If a MOSFET with 
+VGS rating < 15 V is selected, a zener diode can be used between GATE to SRC pin to clamp VGS to safe level.
+To reduce the MOSFET conduction losses, lowest possible RDS(ON) is preferred. Selecting a MOSFET with 
+RDS(ON) that gives VDS drop 20 mV to 50 mV provides good trade off in terms of power dissipation and cost.
+Thermal resistance of the MOSFET must be considered against the expected maximum power dissipation in the 
+MOSFET to ensure that the junction temperature (TJ) is well controlled.
+9.2.2.3 Overvoltage Protection
+Resistors R1 and R2 connected in series is used to program the overvoltage threshold. Connecting R1 to VIN 
+provides overvoltage cutoff and switching the connection to VOUT provides overvoltage clamp response. The 
+resistor values required for setting the overvoltage threshold VOV to 37 V are calculated by solving Equation 3
+VOVR =    
+R1 + R2
+R2 × VOV
+(3)
+For minimizing the input current drawn from the supply through resistors R1 and R2, it is recommended to use 
+higher value of resistance. Using high value resistors adds error in the calculations because the current through 
+the resistors at higher value becomes comparable to the leakage current into the OV pin. Select (R1 + R2) such 
+that current through resistors is around 100 times higher than the leakage through OV pin. Based on the device 
+electrical characteristics, VOVR is 1.25 V , Select (R1) = 100 kΩ and R2 = 3.5 kΩ as a standard resistor value to 
+set overvoltage cutoff of 37 V.
+9.2.2.4 Charge Pump VCAP, Input and Output Capacitance
+Minimum required capacitance for charge pump VCAP and input and output capacitance are:
+•
+CVCAP: minimum recommended value of VCAP (µF) ≥ 10 × Effective CISS(MOSFET) (µF), 0.22 μF is selected
+•
+CIN: typical input capacitor of 0.1 µF
+•
+COUT: typical output capacitor 220 µF
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+15
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 16
+9.2.3 Application Curves
+Time (10 ms/DIV)
+Figure 9-2. Start-up with Reverse Voltage –12 V)
+Time (4 ms/DIV)
+Figure 9-3. Start-up with No Load
+Time (4 ms/DIV)
+Figure 9-4. Start-up with 5-A Load
+Time (2 ms/DIV)
+Figure 9-5. Start-up with EN Control
+Time (4 ms/DIV)
+Figure 9-6. Overvoltage Cutoff Response (37 V)
+Time (10 ms/DIV)
+Figure 9-7. Overvoltage Recovery
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+16
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 17
+9.3 Input Surge Stopper Using LM74502, LM74502H
+Many industrial applications need to comply with input overvoltage transients and surge events specified by 
+standards such as IEC61000-4-x. LM74502, LM74502H can be configured as input surge stopper to provide 
+overvoltage along with input reverse supply protection.
+GND
+GATE
+SRC
+EN/UVLO
+ON OFF
+LM74502
+COUT
+220 µF
+VCAP
+CVCAP
+220 nF
+VIN
+24-V Nominal
+200-V Transient
+CIN
+0.1 µF
+VS
+OV
+R1
+10 k   
+DZ
+60 V
+CVS
+1 µF  
+VOUT
+(OV Clamp)
+VOUT
+Q1  
+Q2  
+100 k   
+3.5 k  
+200 V
+60 V
+R2  
+R3  
+VIN
+OV cut-off
+Figure 9-8. Typical Surge Stopper Application for 24-V Powered Systems
+As shown in Figure 9-8 MOSFET Q1 is used to turn off or clamp output voltage to acceptable safe level and 
+protect the MOSFET Q2 and LM74502 from input transient. Note that only the VS pin is exposed to input 
+transient through a resistor, R1. A 60-V rated zener diode is used to clamp and protect the VS pin within 
+recommended operating condition. Rest of the circuit is not exposed to higher voltage as the MOSFET Q1 can 
+either be turned off completely or output voltage clamped to safe level.
+9.3.1 VS Capacitance, Resistor R1 and Zener Clamp (DZ)
+Minimum of 1 µF CVS capacitance is required. During input overvoltage transient, resistor R1 and zener diode DZ 
+are used to protect VS pin from exceeding the maximum ratings by clamping VVS to 60 V. Choosing R1 = 10 kΩ, 
+the peak power dissipated in zener diode DZ can be calculated using Equation 4.
+PDZ = VDZ × (VIN(MAX) – VDZ) 
+R1
+(4)
+Where VDZ is the breakdown voltage of zener diode. Select the zener diode which can handle peak power 
+requirement.
+Peak power dissipated in resistor R1 can be calculated using Equation 5.
+PR1 =   (VIN(MAX) – VDZ)2 
+R1
+(5)
+Select a resistor package which can handle peak power and maximum DC voltage.
+9.3.2 Overvoltage Protection
+For the overvoltage setting, refer to the resistor selection procedure described in Overvoltage Protection. Select 
+(R2) = 100 kΩ and R3 = 3.5 kΩ as a standard resistor value to set overvoltage cutoff of 37 V.
+9.3.3 MOSFET Selection
+The VDS rating of the MOSFET Q1 must be minimum VIN(max) for designs with output overvoltage cutoff where 
+output can reach 0 V with higher loads. For designs with output overvoltage clamp, MOSFET VDS rating must 
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+17
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 18
+be (VIN(max) – VOUT_CLAMP). The VGS rating is based on GATE-SRC maximum voltage of 15 V. TI recommends a 
+20-V VGS rated MOSFET. Power dissipation on MOSFET Q1 on a design where output is clamped is critical and 
+SOA characteristics of the MOSFET must be considered with sufficient design margin for reliable operation. An 
+additional zener diode from GATE to SRC can be needed to protect the external FET in case output is expected 
+to drop to the level where it can exceed external FET VGS(max) rating.
+Figure 9-9. 200-V Surge Stopper with Overvoltage Cutoff Using LM74502
+9.4 Fast Turn-On and Turn-Off High Side Switch Driver Using LM74502H
+In applications such as industrial motor drives and safety power line communication digital output modules, 
+N-Channel MOSFET based high side switch is very commonly used to disconnect the loads from supply line 
+in case of faults such as overvoltage event . LM74502, LM74502H can be used to drive external MOSFET to 
+realize simple high side switch with overvoltage protection. Figure 9-10 shows a typical application circuit where 
+LM74502H is used to drive external MOSFET Q1 as a main power path connect and disconnect switch. A 
+resistor divider from input to OV pin to ground can be used the set the overvoltage threshold.
+If VOUT node (SRC pin) of the device is expected to drop in case of events such as overcurrent or short-circuit 
+on load side then additional zener diode is required across gate and source pin of external MOSFET to protect it 
+from exceeding it's maximum VGS rating.
+GND
+GATE
+SRC
+EN/UVLO
+ON
+OFF
+LM74502H
+COUT
+VCAP
+CVCAP
+VIN 
+CIN
+VS
+OV
+VOUT
+Q1
+ON
+OFF
+OV pin used as logic input for 
+fast turn ON/OFF of FET Q1  
+High Side 
+Switch
+DC/DC 
+Converter
+Low Side 
+Switch
+LOAD3
+LOAD2
+LOAD3
+VIN
+R1  
+R2  
+OV pin used for 
+overvoltage 
+protection
+Figure 9-10. Fast Turn-ON and OFF High Side Switch Using LM74502H
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+18
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 19
+Many industrial safety applications require fast switching off of MOSFET to verify proper functioning of the 
+high side disconnect switch for diagnostic purpose. LM74502H OV pin can be used as control input to realize 
+fast turn-on and turn-off load switch functionality. with OV pin pulled above VOVR threshold of (1.25-V typical), 
+LM74502H turns off the external MOSFET (with Ciss = 4.7 nF) within 1 μs typically. When OV pin is pulled low, 
+LM74502H with its peak gate drive strength of 11 mA turns on external MOSFET with turn on speed of 7-μs 
+typical. Figure 9-11 shows LM74502H GATE to SRC response when OV pin is used as logic input for turning 
+external MOSFET on and off.
+Figure 9-11. Fast Turn-On and Turn-Off High Side Switch Driver Using LM74502H
+10 Power Supply Recommendations
+The LM74502, LM74502H reverse polarity protection controller is designed for the supply voltage range of 3.2 
+V ≤ VS ≤ 65 V. If the input supply is located more than a few inches from the device, TI recommends an input 
+ceramic bypass capacitor higher than 0.1 μF. Based on system requirements, a higher input bypass capacitor 
+may be needed with LM74502H to avoid supply glitch in case of high inrush current start-up event. To prevent 
+LM74502 and surrounding components from damage under the conditions of a direct output short circuit, use a 
+power supply having overload and short-circuit protection.
+11 Layout
+11.1 Layout Guidelines
+•
+Place the input capacitor CIN of 0.1-μF minimum close to VS pin to ground. This typically helps with better 
+EMI performance.
+•
+Connect GATE and SRC pin of LM74502, LM74502H close to the MOSFET's GATE and SOURCE pin.
+•
+Use thick traces for source and drain of the MOSFET to minimize resistive losses because the high current 
+path of for this solution is through the MOSFET.
+•
+The charge pump capacitor across VCAP and VS pin must be kept away from the MOSFET to lower the 
+thermal effects on the capacitance value.
+•
+The GATE pin of the LM74502, LM74502H must be connected to the MOSFET gate with short trace. Avoid 
+excessively thin and long running trace to the Gate Drive.
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+19
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 20
+11.2 Layout Example
+VIN
+Q1
+VOUT
+S
+S
+D
+D
+D
+D
+Q2
+1
+2
+3
+4
+5
+6
+7
+8
+GND
+CVCAP
+GND
+CIN
+VS
+GATE
+OV
+SRC
+EN/UVLO
+GND
+N.C
+VCAP
+Boom Layer
+COUT
+D
+D
+D
+D
+S
+S
+S
+G
+LM74502
+S
+G
+Signal Via
+Figure 11-1. Layout Example
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+20
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 21
+12 Device and Documentation Support
+12.1 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on 
+Subscribe to updates to register and receive a weekly digest of any product information that has changed. For 
+change details, review the revision history included in any revised document.
+12.2 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight 
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do 
+not necessarily reflect TI's views; see TI's Terms of Use.
+12.3 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+12.4 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled 
+with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may 
+be more susceptible to damage because very small parametric changes could cause the device not to meet its published 
+specifications.
+12.5 Glossary
+TI Glossary 
+This glossary lists and explains terms, acronyms, and definitions.
+www.ti.com
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+Copyright © 2022 Texas Instruments Incorporated
+Submit Document Feedback
+21
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 22
+13 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most 
+current data available for the designated devices. This data is subject to change without notice and revision of 
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+LM74502, LM74502H
+SNOSDE5A – DECEMBER 2021 – REVISED MAY 2022
+www.ti.com
+22
+Submit Document Feedback
+Copyright © 2022 Texas Instruments Incorporated
+Product Folder Links: LM74502 LM74502H
+
+
+PAGE 23
+PACKAGE OPTION ADDENDUM
+www.ti.com
+31-Oct-2025
+PACKAGING INFORMATION
+Orderable part number
+Status
+(1)
+Material type
+(2)
+Package | Pins
+Package qty | Carrier
+RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C)
+Part marking
+(6)
+LM74502DDFR
+Active
+Production
+SOT-23-THIN (DDF) | 8
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 125
+LM502
+LM74502DDFR.A
+Active
+Production
+SOT-23-THIN (DDF) | 8
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 125
+LM502
+LM74502DDFRG4
+Active
+Production
+SOT-23-THIN (DDF) | 8
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 125
+LM502
+LM74502DDFRG4.A
+Active
+Production
+SOT-23-THIN (DDF) | 8
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 125
+LM502
+LM74502HDDFR
+Active
+Production
+SOT-23-THIN (DDF) | 8
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 125
+L502H
+LM74502HDDFR.A
+Active
+Production
+SOT-23-THIN (DDF) | 8
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 125
+L502H
+ 
+(1) Status:  For more details on status, see our product life cycle.
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+ 
+(4) Lead finish/Ball material:  Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+ 
+(5) MSL rating/Peak reflow:  The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+ 
+(6) Part marking:  There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+ 
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+ 
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+Addendum-Page 1
+
+
+PAGE 24
+PACKAGE OPTION ADDENDUM
+www.ti.com
+31-Oct-2025
+ 
+ OTHER QUALIFIED VERSIONS OF LM74502, LM74502H :
+• Automotive : LM74502-Q1, LM74502H-Q1
+ NOTE: Qualified Version Definitions:
+• Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+Addendum-Page 2
+
+
+PAGE 25
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+18-Jun-2025
+TAPE AND REEL INFORMATION
+Reel Width (W1)
+REEL DIMENSIONS
+A0
+B0
+K0
+W
+Dimension designed to accommodate the component length
+Dimension designed to accommodate the component thickness
+Overall width of the carrier tape
+Pitch between successive cavity centers
+Dimension designed to accommodate the component width
+TAPE DIMENSIONS
+K0
+ P1
+B0 W
+A0
+Cavity
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Pocket Quadrants
+Sprocket Holes
+Q1
+Q1
+Q2
+Q2
+Q3
+Q3
+Q4
+Q4
+User Direction of Feed
+P1
+Reel
+Diameter
+ 
+*All dimensions are nominal
+Device
+Package
+Type
+Package
+Drawing
+Pins
+SPQ
+Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+LM74502DDFR
+SOT-23-
+THIN
+DDF
+8
+3000
+180.0
+8.4
+3.2
+3.2
+1.4
+4.0
+8.0
+Q3
+LM74502DDFRG4
+SOT-23-
+THIN
+DDF
+8
+3000
+180.0
+8.4
+3.2
+3.2
+1.4
+4.0
+8.0
+Q3
+LM74502HDDFR
+SOT-23-
+THIN
+DDF
+8
+3000
+180.0
+8.4
+3.2
+3.2
+1.4
+4.0
+8.0
+Q3
+Pack Materials-Page 1
+
+
+PAGE 26
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+18-Jun-2025
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+W
+L
+H
+ 
+*All dimensions are nominal
+Device
+Package Type
+Package Drawing
+Pins
+SPQ
+Length (mm)
+Width (mm)
+Height (mm)
+LM74502DDFR
+SOT-23-THIN
+DDF
+8
+3000
+210.0
+185.0
+35.0
+LM74502DDFRG4
+SOT-23-THIN
+DDF
+8
+3000
+210.0
+185.0
+35.0
+LM74502HDDFR
+SOT-23-THIN
+DDF
+8
+3000
+210.0
+185.0
+35.0
+Pack Materials-Page 2
+
+
+PAGE 27
+www.ti.com
+PACKAGE OUTLINE
+C
+2.95
+2.65 TYP
+1.1
+MAX
+6X 0.65
+8X 0.38
+0.22
+2X
+1.95
+0.20
+0.08 TYP
+0 - 8
+0.1
+0.0
+0.25
+GAGE PLANE
+0.6
+0.3
+4X 0 -15
+4X 4 -15
+A
+2.95
+2.85
+NOTE 3
+B
+1.65
+1.55
+4222047/E   07/2024
+SOT-23-THIN - 1.1 mm max height
+DDF0008A
+PLASTIC SMALL OUTLINE
+NOTES: 
+ 
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+    per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+    exceed 0.15 mm per side.
+ 
+1
+8
+0.1
+C A B
+5
+4
+PIN 1 ID
+AREA
+SEATING PLANE
+0.1 C
+ SEE DETAIL A
+DETAIL A
+TYPICAL
+SCALE  4.000
+
+
+PAGE 28
+www.ti.com
+EXAMPLE BOARD LAYOUT
+(2.6)
+0.05 MAX
+ALL AROUND
+0.05 MIN
+ALL AROUND
+8X (1.05)
+8X (0.45)
+6X (0.65)
+(R0.05)
+TYP
+4222047/E   07/2024
+SOT-23-THIN - 1.1 mm max height
+DDF0008A
+PLASTIC SMALL OUTLINE
+SYMM
+SYMM
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE:15X
+1
+4
+5
+8
+NOTES: (continued)
+ 
+4. Publication IPC-7351 may have alternate designs. 
+5. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+ 
+METAL
+SOLDER MASK
+OPENING
+NON SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+EXPOSED
+METAL
+SOLDER MASK
+OPENING
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+DEFINED
+EXPOSED
+METAL
+
+
+PAGE 29
+www.ti.com
+EXAMPLE STENCIL DESIGN
+(2.6)
+6X (0.65)
+8X (0.45)
+8X (1.05)
+(R0.05) TYP
+4222047/E   07/2024
+SOT-23-THIN - 1.1 mm max height
+DDF0008A
+PLASTIC SMALL OUTLINE
+NOTES: (continued)
+ 
+6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+    design recommendations.   
+7. Board assembly site may have different recommendations for stencil design.
+ 
+SYMM
+SYMM
+1
+4
+5
+8
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+SCALE:15X
+
+
+PAGE 30
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE 
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” 
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD 
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate 
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable 
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an 
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license 
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully 
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on 
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable 
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products 
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2025, Texas Instruments Incorporated
+Last updated 10/2025

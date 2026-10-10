@@ -1,0 +1,25 @@
+{
+  "board_sha256": "0718fcf4ad4816b4e065f5e90765419605ba5d6a86b6edd38c2f94c208bd1287",
+  "mesh_mm": 0.2,
+  "solver": "AMG-preconditioned CG",
+  "scope": "PGND DC resistance screening only, ideal equipotential solder-land contacts; not a thermal rating",
+  "limitations": [
+    "Copper assumed uniformly 100 C and 70 um on all four layers",
+    "Plating is assumed, not measured or fabricator accepted",
+    "Rasterized pads omit rounded corners; vias use lumped barrel conductance",
+    "Mesh convergence must be checked",
+    "No harness, connector, solder-joint or solder-void resistance",
+    "No prediction of temperature rise"
+  ],
+  "results": [
+    {
+      "plating_um_assumed": 20.0,
+      "resistance_ohm_at_100C": 0.0007829042801193177,
+      "drop_V_at_80A": 0.06263234240954542,
+      "copper_and_via_loss_W_at_80A": 5.010587392763633,
+      "iterations": 25,
+      "relative_residual": 9.570624908686982e-12,
+      "current_balance_relative": 6.42282680941141e-11
+    }
+  ]
+}

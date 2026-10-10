@@ -1,0 +1,34 @@
+# KiCad local state, locks, and automatic backups
+*.kicad_prl
+*.lck
+~*.lck
+*-backups/
+*.bak
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local tool state and logs
+.copperpilot/
+.history/
+logs/
+*.log
+
+# Vendored analysis environments can be restored separately
+engineering/vendor/
+engineering/fab_vendor/
+engineering/chrome_preview_profile/
+engineering/kicad_cli_config/
+
+# Historical editor recovery snapshots
+_restore_backup_*/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

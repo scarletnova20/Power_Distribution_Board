@@ -1,0 +1,29 @@
+{
+  "current_requirement_A": 50,
+  "board_sha256": "b79c086370f9733d7d2e7a1265d371769b15d797c8b46c5c1b6e74f80a6fe2c8",
+  "schematic_sha256": "79fffea5035bda123fbc30a6452781be44352b13c54035f06f4a010d5ecf094e",
+  "footprints": 78,
+  "tracks_vias": 1298,
+  "electrical_checks": 52,
+  "electrical_failures": [],
+  "layout_net_failures": [],
+  "extra_checks": {
+    "LED_5V_branch": true,
+    "Pi_is_external_testpoint_only": true,
+    "independent_BEC_outputs": true,
+    "main_ESC_pads": true,
+    "fuse_not_automatically_rated_50A": true,
+    "INA228_manufacturer_footprint": true,
+    "four_layers": true,
+    "closed_42mm_outline": true,
+    "new_power_vias_have_intended_nets": true
+  },
+  "drc_findings": 908,
+  "unconnected": 0,
+  "erc_findings": 0,
+  "ignored_checks": [],
+  "exclusions": [],
+  "A_fabrication_ready": false,
+  "B_50A_thermal_prototype": false,
+  "C_50A_production": false
+}

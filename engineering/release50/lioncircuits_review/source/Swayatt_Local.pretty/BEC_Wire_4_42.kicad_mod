@@ -1,0 +1,67 @@
+(footprint "BEC_Wire_4_42"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -3.0 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "BEC_Wire_4"
+		(at 0 3.0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_rect
+		(start -6.5 -1.5)
+		(end 6.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -6.75 -1.75)
+		(end 6.75 1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+	)
+	(pad "1" smd rect
+		(at -5.25 0)
+		(size 2.5 3)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at -1.75 0)
+		(size 2.5 3)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "3" smd rect
+		(at 1.75 0)
+		(size 2.5 3)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "4" smd rect
+		(at 5.25 0)
+		(size 2.5 3)
+		(layers "F.Cu" "F.Mask")
+	)
+	(descr "Direct solder wire land, no discrete connector; separate strain relief required. 2.5 x 3 mm lands.")
+)

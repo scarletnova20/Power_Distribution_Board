@@ -1,0 +1,77 @@
+Reference,Value,Footprint,Manufacturer,MPN,Status,Note
+BEC1,Conn_01x04,Swayatt_Local:BEC_Wire_4_42,,,REVIEW - NOT RELEASED,"External Pi BEC; PCB /5V_PI connection is a test-point branch, not the 5 A load path"
+BT1,BATTERY HARNESS EXTERNAL,,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C1,2.2u 100V X7R,Capacitor_SMD:C_1812_4532Metric,,,REVIEW - NOT RELEASED,Exact MLCC and effective capacitance under DC bias must be verified
+C10,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,,,REVIEW - NOT RELEASED,Exact MLCC and effective capacitance under DC bias must be verified
+C11,22p C0G,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C12,10n C0G,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C13,47u 50V EEH-ZA1H470P,Capacitor_SMD:C_Elec_8x10.2,Panasonic,EEH-ZA1H470P,REVIEW - NOT RELEASED,SMD hybrid reservoir
+C14,100n 25V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C15,100n 25V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C16,100n 100V X7R,Capacitor_SMD:C_0805_2012Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C17,100n 25V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C18,1u 16V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C19,1u 16V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C2,2.2u 100V X7R,Capacitor_SMD:C_1812_4532Metric,,,REVIEW - NOT RELEASED,Exact MLCC and effective capacitance under DC bias must be verified
+C20,1u 25V X7R,Capacitor_SMD:C_0805_2012Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C21,100n 100V X7R,Capacitor_SMD:C_0805_2012Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C3,330p,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C4,10n 25V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C5,470n 25V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C6,10n 25V,Capacitor_SMD:C_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C7,22n 100V X7R,Capacitor_SMD:C_0805_2012Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C8,330p 100V C0G,Capacitor_SMD:C_0805_2012Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+C9,120u 10V 10SVPC120M ESR27mR,Swayatt_Local:Panasonic_OSCON_C6_10SVPC120M,Panasonic,10SVPC120M,REVIEW - NOT RELEASED,Manufacturer C6 land pattern applied
+D1,STPS5H100B,Swayatt_Local:STPS5H100B,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+D2,SMCJ28CA bidirectional,Diode_SMD:D_SMC,,,REVIEW - NOT RELEASED,Existing SMCJ28CA; 4S clamp selection and pulse-current path not qualified
+D3,GREEN 5V ON,LED_SMD:LED_0805_2012Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+F1,EXTERNAL FUSE + HOLDER TBD FOR 50A SYSTEM,,,,REVIEW - NOT RELEASED,External fuse AND holder OPEN; obsolete 80A selection withdrawn; not replaced by an assumed50A fuse
+J1,4S FUSED INPUT 16.8V MAX NORMAL,Swayatt_Local:Power_Wire_2_42,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J10,EXTERNAL BEC 12V DJI,Swayatt_Local:BEC_Wire_4,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J11,12V DJI OUTPUT,Swayatt_Local:Aux_Wire_2_42,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J12,SPEEDYBEE ESC BATTERY 4S,Swayatt_Local:Power_Wire_2_42,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J2,PIXHAWK 6X POWER 5024430670 VERTICAL,Swayatt_Local:CLIK_Mate_502443_0670,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J3,BEC_5V_SERVOS,Swayatt_Local:BEC_Wire_4_42,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J4,BEC_12V_SERVOS,Swayatt_Local:BEC_Wire_4,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J5,Servo_5V_1,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J6,Servo_5V_2,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J7,Servo_5V_3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+J8,Servo_12V_1,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+L1,33u XAL8080-333MED,Inductor_SMD:L_Coilcraft_XAL8080-XXX,Coilcraft,XAL8080-333MED,REVIEW - NOT RELEASED,33 uH; manufacturer electrical data reviewed
+NT1,NetTie_2,NetTie:NetTie-2_SMD_Pad0.5mm,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+NT2,NetTie_2,NetTie:NetTie-2_SMD_Pad0.5mm,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+NT3,NetTie_2,NetTie:NetTie-2_SMD_Pad0.5mm,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+Q1,ISC027N10NM6 100V 2.7mR,Swayatt_Local:ISC027N10NM6_GDS,Infineon,ISC027N10NM6ATMA1,REVIEW - NOT RELEASED,Four parallel NMOS retained; hot/current-sharing/thermal qualification OPEN
+Q2,ISC027N10NM6 100V 2.7mR,Swayatt_Local:ISC027N10NM6_GDS,Infineon,ISC027N10NM6ATMA1,REVIEW - NOT RELEASED,Four parallel NMOS retained; hot/current-sharing/thermal qualification OPEN
+Q3,ISC027N10NM6 100V 2.7mR,Swayatt_Local:ISC027N10NM6_GDS,Infineon,ISC027N10NM6ATMA1,REVIEW - NOT RELEASED,Four parallel NMOS retained; hot/current-sharing/thermal qualification OPEN
+Q4,ISC027N10NM6 100V 2.7mR,Swayatt_Local:ISC027N10NM6_GDS,Infineon,ISC027N10NM6ATMA1,REVIEW - NOT RELEASED,Four parallel NMOS retained; hot/current-sharing/thermal qualification OPEN
+R1,90.9k 1%,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R10,500u 3W 1% WSLP2512L5000FEA,Swayatt_Local:WSLP2512_L5000,Vishay,WSLP2512L5000FEA,REVIEW - NOT RELEASED,Kelvin pickup/current sharing review remains open
+R11,500u 3W 1% WSLP2512L5000FEA,Swayatt_Local:WSLP2512_L5000,Vishay,WSLP2512L5000FEA,REVIEW - NOT RELEASED,Kelvin pickup/current sharing review remains open
+R12,4.7R,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R13,1k 1%,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R14,1M gate-source bleed,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R15,10R 1%,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R16,10R 1%,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R17,4.7k,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R18,4.7k,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R19,4.7R,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R2,10k 1%,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R20,4.7R,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R21,4.7R,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R3,"10, 1W",Resistor_SMD:R_2512_6332Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R4,21k,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R5,5.11k,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R6,1.65k,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R7,39.2k 1%,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R8,20k 1% 0.25W,Resistor_SMD:R_1206_3216Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+R9,1.1k,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+RL1,100k,Resistor_SMD:R_0603_1608Metric,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+TP1,5V_PI AUX,TestPoint:TestPoint_Pad_D1.5mm,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+TP2,CURRENT ANALOG TEST,TestPoint:TestPoint_Pad_D1.5mm,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+TP3,VOLTAGE ANALOG TEST,TestPoint:TestPoint_Pad_D1.5mm,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+U1,LM5576MH,Swayatt_Local:LM5576_PWP20,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+U2,INA169NA_3KG4,Package_TO_SOT_SMD:SOT-23-5,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+U3,INA228AIDGSR I2C=0x45,Swayatt_Local:INA228_DGS0010A,Texas Instruments,INA228AIDGSR,REVIEW - NOT RELEASED,TI DGS0010A land pattern; Kelvin geometry/calibration review OPEN
+U4,TLV75533PDBV,Package_TO_SOT_SMD:SOT-23-5,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review
+U5,LM74502HDDFR REVERSE ONLY,Swayatt_Local:LM74502_DDF8,,,REVIEW - NOT RELEASED,Exact ordering code/assembly specification requires BOM review

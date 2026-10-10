@@ -1,0 +1,131 @@
+{
+  "routes": [
+    {
+      "net": "/DIG_SENSE_P",
+      "start": [
+        82.1,
+        214.0,
+        0
+      ],
+      "end": [
+        84.3,
+        213.05,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/DIG_SENSE_N",
+      "start": [
+        82.1,
+        214.5,
+        0
+      ],
+      "end": [
+        84.3,
+        214.95,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/Vin",
+      "start": [
+        82.1,
+        215.0,
+        0
+      ],
+      "end": [
+        88.326,
+        213.8062,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/DIG_SENSE_P",
+      "start": [
+        84.3,
+        213.05,
+        0
+      ],
+      "end": [
+        75.5,
+        213.175,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/DIG_SENSE_N",
+      "start": [
+        84.3,
+        214.95,
+        0
+      ],
+      "end": [
+        75.5,
+        216.675,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/Voltage",
+      "start": [
+        86.025,
+        213.9,
+        0
+      ],
+      "end": [
+        84.175,
+        217.0,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/Voltage",
+      "start": [
+        84.175,
+        217.0,
+        0
+      ],
+      "end": [
+        90.0,
+        218.0,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/Voltage",
+      "start": [
+        90.0,
+        218.0,
+        0
+      ],
+      "end": [
+        95.4625,
+        217.0,
+        0
+      ],
+      "routed": true
+    },
+    {
+      "net": "/GNDA",
+      "start": [
+        85.775,
+        215,
+        0
+      ],
+      "end": [
+        87.575,
+        213.9,
+        0
+      ],
+      "routed": true
+    }
+  ],
+  "removed_stitch_vias": []
+}

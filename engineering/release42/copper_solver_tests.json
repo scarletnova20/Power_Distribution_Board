@@ -1,0 +1,51 @@
+{
+  "scope": "Solver checks only; does not validate PCB geometry or ampacity",
+  "passed": 5,
+  "cases": [
+    {
+      "name": "series_strip",
+      "expected_ohm": 10.0,
+      "actual_ohm": 10.000000000000025,
+      "relative_error": 2.4424906541753444e-15,
+      "current_balance": 4.718447854656927e-15,
+      "energy_balance": 2.4424906541753444e-15,
+      "solver_residual": 1.4526007183912088e-15
+    },
+    {
+      "name": "multilevel_series_strip",
+      "expected_ohm": 201.0,
+      "actual_ohm": 200.99999999999196,
+      "relative_error": 3.9968028886505635e-14,
+      "current_balance": 1.3967748832554577e-11,
+      "energy_balance": 4.007905118896815e-14,
+      "solver_residual": 4.870898546409972e-12
+    },
+    {
+      "name": "rectangular_sheet",
+      "expected_ohm": 1.25,
+      "actual_ohm": 1.2500000000000033,
+      "relative_error": 2.6645352591003757e-15,
+      "current_balance": 1.7902346272080697e-14,
+      "energy_balance": 2.6645352591003757e-15,
+      "solver_residual": 4.645878364339666e-15
+    },
+    {
+      "name": "via_and_planes",
+      "expected_ohm": 10.0,
+      "actual_ohm": 10.000000000000007,
+      "relative_error": 6.661338147750939e-16,
+      "current_balance": 1.249000902703302e-15,
+      "energy_balance": 8.881784197001252e-16,
+      "solver_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "floating_islands",
+      "expected_ohm": 10.0,
+      "actual_ohm": 10.000000000000025,
+      "relative_error": 2.4424906541753444e-15,
+      "current_balance": 4.718447854656927e-15,
+      "energy_balance": 2.4424906541753444e-15,
+      "solver_residual": 1.4526007183912088e-15
+    }
+  ]
+}

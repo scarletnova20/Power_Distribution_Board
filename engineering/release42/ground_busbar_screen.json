@@ -1,0 +1,57 @@
+{
+  "scope": "Proposed reinforcement screening only; no mechanical or thermal qualification",
+  "PCB_model": "ground_resistance_0.05_amg.json",
+  "PCB_board_sha256": "0718fcf4ad4816b4e065f5e90765419605ba5d6a86b6edd38c2f94c208bd1287",
+  "assumed_uniform_temperature_C": 100,
+  "cases": [
+    {
+      "width_mm": 6,
+      "thickness_mm": 1,
+      "developed_length_mm": 25,
+      "ideal_copper_resistance_ohm_at_100C": 9.441773333333334e-05,
+      "two_joint_resistance_budget_ohm": 2e-05,
+      "bridge_resistance_with_budget_ohm": 0.00011441773333333333,
+      "bridge_current_A": 66.52626703602753,
+      "PCB_ground_current_A": 13.473732963972466,
+      "total_parallel_loss_W": 0.6089427745112258,
+      "PCB_ground_loss_W": 0.10255915417630944,
+      "bridge_loss_W": 0.5063836203349162,
+      "copper_mass_g": 1.3439999999999999
+    },
+    {
+      "width_mm": 6,
+      "thickness_mm": 1,
+      "developed_length_mm": 30,
+      "ideal_copper_resistance_ohm_at_100C": 0.00011330128000000001,
+      "two_joint_resistance_budget_ohm": 2e-05,
+      "bridge_resistance_with_budget_ohm": 0.00013330128000000002,
+      "bridge_current_A": 64.72708855743716,
+      "PCB_ground_current_A": 15.272911442562844,
+      "total_parallel_loss_W": 0.6902563004303781,
+      "PCB_ground_loss_W": 0.13177779186430266,
+      "bridge_loss_W": 0.5584785085660755,
+      "copper_mass_g": 1.6127999999999998
+    },
+    {
+      "width_mm": 6,
+      "thickness_mm": 1,
+      "developed_length_mm": 35,
+      "ideal_copper_resistance_ohm_at_100C": 0.00013218482666666669,
+      "two_joint_resistance_budget_ohm": 2e-05,
+      "bridge_resistance_with_budget_ohm": 0.00015218482666666668,
+      "bridge_current_A": 63.02266374414503,
+      "PCB_ground_current_A": 16.977336255854972,
+      "total_parallel_loss_W": 0.7672874526379463,
+      "PCB_ground_loss_W": 0.16283121360415997,
+      "bridge_loss_W": 0.6044562390337862,
+      "copper_mass_g": 1.8816
+    }
+  ],
+  "requirements": [
+    "Entire conductive span insulated except termination feet",
+    "Clearance over J12 positive solder land and its actual wire/harness must be verified",
+    "Strain relief must not rely solely on PCB pad adhesion",
+    "Measure completed bridge plus joints with four-wire resistance measurement",
+    "Qualify at full 80 A even though ideal parallel model shares some current with PCB"
+  ]
+}

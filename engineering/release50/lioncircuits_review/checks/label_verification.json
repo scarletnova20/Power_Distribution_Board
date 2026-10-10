@@ -1,0 +1,31 @@
+{
+  "board_sha256": "c9c3f9b4b2eaea11e62d7a06adaa5d6bd7cebcf41989441f326c62a01ae33d8d",
+  "silk_references": 58,
+  "assembly_only_references": [
+    "C13",
+    "C14",
+    "C17",
+    "C21",
+    "D2",
+    "H4",
+    "J1",
+    "J12",
+    "J2",
+    "J5",
+    "J6",
+    "L1",
+    "NT2",
+    "R10",
+    "R11",
+    "R18",
+    "R6",
+    "R9",
+    "TP1",
+    "U5"
+  ],
+  "all_references_accounted": true,
+  "silk_text_drc_findings": 0,
+  "minimum_reference_height_mm": 0.8,
+  "stroke_mm": 0.16,
+  "placement_note": "Crowded references remain visible on fabrication layers; indexed component maps identify every component. No reference is displaced farther than 4.5 mm from its component center."
+}

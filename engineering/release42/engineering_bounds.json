@@ -1,0 +1,94 @@
+{
+  "scope": "Analytical screening only; not a qualified model or measured rating",
+  "battery": {
+    "full_V": 16.8,
+    "nominal_V": 14.8,
+    "capacity_Ah": 8.4,
+    "stated_C_rating": 25,
+    "arithmetic_rating_A": 210,
+    "PCB_target_A": 80,
+    "soak_minutes": 15,
+    "soak_required_Ah": 20,
+    "ideal_pack_runtime_minutes_at_80A": 6.3,
+    "cell_model": null,
+    "BMS_rating": null,
+    "pack_resistance_ohm": null,
+    "fault_current_A": null
+  },
+  "buck": {
+    "output_V": 5.01878787878788,
+    "switching_hz": 292825.7686676428,
+    "inductor_uH": 33,
+    "L_DCR_max_ohm_at_25C": 0.0485,
+    "inductor_ripple_A_at_16_8V": 0.3642137205619093,
+    "output_capacitor": "Panasonic 10SVPC120M, 120uF +/-20%, 10V, ESR max27mOhm at100kHz",
+    "compensation_R_ohm": 39200,
+    "compensation_C_F": 1e-08,
+    "HF_C_F": 2.2e-11,
+    "corner_count": 32,
+    "crossover_min_hz": 14522.470739955637,
+    "crossover_max_hz": 25313.420740801055,
+    "phase_margin_min_deg_estimate": 74.6698183040469,
+    "model_limits": [
+      "TI 2A/V approximation excludes device gain spread",
+      "ceramic effective capacitance is a screening range, not selected-part evidence",
+      "ESR frequency/temperature dependence not modeled",
+      "half-cycle delay approximation",
+      "load-step/Bode measurements required"
+    ]
+  },
+  "thermal_screen": {
+    "ambient_C": 50,
+    "MOSFET_RDS_multiplier_assumed": 1.7,
+    "MOSFET_total_W_equal_sharing": 7.344,
+    "shunt_total_W_equal_sharing": 1.6,
+    "MOSFET_top_RthJC_max_C_per_W": 20,
+    "TIM_Rth_assumed_C_per_W_per_device": 4,
+    "junction_design_limit_C": 125,
+    "note": "Assumed multiplier/TIM are design screening bounds, not verified assembly values",
+    "max_shared_heatsink_RthSA_C_per_W_MOSFET_only": 4.212418300653595
+  },
+  "uniform_trace_screen": {
+    "Pi existing screen": {
+      "current_A": 5,
+      "length_mm": 30.155,
+      "width_mm": 0.2,
+      "copper_mm": 0.07,
+      "assumed_copper_C": 100,
+      "resistance_ohm": 0.04880857283428571,
+      "drop_V": 0.24404286417142856,
+      "loss_W": 1.2202143208571428
+    },
+    "Pi proposed screen": {
+      "current_A": 5,
+      "length_mm": 40,
+      "width_mm": 2,
+      "copper_mm": 0.07,
+      "assumed_copper_C": 100,
+      "resistance_ohm": 0.006474358857142857,
+      "drop_V": 0.03237179428571429,
+      "loss_W": 0.16185897142857142
+    },
+    "Servo existing screen": {
+      "current_A": 7.5,
+      "length_mm": 40.878,
+      "width_mm": 0.2,
+      "copper_mm": 0.07,
+      "assumed_copper_C": 100,
+      "resistance_ohm": 0.0661647103405714,
+      "drop_V": 0.49623532755428557,
+      "loss_W": 3.721764956657142
+    },
+    "Servo proposed screen": {
+      "current_A": 7.5,
+      "length_mm": 45,
+      "width_mm": 3,
+      "copper_mm": 0.07,
+      "assumed_copper_C": 100,
+      "resistance_ohm": 0.004855769142857143,
+      "drop_V": 0.036418268571428575,
+      "loss_W": 0.2731370142857143
+    }
+  },
+  "Pi_topology_note": "Existing /5V_PI net has only BEC1.3 and TP1.1; its PCB trace is a test-point branch, not a 5A distribution path. Pi power must run directly from the external BEC through the specified harness. The Pi trace calculation above is hypothetical and must not be interpreted as actual PCB dissipation."
+}

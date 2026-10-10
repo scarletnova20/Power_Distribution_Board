@@ -1,0 +1,6 @@
+{
+  "only_changes": "board annotation and D3 displayed value",
+  "all_other_serialized_board_items_identical": true,
+  "before_sha256": "0718fcf4ad4816b4e065f5e90765419605ba5d6a86b6edd38c2f94c208bd1287",
+  "after_sha256": "bba225e1480d85443def2e79173236150f8c53b37b45844f93623032e605ff5a"
+}

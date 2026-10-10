@@ -1,0 +1,74 @@
+{
+  "system_continuous_A": 50,
+  "battery_max_V": 16.8,
+  "battery_nominal_V": 14.8,
+  "capacity_Ah": 8.4,
+  "ambient_max_C": 50,
+  "baseline_cooling": "natural convection; no guaranteed airflow",
+  "outline_mm": [
+    42,
+    42
+  ],
+  "copper_candidates_um": [
+    35,
+    70
+  ],
+  "working_copper_um": {
+    "outer": 35,
+    "inner": 70
+  },
+  "process_candidate": "Standard four-layer, 1 oz outer / 2 oz inner, 1.6 mm, ENIG. 6 mil track/space, 0.127 mm min annular ring, 0.24 mm min drill. Chosen 2026-09-15 because the TI land patterns for U1/U3/U5 (0.200-0.220 mm pad gaps) cannot meet any 0.254 mm spacing rule, which 2 oz outer copper forces.",
+  "transient_profile": null,
+  "battery_fault_current_A": null,
+  "cells": null,
+  "BMS": null,
+  "BEC_models": {
+    "Pi_5V": null,
+    "servo_5V": null,
+    "servo_12V": null,
+    "DJI_12V": null
+  },
+  "harness_connectors": null,
+  "wire_gauge_and_length": null,
+  "qualification": {
+    "A_fabrication_ready": false,
+    "B_50A_thermal_prototype": false,
+    "C_50A_production": false
+  },
+  "obsolete_requirement": "80 A is superseded and is not a release gate",
+  "fabricator": "TBD - retarget from LionCircuits 2oz; spec is vendor-neutral",
+  "fabricator_service": "Custom four-layer, mixed copper weight; acceptance pending",
+  "battery_topology": "4S2P Li-ion; user reconfirmed 2026-09-10",
+  "BEC_revision": {
+    "date": "2026-09-11",
+    "architecture": "External BEC modules retained, confirmed by user",
+    "outputs_V": [
+      5,
+      12
+    ],
+    "changed_branches": [
+      "J4/J8 servo",
+      "J10/J11 DJI"
+    ],
+    "output_current_A": null,
+    "load_voltage_compatibility": "Exact load models remain unspecified"
+  },
+  "stackup_um": {
+    "F.Cu": 35,
+    "In1.Cu": 70,
+    "In2.Cu": 70,
+    "B.Cu": 35,
+    "total_mm": 1.6
+  },
+  "restack_decision": {
+    "date": "2026-09-15",
+    "requested_by": "user",
+    "rationale": "Move the 50 A path onto 2 oz inner layers so outer copper can drop to 1 oz and admit a 6 mil class process.",
+    "measured_cost_W_at_50A": {
+      "before_2oz_all": 11.136,
+      "after_1oz_outer": 14.203,
+      "delta": 3.067
+    },
+    "note": "Both figures are on the final refilled geometry, same DC screening model."
+  }
+}

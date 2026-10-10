@@ -1,0 +1,39 @@
+{
+  "system_continuous_A": 50,
+  "battery_max_V": 16.8,
+  "battery_nominal_V": 14.8,
+  "capacity_Ah": 8.4,
+  "ambient_max_C": 50,
+  "baseline_cooling": "natural convection; no guaranteed airflow",
+  "outline_mm": [
+    42,
+    42
+  ],
+  "copper_candidates_um": [
+    70,
+    105
+  ],
+  "working_copper_um": 70,
+  "process_candidate": "LionCircuits custom four-layer 2oz all layers, 1.6mm ENIG, filled/capped vias; standard 10mil rules NOT MET",
+  "transient_profile": null,
+  "battery_fault_current_A": null,
+  "cells": null,
+  "BMS": null,
+  "BEC_models": {
+    "Pi_5V": null,
+    "servo_5V": null,
+    "servo_9V": null,
+    "DJI_9V": null
+  },
+  "harness_connectors": null,
+  "wire_gauge_and_length": null,
+  "qualification": {
+    "A_fabrication_ready": false,
+    "B_50A_thermal_prototype": false,
+    "C_50A_production": false
+  },
+  "obsolete_requirement": "80 A is superseded and is not a release gate",
+  "fabricator": "LionCircuits",
+  "fabricator_service": "Custom; acceptance pending",
+  "battery_topology": "4S2P Li-ion; user reconfirmed 2026-09-10"
+}

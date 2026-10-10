@@ -1,0 +1,15 @@
+{
+  "board_sha256": "bba225e1480d85443def2e79173236150f8c53b37b45844f93623032e605ff5a",
+  "footprints": 78,
+  "tracks_and_vias": 1247,
+  "layers": 4,
+  "layout_and_pad_net_failures": [],
+  "electrical_check_count": 52,
+  "electrical_failures": [],
+  "manufacturing_release": false,
+  "drc_findings": 0,
+  "unconnected_items": 0,
+  "erc_findings": 0,
+  "ignored_checks": [],
+  "drc_exclusions": []
+}

@@ -1,0 +1,20 @@
+{
+  "board_sha256": "c9c3f9b4b2eaea11e62d7a06adaa5d6bd7cebcf41989441f326c62a01ae33d8d",
+  "date": "2026-09-11",
+  "reviewed": [
+    "gerber_top_silk",
+    "gerber_bottom_silk",
+    "front",
+    "back",
+    "component_locator_front",
+    "component_locator_back"
+  ],
+  "findings": [
+    "Layer registration, outline and hole placement agree with native board.",
+    "Copper/stackup and holes are independently unchanged from the previously reviewed revision; via-in-pad requires documented fill/cap.",
+    "Fine-pitch gaps and via annuli remain incompatible with the published LionCircuits screen.",
+    "58 silk references and 20 assembly-only references; indexed component locators supplement dense assembly drawings.",
+    "Gerbonara warns about KiCad G90 after Excellon header; parsed absolute coordinates match the native design."
+  ],
+  "fabrication_release": false
+}

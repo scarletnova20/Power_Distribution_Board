@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-09T18:52:48",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [],
+    "source": "release_candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1562 mm)",
+            "items": [
+                {
+                    "description": "Track [/PGND] on B.Cu, length 1.6839 mm",
+                    "pos": {
+                        "x": 63.2,
+                        "y": 217.375
+                    },
+                    "uuid": "5b16f567-fe7e-4c16-afe9-876e1e982286"
+                },
+                {
+                    "description": "Via [/BAT_FUSED] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 65.599999,
+                        "y": 218.0
+                    },
+                    "uuid": "74f0a017-f276-4af9-8dfb-36ef153c953a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

@@ -1,0 +1,4538 @@
+{
+  "components": [
+    {
+      "ref": "BEC1",
+      "value": "Conn_01x04",
+      "footprint": "BEC_Wire_4_42",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            67.5,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            71.0,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/5V_PI",
+          "xy": [
+            74.5,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/PGND",
+          "xy": [
+            78.0,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C1",
+      "value": "2.2u 100V X7R",
+      "footprint": "C_1812_4532Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/PGND",
+          "xy": [
+            84.95,
+            204.0
+          ],
+          "size": [
+            1.4,
+            3.4
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/Vin",
+          "xy": [
+            89.05,
+            204.0
+          ],
+          "size": [
+            1.4,
+            3.4
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C10",
+      "value": "22u 16V X7R",
+      "footprint": "C_1206_3216Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            71.525,
+            218.5
+          ],
+          "size": [
+            1.15,
+            1.8
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            74.475,
+            218.5
+          ],
+          "size": [
+            1.15,
+            1.8
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "22p C0G",
+      "footprint": "C_0603_1608Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/COMP",
+          "xy": [
+            87.225,
+            215.5
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/FB",
+          "xy": [
+            88.775,
+            215.5
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C12",
+      "value": "10n C0G",
+      "footprint": "C_0603_1608Metric",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/COMP_RC",
+          "xy": [
+            94.0,
+            215.275
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/FB",
+          "xy": [
+            94.0,
+            213.725
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C13",
+      "value": "47u 100V EEUFS2A470L",
+      "footprint": "CP_Radial_D8.0mm_P3.50mm",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            91.0,
+            213.0
+          ],
+          "size": [
+            1.6,
+            1.6
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            91.0,
+            209.5
+          ],
+          "size": [
+            1.6,
+            1.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "100n 25V",
+      "footprint": "C_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            82.0,
+            223.275
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            82.0,
+            221.725
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C15",
+      "value": "100n 25V",
+      "footprint": "C_0603_1608Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Voltage",
+          "xy": [
+            84.225,
+            215.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            85.775,
+            215.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C16",
+      "value": "100n 100V X7R",
+      "footprint": "C_0805_2012Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/DIG_SENSE_P",
+          "xy": [
+            84.8,
+            209.95
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/DIG_SENSE_N",
+          "xy": [
+            84.8,
+            208.05
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C17",
+      "value": "100n 25V",
+      "footprint": "C_0603_1608Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/3V3",
+          "xy": [
+            74.725,
+            220.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            76.275,
+            220.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C18",
+      "value": "1u 16V",
+      "footprint": "C_0603_1608Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            78.225,
+            222.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            79.775,
+            222.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C19",
+      "value": "1u 16V",
+      "footprint": "C_0603_1608Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/3V3",
+          "xy": [
+            78.225,
+            228.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            79.775,
+            228.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "2.2u 100V X7R",
+      "footprint": "C_1812_4532Metric",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/PGND",
+          "xy": [
+            92.5,
+            207.55
+          ],
+          "size": [
+            1.4,
+            3.4
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/Vin",
+          "xy": [
+            92.5,
+            203.45
+          ],
+          "size": [
+            1.4,
+            3.4
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C20",
+      "value": "1u 25V X7R",
+      "footprint": "C_0805_2012Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/CHARGE_PUMP",
+          "xy": [
+            73.8,
+            207.75
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/BAT_FUSED",
+          "xy": [
+            73.8,
+            205.85
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C21",
+      "value": "100n 100V X7R",
+      "footprint": "C_0805_2012Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/BAT_FUSED",
+          "xy": [
+            73.5,
+            204.15
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            73.5,
+            202.25
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "330p",
+      "footprint": "C_0603_1608Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/GNDA",
+          "xy": [
+            90.725,
+            215.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/RAMP",
+          "xy": [
+            92.275,
+            215.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "10n 25V",
+      "footprint": "C_0603_1608Metric",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/GNDA",
+          "xy": [
+            90.0,
+            224.775
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SD",
+          "xy": [
+            90.0,
+            223.225
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "470n 25V",
+      "footprint": "C_0603_1608Metric",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/PGND",
+          "xy": [
+            93.0,
+            211.275
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/BUCK_BIAS",
+          "xy": [
+            93.0,
+            209.725
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "10n 25V",
+      "footprint": "C_0603_1608Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/GNDA",
+          "xy": [
+            83.225,
+            201.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SS",
+          "xy": [
+            84.775,
+            201.0
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "22n 100V X7R",
+      "footprint": "C_0805_2012Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/SW",
+          "xy": [
+            82.55,
+            215.5
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/BST",
+          "xy": [
+            84.45,
+            215.5
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "330p 100V C0G",
+      "footprint": "C_0805_2012Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/SW",
+          "xy": [
+            83.05,
+            199.0
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SNUB",
+          "xy": [
+            84.95,
+            199.0
+          ],
+          "size": [
+            1.0,
+            1.45
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "150u 10V polymer ESR<=30mR",
+      "footprint": "C_Elec_6.3x5.8",
+      "side": "B",
+      "angle": 180.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            68.5375,
+            217.375
+          ],
+          "size": [
+            3.325,
+            1.6
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            63.4625,
+            217.375
+          ],
+          "size": [
+            3.325,
+            1.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "STPS5H100B",
+      "footprint": "STPS5H100B",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            76.22,
+            205.04
+          ],
+          "size": [
+            2.2,
+            1.2
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            76.975,
+            200.415
+          ],
+          "size": [
+            3.05,
+            2.75
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            80.025,
+            200.415
+          ],
+          "size": [
+            3.05,
+            2.75
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            76.975,
+            197.065
+          ],
+          "size": [
+            3.05,
+            2.75
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            80.025,
+            197.065
+          ],
+          "size": [
+            3.05,
+            2.75
+          ]
+        },
+        {
+          "number": "1",
+          "net": "/SW",
+          "xy": [
+            78.5,
+            198.74
+          ],
+          "size": [
+            6.4,
+            5.8
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/IS_RETURN",
+          "xy": [
+            80.78,
+            205.04
+          ],
+          "size": [
+            2.2,
+            1.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "SMCJ28CA bidirectional",
+      "footprint": "D_SMC",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/BAT_FUSED",
+          "xy": [
+            86.6,
+            202.0
+          ],
+          "size": [
+            3.3,
+            2.5
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            93.4,
+            202.0
+          ],
+          "size": [
+            3.3,
+            2.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "GREEN",
+      "footprint": "LED_0805_2012Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/PGND",
+          "xy": [
+            74.0,
+            228.9375
+          ],
+          "size": [
+            0.975,
+            1.4
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/LED_A",
+          "xy": [
+            74.0,
+            227.0625
+          ],
+          "size": [
+            0.975,
+            1.4
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "H1",
+      "value": "M3 3.2mm NPTH",
+      "footprint": "MountingHole_3.2mm_M3",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            62.5,
+            192.5
+          ],
+          "size": [
+            3.2,
+            3.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "H2",
+      "value": "M3 3.2mm NPTH",
+      "footprint": "MountingHole_3.2mm_M3",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            97.5,
+            192.5
+          ],
+          "size": [
+            3.2,
+            3.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "H3",
+      "value": "M3 3.2mm NPTH",
+      "footprint": "MountingHole_3.2mm_M3",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            62.5,
+            227.5
+          ],
+          "size": [
+            3.2,
+            3.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "H4",
+      "value": "M3 3.2mm NPTH",
+      "footprint": "MountingHole_3.2mm_M3",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            97.5,
+            227.5
+          ],
+          "size": [
+            3.2,
+            3.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "4-6S FUSED INPUT 25.2V MAX",
+      "footprint": "Power_Wire_2_42",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/BAT_FUSED",
+          "xy": [
+            70.0,
+            193.75
+          ],
+          "size": [
+            6.0,
+            6.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            77.0,
+            193.75
+          ],
+          "size": [
+            6.0,
+            6.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J10",
+      "value": "BEC_12V_DJI",
+      "footprint": "BEC_Wire_4",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            97.0,
+            211.0
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            97.0,
+            207.0
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/12V_DJI",
+          "xy": [
+            97.0,
+            203.0
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/PGND",
+          "xy": [
+            97.0,
+            199.0
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J11",
+      "value": "DJI_PWR_OUT",
+      "footprint": "Aux_Wire_2_42",
+      "side": "B",
+      "angle": 180.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/12V_DJI",
+          "xy": [
+            96.4,
+            218.4
+          ],
+          "size": [
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            92.4,
+            218.4
+          ],
+          "size": [
+            3.0,
+            3.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J12",
+      "value": "SPEEDYBEE ESC BATTERY 4-6S",
+      "footprint": "Power_Wire_2_42",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            83.7,
+            193.75
+          ],
+          "size": [
+            6.0,
+            6.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            90.7,
+            193.75
+          ],
+          "size": [
+            6.0,
+            6.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "PIXHAWK 6X DIGITAL POWER",
+      "footprint": "CLIK_Mate_502443_0670",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            70.0,
+            223.05
+          ],
+          "size": [
+            1.0,
+            2.9
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/out",
+          "xy": [
+            72.0,
+            223.05
+          ],
+          "size": [
+            1.0,
+            2.9
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/SCL",
+          "xy": [
+            74.0,
+            223.05
+          ],
+          "size": [
+            1.0,
+            2.9
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/SDA",
+          "xy": [
+            76.0,
+            223.05
+          ],
+          "size": [
+            1.0,
+            2.9
+          ]
+        },
+        {
+          "number": "5",
+          "net": "/PGND",
+          "xy": [
+            78.0,
+            223.05
+          ],
+          "size": [
+            1.0,
+            2.9
+          ]
+        },
+        {
+          "number": "6",
+          "net": "/PGND",
+          "xy": [
+            80.0,
+            223.05
+          ],
+          "size": [
+            1.0,
+            2.9
+          ]
+        },
+        {
+          "number": "MP",
+          "net": "",
+          "xy": [
+            67.65,
+            227.7
+          ],
+          "size": [
+            1.8,
+            3.6
+          ]
+        },
+        {
+          "number": "MP",
+          "net": "",
+          "xy": [
+            82.35,
+            227.7
+          ],
+          "size": [
+            1.8,
+            3.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J3",
+      "value": "BEC_5V_SERVOS",
+      "footprint": "BEC_Wire_4_42",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            82.0,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            85.5,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/5V_Servo",
+          "xy": [
+            89.0,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/PGND",
+          "xy": [
+            92.5,
+            192.5
+          ],
+          "size": [
+            2.5,
+            3.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J4",
+      "value": "BEC_9V_SERVOS",
+      "footprint": "BEC_Wire_4",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            63.0,
+            211.85
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            63.0,
+            207.85
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/9V_Servo",
+          "xy": [
+            63.0,
+            203.85
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/PGND",
+          "xy": [
+            63.0,
+            199.85
+          ],
+          "size": [
+            3.0,
+            4.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J5",
+      "value": "Servo_5V_1",
+      "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "unconnected-(J5-Pin_1-Pad1)",
+          "xy": [
+            84.5,
+            221.2
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/5V_Servo",
+          "xy": [
+            84.5,
+            223.74
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/PGND",
+          "xy": [
+            84.5,
+            226.28
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J6",
+      "value": "Servo_5V_2",
+      "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "unconnected-(J6-Pin_1-Pad1)",
+          "xy": [
+            88.2,
+            221.2
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/5V_Servo",
+          "xy": [
+            88.2,
+            223.74
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/PGND",
+          "xy": [
+            88.2,
+            226.28
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J7",
+      "value": "Servo_5V_3",
+      "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "unconnected-(J7-Pin_1-Pad1)",
+          "xy": [
+            91.9,
+            221.2
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/5V_Servo",
+          "xy": [
+            91.9,
+            223.74
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/PGND",
+          "xy": [
+            91.9,
+            226.28
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J8",
+      "value": "Servo_9V_1",
+      "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "unconnected-(J8-Pin_1-Pad1)",
+          "xy": [
+            99.0,
+            217.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/9V_Servo",
+          "xy": [
+            99.0,
+            219.54
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/PGND",
+          "xy": [
+            99.0,
+            222.08
+          ],
+          "size": [
+            1.7,
+            1.7
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "33u XAL8080-333MED",
+      "footprint": "L_Coilcraft_XAL8080-XXX",
+      "side": "B",
+      "angle": 180.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            79.58,
+            211.5
+          ],
+          "size": [
+            1.78,
+            7.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SW",
+          "xy": [
+            74.42,
+            211.5
+          ],
+          "size": [
+            1.78,
+            7.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "NT1",
+      "value": "NetTie_2",
+      "footprint": "NetTie-2_SMD_Pad0.5mm",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/GNDA",
+          "xy": [
+            84.5,
+            206.5
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            85.5,
+            206.5
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "NT2",
+      "value": "NetTie_2",
+      "footprint": "NetTie-2_SMD_Pad0.5mm",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/VCC",
+          "xy": [
+            78.5,
+            207.0
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SENSE_P",
+          "xy": [
+            79.5,
+            207.0
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "NT3",
+      "value": "NetTie_2",
+      "footprint": "NetTie-2_SMD_Pad0.5mm",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            81.5,
+            207.0
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SENSE_N",
+          "xy": [
+            82.5,
+            207.0
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "ISC027N10NM6 100V 2.7mR",
+      "footprint": "ISC027N10NM6_GDS",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            199.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            200.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            201.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            202.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            199.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            200.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            201.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            202.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            199.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            200.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            201.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            202.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "1",
+          "net": "/GATE_Q1",
+          "xy": [
+            65.175,
+            202.905
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            68.675,
+            201.0
+          ],
+          "size": [
+            4.5,
+            4.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            199.005
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            200.335
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            201.665
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            202.995
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            199.095
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            200.365
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            200.365
+          ],
+          "size": [
+            1.2,
+            3.19
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            201.635
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q2",
+      "value": "ISC027N10NM6 100V 2.7mR",
+      "footprint": "ISC027N10NM6_GDS",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            206.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            207.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            208.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            209.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            206.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            207.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            208.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            209.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            206.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            207.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            208.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            209.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "1",
+          "net": "/GATE_Q2",
+          "xy": [
+            65.175,
+            209.905
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            68.675,
+            208.0
+          ],
+          "size": [
+            4.5,
+            4.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            206.005
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            207.335
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            208.665
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            209.995
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            206.095
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            207.365
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            207.365
+          ],
+          "size": [
+            1.2,
+            3.19
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            208.635
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q3",
+      "value": "ISC027N10NM6 100V 2.7mR",
+      "footprint": "ISC027N10NM6_GDS",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            213.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            214.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            215.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            67.2,
+            216.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            213.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            214.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            215.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.425,
+            216.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            213.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            214.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            215.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.625,
+            216.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "1",
+          "net": "/GATE_Q3",
+          "xy": [
+            65.175,
+            216.905
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            68.675,
+            215.0
+          ],
+          "size": [
+            4.5,
+            4.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            213.005
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            214.335
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            215.665
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            70.925,
+            216.995
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            213.095
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            214.365
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            214.365
+          ],
+          "size": [
+            1.2,
+            3.19
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            65.175,
+            215.635
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q4",
+      "value": "ISC027N10NM6 100V 2.7mR",
+      "footprint": "ISC027N10NM6_GDS",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.1,
+            220.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.1,
+            221.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.1,
+            222.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            68.1,
+            223.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.325,
+            220.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.325,
+            221.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.325,
+            222.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            69.325,
+            223.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            70.525,
+            220.275
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            70.525,
+            221.425
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            70.525,
+            222.575
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            70.525,
+            223.725
+          ],
+          "size": [
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "number": "1",
+          "net": "/GATE_Q4",
+          "xy": [
+            66.075,
+            223.905
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            69.575,
+            222.0
+          ],
+          "size": [
+            4.5,
+            4.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            71.825,
+            220.005
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            71.825,
+            221.335
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            71.825,
+            222.665
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VCC",
+          "xy": [
+            71.825,
+            223.995
+          ],
+          "size": [
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            66.075,
+            220.095
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            66.075,
+            221.365
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            66.075,
+            221.365
+          ],
+          "size": [
+            1.2,
+            3.19
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/BAT_FUSED",
+          "xy": [
+            66.075,
+            222.635
+          ],
+          "size": [
+            1.2,
+            0.65
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "90.9k 1%",
+      "footprint": "R_0603_1608Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            91.175,
+            201.5
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SD",
+          "xy": [
+            92.825,
+            201.5
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R10",
+      "value": "500u 3W 1% WSLP2512L5000FEA",
+      "footprint": "WSLP2512_L5000",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/VCC",
+          "xy": [
+            76.84,
+            204.0
+          ],
+          "size": [
+            3.05,
+            3.68
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/Vin",
+          "xy": [
+            81.16,
+            204.0
+          ],
+          "size": [
+            3.05,
+            3.68
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R11",
+      "value": "500u 3W 1% WSLP2512L5000FEA",
+      "footprint": "WSLP2512_L5000",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/VCC",
+          "xy": [
+            76.84,
+            210.0
+          ],
+          "size": [
+            3.05,
+            3.68
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/Vin",
+          "xy": [
+            81.16,
+            210.0
+          ],
+          "size": [
+            3.05,
+            3.68
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "4.7R",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/NMOS_DRIVE",
+          "xy": [
+            63.0,
+            203.825
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GATE_Q1",
+          "xy": [
+            63.0,
+            202.175
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R13",
+      "value": "1k 1%",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            76.0,
+            227.825
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/LED_A",
+          "xy": [
+            76.0,
+            226.175
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "1M gate-source bleed",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/NMOS_DRIVE",
+          "xy": [
+            61.175,
+            200.5
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/BAT_FUSED",
+          "xy": [
+            62.825,
+            200.5
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "10R 1%",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/SENSE_P",
+          "xy": [
+            75.5,
+            214.825
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/DIG_SENSE_P",
+          "xy": [
+            75.5,
+            213.175
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R16",
+      "value": "10R 1%",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/SENSE_N",
+          "xy": [
+            75.5,
+            218.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/DIG_SENSE_N",
+          "xy": [
+            75.5,
+            216.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R17",
+      "value": "4.7k",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/3V3",
+          "xy": [
+            73.5,
+            218.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SCL",
+          "xy": [
+            73.5,
+            216.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R18",
+      "value": "4.7k",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/3V3",
+          "xy": [
+            78.0,
+            219.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SDA",
+          "xy": [
+            78.0,
+            217.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R19",
+      "value": "4.7R",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/NMOS_DRIVE",
+          "xy": [
+            63.0,
+            210.825
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GATE_Q2",
+          "xy": [
+            63.0,
+            209.175
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "10k 1%",
+      "footprint": "R_0603_1608Metric",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/GNDA",
+          "xy": [
+            90.0,
+            228.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SD",
+          "xy": [
+            90.0,
+            226.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R20",
+      "value": "4.7R",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/NMOS_DRIVE",
+          "xy": [
+            63.0,
+            217.825
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GATE_Q3",
+          "xy": [
+            63.0,
+            216.175
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "4.7R",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/NMOS_DRIVE",
+          "xy": [
+            64.0,
+            222.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GATE_Q4",
+          "xy": [
+            64.0,
+            220.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "10, 1W",
+      "footprint": "R_2512_6332Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/SNUB",
+          "xy": [
+            78.0375,
+            199.5
+          ],
+          "size": [
+            1.225,
+            3.35
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/IS_RETURN",
+          "xy": [
+            83.9625,
+            199.5
+          ],
+          "size": [
+            1.225,
+            3.35
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "21k",
+      "footprint": "R_0603_1608Metric",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/GNDA",
+          "xy": [
+            96.0,
+            215.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/RT",
+          "xy": [
+            96.0,
+            213.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "5.11k",
+      "footprint": "R_0603_1608Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            88.175,
+            217.5
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/FB",
+          "xy": [
+            89.825,
+            217.5
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "1.65k",
+      "footprint": "R_0603_1608Metric",
+      "side": "B",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/FB",
+          "xy": [
+            98.0,
+            215.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            98.0,
+            213.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "49.9k",
+      "footprint": "R_0603_1608Metric",
+      "side": "B",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/COMP",
+          "xy": [
+            87.675,
+            201.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/COMP_RC",
+          "xy": [
+            89.325,
+            201.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "20k 1% 0.25W",
+      "footprint": "R_1206_3216Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Vin",
+          "xy": [
+            92.5375,
+            217.0
+          ],
+          "size": [
+            1.125,
+            1.75
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/Voltage",
+          "xy": [
+            95.4625,
+            217.0
+          ],
+          "size": [
+            1.125,
+            1.75
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "1.1k",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Voltage",
+          "xy": [
+            84.175,
+            217.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            85.825,
+            217.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "RL1",
+      "value": "100k",
+      "footprint": "R_0603_1608Metric",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Current",
+          "xy": [
+            87.5,
+            218.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            87.5,
+            216.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP1",
+      "value": "5V_PI AUX",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/5V_PI",
+          "xy": [
+            81.0,
+            219.5
+          ],
+          "size": [
+            1.5,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP2",
+      "value": "CURRENT ANALOG TEST",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Current",
+          "xy": [
+            85.0,
+            212.5
+          ],
+          "size": [
+            1.5,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP3",
+      "value": "VOLTAGE ANALOG TEST",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Voltage",
+          "xy": [
+            90.0,
+            218.0
+          ],
+          "size": [
+            1.5,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "value": "LM5576MH",
+      "footprint": "LM5576_PWP20",
+      "side": "B",
+      "angle": 180.0,
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            86.25,
+            212.0
+          ],
+          "size": [
+            1.15,
+            1.05
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            86.25,
+            210.6
+          ],
+          "size": [
+            1.15,
+            1.05
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            86.25,
+            209.2
+          ],
+          "size": [
+            1.15,
+            1.05
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            84.75,
+            212.0
+          ],
+          "size": [
+            1.15,
+            1.05
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            84.75,
+            210.6
+          ],
+          "size": [
+            1.15,
+            1.05
+          ]
+        },
+        {
+          "number": "",
+          "net": "",
+          "xy": [
+            84.75,
+            209.2
+          ],
+          "size": [
+            1.15,
+            1.05
+          ]
+        },
+        {
+          "number": "1",
+          "net": "/BUCK_BIAS",
+          "xy": [
+            88.47,
+            207.68
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/SD",
+          "xy": [
+            88.47,
+            208.33
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/Vin",
+          "xy": [
+            88.47,
+            208.98
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/Vin",
+          "xy": [
+            88.47,
+            209.63
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "5",
+          "net": "unconnected-(U1-SYNC-Pad5)",
+          "xy": [
+            88.47,
+            210.27
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "6",
+          "net": "/COMP",
+          "xy": [
+            88.47,
+            210.93
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "7",
+          "net": "/FB",
+          "xy": [
+            88.47,
+            211.57
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "8",
+          "net": "/RT",
+          "xy": [
+            88.47,
+            212.22
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "9",
+          "net": "/RAMP",
+          "xy": [
+            88.47,
+            212.87
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "10",
+          "net": "/GNDA",
+          "xy": [
+            88.47,
+            213.52
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "11",
+          "net": "/SS",
+          "xy": [
+            82.53,
+            213.52
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "12",
+          "net": "/out",
+          "xy": [
+            82.53,
+            212.87
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "13",
+          "net": "/PGND",
+          "xy": [
+            82.53,
+            212.22
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "14",
+          "net": "/PGND",
+          "xy": [
+            82.53,
+            211.57
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "15",
+          "net": "/IS_RETURN",
+          "xy": [
+            82.53,
+            210.93
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "16",
+          "net": "/IS_RETURN",
+          "xy": [
+            82.53,
+            210.27
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "17",
+          "net": "/SW",
+          "xy": [
+            82.53,
+            209.63
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "18",
+          "net": "/SW",
+          "xy": [
+            82.53,
+            208.98
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "19",
+          "net": "/SW",
+          "xy": [
+            82.53,
+            208.33
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "20",
+          "net": "/BST",
+          "xy": [
+            82.53,
+            207.68
+          ],
+          "size": [
+            1.78,
+            0.42
+          ]
+        },
+        {
+          "number": "21",
+          "net": "/PGND",
+          "xy": [
+            85.5,
+            210.6
+          ],
+          "size": [
+            3.0,
+            4.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "INA169NA_3KG4",
+      "footprint": "SOT-23-5",
+      "side": "F",
+      "angle": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/Current",
+          "xy": [
+            74.05,
+            224.1375
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            75.0,
+            224.1375
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/SENSE_P",
+          "xy": [
+            75.95,
+            224.1375
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/SENSE_N",
+          "xy": [
+            75.95,
+            221.8625
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "5",
+          "net": "/out",
+          "xy": [
+            74.05,
+            221.8625
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "INA228AIDGSR I2C=0x45",
+      "footprint": "MSOP-10_3x3mm_P0.5mm",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/3V3",
+          "xy": [
+            77.9,
+            214.0
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/3V3",
+          "xy": [
+            77.9,
+            214.5
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "3",
+          "net": "unconnected-(U3-~{ALERT}-Pad3)",
+          "xy": [
+            77.9,
+            215.0
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/SDA",
+          "xy": [
+            77.9,
+            215.5
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "5",
+          "net": "/SCL",
+          "xy": [
+            77.9,
+            216.0
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "6",
+          "net": "/3V3",
+          "xy": [
+            82.1,
+            216.0
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "7",
+          "net": "/GNDA",
+          "xy": [
+            82.1,
+            215.5
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "8",
+          "net": "/Vin",
+          "xy": [
+            82.1,
+            215.0
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "9",
+          "net": "/DIG_SENSE_N",
+          "xy": [
+            82.1,
+            214.5
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        },
+        {
+          "number": "10",
+          "net": "/DIG_SENSE_P",
+          "xy": [
+            82.1,
+            214.0
+          ],
+          "size": [
+            1.5,
+            0.35
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U4",
+      "value": "TLV75533PDBV",
+      "footprint": "SOT-23-5",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/out",
+          "xy": [
+            77.8625,
+            224.05
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GNDA",
+          "xy": [
+            77.8625,
+            225.0
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/out",
+          "xy": [
+            77.8625,
+            225.95
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U4-NC-Pad4)",
+          "xy": [
+            80.1375,
+            225.95
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "number": "5",
+          "net": "/3V3",
+          "xy": [
+            80.1375,
+            224.05
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U5",
+      "value": "LM74502HDDFR REVERSE ONLY",
+      "footprint": "LM74502_DDF8",
+      "side": "F",
+      "angle": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/BAT_FUSED",
+          "xy": [
+            72.7,
+            198.525
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/PGND",
+          "xy": [
+            72.7,
+            199.175
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        },
+        {
+          "number": "3",
+          "net": "unconnected-(U5-NC-Pad3)",
+          "xy": [
+            72.7,
+            199.825
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        },
+        {
+          "number": "4",
+          "net": "/CHARGE_PUMP",
+          "xy": [
+            72.7,
+            200.475
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        },
+        {
+          "number": "5",
+          "net": "/BAT_FUSED",
+          "xy": [
+            75.3,
+            200.475
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        },
+        {
+          "number": "6",
+          "net": "/NMOS_DRIVE",
+          "xy": [
+            75.3,
+            199.825
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        },
+        {
+          "number": "7",
+          "net": "/PGND",
+          "xy": [
+            75.3,
+            199.175
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        },
+        {
+          "number": "8",
+          "net": "/BAT_FUSED",
+          "xy": [
+            75.3,
+            198.525
+          ],
+          "size": [
+            1.05,
+            0.45
+          ]
+        }
+      ]
+    }
+  ],
+  "routing": {
+    "/Voltage": {
+      "length_mm": 15.157,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/GNDA": {
+      "length_mm": 99.362,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 4
+    },
+    "/3V3": {
+      "length_mm": 41.374,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/SDA": {
+      "length_mm": 10.725,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/SCL": {
+      "length_mm": 11.952,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 1
+    },
+    "/Vin": {
+      "length_mm": 136.446,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 23
+    },
+    "/DIG_SENSE_N": {
+      "length_mm": 16.637,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/DIG_SENSE_P": {
+      "length_mm": 11.778,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/Current": {
+      "length_mm": 31.613,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 3
+    },
+    "/NMOS_DRIVE": {
+      "length_mm": 41.19,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/GATE_Q3": {
+      "length_mm": 2.477,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/5V_Servo": {
+      "length_mm": 40.878,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 1
+    },
+    "/PGND": {
+      "length_mm": 233.93,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 56
+    },
+    "/BAT_FUSED": {
+      "length_mm": 63.685,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 14
+    },
+    "/CHARGE_PUMP": {
+      "length_mm": 7.962,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/SNUB": {
+      "length_mm": 10.271,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 1
+    },
+    "/IS_RETURN": {
+      "length_mm": 21.097,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/5V_PI": {
+      "length_mm": 30.155,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/out": {
+      "length_mm": 62.268,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/VCC": {
+      "length_mm": 47.791,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 68
+    },
+    "/GATE_Q1": {
+      "length_mm": 2.477,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/GATE_Q2": {
+      "length_mm": 2.477,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/LED_A": {
+      "length_mm": 2.368,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/9V_Servo": {
+      "length_mm": 42.499,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 1
+    },
+    "/SENSE_N": {
+      "length_mm": 22.399,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/SENSE_P": {
+      "length_mm": 24.733,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/GATE_Q4": {
+      "length_mm": 4.148,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/BUCK_BIAS": {
+      "length_mm": 8.901,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/SD": {
+      "length_mm": 31.621,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/COMP": {
+      "length_mm": 17.914,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 3
+    },
+    "/FB": {
+      "length_mm": 33.154,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/RT": {
+      "length_mm": 11.185,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/RAMP": {
+      "length_mm": 5.132,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/SS": {
+      "length_mm": 16.791,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/SW": {
+      "length_mm": 43.539,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    },
+    "/BST": {
+      "length_mm": 33.491,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/COMP_RC": {
+      "length_mm": 17.208,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 2
+    },
+    "/12V_DJI": {
+      "length_mm": 21.302,
+      "widths_mm": [
+        0.2
+      ],
+      "vias": 0
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="43.0mm" height="43.0mm" viewBox="58.5 -231.5 43.0 43.0" style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke-linejoin="round" stroke-linecap="round" id="l-mechanical-outline" transform="translate(0 -420.0) scale(1 -1)">
+    <path d="M 59.0 -189.0 L 101.0 -189.0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 59.0 -231.0 L 59.0 -189.0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 101.0 -189.0 L 101.0 -231.0 L 59.0 -231.0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "board_sha256": "c9c3f9b4b2eaea11e62d7a06adaa5d6bd7cebcf41989441f326c62a01ae33d8d",
+  "gerber_parser": "gerbonara 1.5.0",
+  "parsed_layers": 9,
+  "plated_holes": 355,
+  "nonplated_holes": 4,
+  "via_drills_match": true,
+  "maximum_via_coordinate_rounding_mm": 0.0007071067811698266,
+  "drill_coordinate_resolution_mm": 0.001,
+  "closed_42mm_outline": true,
+  "gerber_job_paths_valid": true,
+  "copper_geometry_unchanged": true,
+  "stackup_unchanged": true,
+  "component_drills_match": true,
+  "copper_signature": "7489ded5d8f09f55872df1e295340ef2edc98b79540d2523a36f6fcc74167a7a",
+  "previous_board_sha256": "90757b3665616a08cf659170a5eade41814d9c653b4739c096dec1be8d3393f7",
+  "power_report_reconciled": "power_0.1mm_70um_repaired.json; copper/stackup unchanged after normalizing only /9V_Servo to /12V_Servo and /9V_DJI to /12V_DJI; ESC-only model excludes BEC conversion losses",
+  "limitations": [
+    "Parsing/coordinate checks do not establish copper connectivity independently of KiCad",
+    "Graphical review still required",
+    "LionCircuits DFM failures remain; not released"
+  ]
+}

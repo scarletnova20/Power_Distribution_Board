@@ -1,0 +1,33 @@
+Subject: DFM feasibility request: 42 x 42 mm, four-layer 2 oz PDB with filled/capped vias
+
+Please review the attached engineering-review package before any production order.
+
+We need a 42 x 42 mm, 1.6 mm nominal, four-layer FR-4 ENIG board with 2 oz copper
+on every layer. It contains 0.20 mm routed tracks, local clearances down to the
+previous 0.16 mm design minimum, and 343 through vias with 0.30 mm nominal drill
+and 0.50/0.60 mm copper diameters. Fine-pitch IC lands include 0.20 mm gaps.
+The package identifies exact dimensions, locations and rule failures.
+
+Your published Custom 2 oz rules show 10 mil track/space and 6 mil annular rings.
+Can you offer a qualified custom process for the supplied artwork? Please
+provide explicit accepted minimum track/space, pad-gap, annulus and drill rules.
+If not, please return the actual rule deck and viable stackup options for redesign.
+
+All 343 vias require resin fill, planarization and copper capping on both sides.
+Please confirm via-in-pad process availability, cap thickness/flatness/void limits
+and inspection. Connector PTH and mounting NPTH holes must remain open; the
+via-fill schedule and native board identify each via unambiguously.
+
+Please provide the actual four-layer stackup, laminate grade/Tg, minimum finished
+copper thickness/tolerance on every layer, and guaranteed minimum barrel plating.
+Do not substitute 1 oz outer/inner copper without an engineering revision.
+
+Please include bare-board electrical testing and return CAM plots for review.
+For possible later assembly, propose an appropriate tooling panel and paste
+process. The assembly BOM and electrical/thermal qualification are not released.
+
+This is a feasibility/quotation request only. No production authorization is given.
+
+Revision 2026-09-11: external BEC interfaces are 5 V and 12 V. Servo J4/J8
+and DJI J10/J11 previously marked 9 V are now 12 V; copper, stackup and
+drills are unchanged. Please use this regenerated review package.

@@ -1,0 +1,263 @@
+{
+  "board_sha256": "c9c3f9b4b2eaea11e62d7a06adaa5d6bd7cebcf41989441f326c62a01ae33d8d",
+  "fabricator": "LionCircuits",
+  "service": "Custom, 2oz",
+  "source": "https://www.lioncircuits.com/pcb-manufacturing-capabilities/rigid-pcb",
+  "accessed": "2026-09-10",
+  "rule_note": "Use exact 6mil=0.1524mm rather than rounded 0.152mm; same for 10mil=0.254mm.",
+  "short_width_segments": 902,
+  "short_width_by_layer": {
+    "F.Cu": 445,
+    "B.Cu": 291,
+    "In2.Cu": 112,
+    "In1.Cu": 54
+  },
+  "total_vias": 343,
+  "undersize_via_annuli": 343,
+  "minimum_annulus_mm": 0.1,
+  "aligned_fine_pitch_pad_gaps": [
+    {
+      "reference": "U3",
+      "pads": [
+        "2",
+        "3"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:INA228_DGS0010A"
+    },
+    {
+      "reference": "U3",
+      "pads": [
+        "3",
+        "4"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:INA228_DGS0010A"
+    },
+    {
+      "reference": "U3",
+      "pads": [
+        "4",
+        "5"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:INA228_DGS0010A"
+    },
+    {
+      "reference": "U3",
+      "pads": [
+        "6",
+        "7"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:INA228_DGS0010A"
+    },
+    {
+      "reference": "U3",
+      "pads": [
+        "7",
+        "8"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:INA228_DGS0010A"
+    },
+    {
+      "reference": "U3",
+      "pads": [
+        "8",
+        "9"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:INA228_DGS0010A"
+    },
+    {
+      "reference": "U3",
+      "pads": [
+        "9",
+        "10"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:INA228_DGS0010A"
+    },
+    {
+      "reference": "U5",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:LM74502_DDF8"
+    },
+    {
+      "reference": "U5",
+      "pads": [
+        "2",
+        "3"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:LM74502_DDF8"
+    },
+    {
+      "reference": "U5",
+      "pads": [
+        "3",
+        "4"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:LM74502_DDF8"
+    },
+    {
+      "reference": "U5",
+      "pads": [
+        "5",
+        "6"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:LM74502_DDF8"
+    },
+    {
+      "reference": "U5",
+      "pads": [
+        "6",
+        "7"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:LM74502_DDF8"
+    },
+    {
+      "reference": "U5",
+      "pads": [
+        "7",
+        "8"
+      ],
+      "gap_mm": 0.2,
+      "footprint": "Swayatt_Local:LM74502_DDF8"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "2",
+        "3"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "4",
+        "5"
+      ],
+      "gap_mm": 0.22,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "5",
+        "6"
+      ],
+      "gap_mm": 0.24,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "6",
+        "7"
+      ],
+      "gap_mm": 0.22,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "7",
+        "8"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "8",
+        "9"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "9",
+        "10"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "11",
+        "12"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "12",
+        "13"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "14",
+        "15"
+      ],
+      "gap_mm": 0.22,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "16",
+        "17"
+      ],
+      "gap_mm": 0.22,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    },
+    {
+      "reference": "U1",
+      "pads": [
+        "19",
+        "20"
+      ],
+      "gap_mm": 0.23,
+      "footprint": "Swayatt_Local:LM5576_PWP20"
+    }
+  ],
+  "via_drill_inventory": {
+    "0.3": 343
+  },
+  "unverified_process_features": [
+    "Filled/capped via-in-pad availability",
+    "Guaranteed minimum finished copper and via barrel plating",
+    "Accepted 2oz stackup"
+  ],
+  "manufacturing_release": false
+}
